@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Locomotive Scroll Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Kirill Ginko`,
+    description: `Designer and Interactive Developer`,
+    author: `Kirill Ginko`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

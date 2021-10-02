@@ -1,14 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-body {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
-article,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(151, 151, 151);
+  box-sizing: border-box;
+  font-family: "Questrial", sans-serif;
+}
+canvas {
+  max-width: 100%;
+  display: block;
+  z-index: -1;
+}
+.noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+}
+/* body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(92, 92, 92);
+} */
+/* article,
 aside,
 details,
 figcaption,
@@ -623,13 +655,13 @@ pre tt:after {
 
 /*  */
 
-html[data-direction="down"] .header {
+/* html[data-direction="down"] .header {
   transform: translateY(-100%);
 }
 
 /*  */
 
-.Collapse {
+/* .Collapse {
   background: none;
   border: 2px solid black;
   padding: 20px 10px;
@@ -645,4 +677,4 @@ html[data-direction="down"] .header {
 .Collapse_Content > div {
   padding-top: 20px;
   text-align: left;
-}
+} */

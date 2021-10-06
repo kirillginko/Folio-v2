@@ -8,11 +8,12 @@
 
 }
 .contact__header{
-    font-size: 1rem;
+    font-size: .75rem;
     padding: 1rem 0rem;
     text-align: left;
     color: #fff;
     text-transform: uppercase;
+    transition: color 0.2s ease-in-out;
 
 }
 .contact__links > a{
@@ -21,9 +22,9 @@
     font-size: .8rem;
     color: #fff;
     text-align: left;
-    border-top: 1px solid #fff;
+    border-top: 1px dashed #fff;
     text-transform: uppercase;
-    transition: color 0.5s ease-in-out;
+    transition: color 0.2s ease-in-out;
     text-decoration: none;
     cursor: pointer;
 }
@@ -31,6 +32,10 @@
     color: rgb(0, 0, 0);
 
 }
+/* .contact__header:hover{
+    color: rgb(0, 0, 0);
+
+} */
 .blur-effect {
     filter: blur(50px);
     transition: filter 0.7s;
@@ -39,3 +44,4 @@
   .blur-effect.is-inview {
     filter: blur(0px);
   }
+

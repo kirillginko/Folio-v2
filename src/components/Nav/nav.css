@@ -11,10 +11,26 @@
     display: inline-block;
     font-size: .5rem;
     padding: 1rem .5rem;
-
+    z-index: 20;
 
 }
 .nav__items > ul{
     display: flex;
     list-style: none;
+}
+.nav__items > ul > li >h2:hover {
+    color: #000;
+    transition: all 0.2s ease-in-out; 
+
+}
+.nav__header > h2:hover{
+    color: #000; 
+    transition: all 0.2s ease-in-out; 
+}
+.un{
+    border-bottom: 1px dashed transparent;    
+    transition: all 0.2s ease-in-out;
+}
+.un:hover{
+    border-bottom: 1px dashed #000;    
 }

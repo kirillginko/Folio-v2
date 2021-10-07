@@ -27,7 +27,7 @@ li {
   font-size: calc(20vmax * 9 / 16);
   overflow-x: hidden;
   padding-top: 300px;
-  padding-bottom: 300px;
+  /* padding-bottom: 300px; */
 }
 
 .nav-list__item {

@@ -15,13 +15,21 @@ function Contact() {
         >
           Email
         </a>
-        <a href="https://github.com/kirillginko" target="_blank">
+        <a
+          href="https://github.com/kirillginko"
+          target="_blank"
+          rel="noreferrer"
+        >
           Github
         </a>
-        <a href="https://www.instagram.com/co_existenz/?hl=en" target="_blank">
+        <a
+          href="https://www.instagram.com/co_existenz/?hl=en"
+          target="_blank"
+          rel="noreferrer"
+        >
           Instagram
         </a>
-        <a href="https://dribbble.com/" target="_blank">
+        <a href="https://dribbble.com/" target="_blank" rel="noreferrer">
           Dribbble
         </a>
         <a href="#"></a>

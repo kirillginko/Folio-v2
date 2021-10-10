@@ -8,10 +8,22 @@ function Contact() {
         <h2>Contact</h2>
       </div>
       <div className="contact__links">
-        <a href="">Email</a>
-        <a href="https://github.com/kirillginko">Github</a>
-        <a href="https://www.instagram.com/co_existenz/?hl=en">Instagram</a>
-        <a href="https://dribbble.com/">Dribbble</a>
+        <a
+          href="mailto:kirillginko@gmail.com?subject=Let%27s%20make%20something%20cool"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Email
+        </a>
+        <a href="https://github.com/kirillginko" target="_blank">
+          Github
+        </a>
+        <a href="https://www.instagram.com/co_existenz/?hl=en" target="_blank">
+          Instagram
+        </a>
+        <a href="https://dribbble.com/" target="_blank">
+          Dribbble
+        </a>
         <a href="#"></a>
       </div>
     </section>

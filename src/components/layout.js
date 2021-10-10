@@ -6,6 +6,7 @@ import "./locomotive-scroll.css"
 import noise from "./Noise/noise"
 import Nav from "../components/Nav/Nav"
 import Loader from "../components/Loader"
+import Footer from "../components/Footer/Footer"
 import "./layout.css"
 
 // This `location` prop will serve as a callback on route change
@@ -38,6 +39,7 @@ const Layout = ({ children, location }) => {
           <div className="wrapper">
             <Nav />
             <main>{children}</main>
+            <Footer />
           </div>
         </>
       )}

@@ -27,7 +27,7 @@ const Footer = () => {
     <FixedWrapper data-scroll-section>
       <StyledFooter>
         <small>
-          <StyledText>&copy; {y} Kirill Ginko</StyledText>
+          <StyledText>&copy; {y}</StyledText>
         </small>
         <small>
           <StyledText>45.5017° N, 73.5673° W</StyledText>

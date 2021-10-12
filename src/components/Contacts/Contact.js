@@ -32,7 +32,7 @@ function Contact() {
         <a href="https://dribbble.com/" target="_blank" rel="noreferrer">
           Dribbble
         </a>
-        <a href="#"></a>
+        <a href="#" target="_blank"></a>
       </div>
     </section>
   )

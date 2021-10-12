@@ -22,7 +22,7 @@ function Distort() {
         className="item"
         data-scroll
         data-scroll-direction="vertical"
-        data-scroll-target="#direction"
+        // data-scroll-target="#direction"
         data-scroll-speed="2"
         data-scroll-delay="0.05"
       >

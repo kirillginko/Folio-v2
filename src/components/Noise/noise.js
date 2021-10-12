@@ -17,17 +17,6 @@ const noise = () => {
     patternData,
     frame = 0
 
-  window.onload = function () {
-    initCanvas()
-    initGrain()
-    requestAnimationFrame(loop)
-
-    window.addEventListener("resize", () => {
-      viewWidth = canvas.width = canvas.clientWidth
-      viewHeight = canvas.height = canvas.clientHeight
-    })
-  }
-
   // create a canvas which will render the grain
   function initCanvas() {
     viewWidth = canvas.width = canvas.clientWidth
@@ -72,8 +61,15 @@ const noise = () => {
     }
     requestAnimationFrame(loop)
   }
-}
 
-noise()
+  initCanvas()
+  initGrain()
+  requestAnimationFrame(loop)
+
+  window.addEventListener("resize", () => {
+    viewWidth = canvas.width = canvas.clientWidth
+    viewHeight = canvas.height = canvas.clientHeight
+  })
+}
 
 export default noise

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 import Scroll from "./locomotiveScroll"
+import { motion, AnimatePresence } from "framer-motion"
 import "./locomotive-scroll.css"
 import noise from "./Noise/noise"
 import Nav from "../components/Nav/Nav"
@@ -9,7 +10,24 @@ import Loader from "../components/Loader"
 import Footer from "../components/Footer/Footer"
 import "./layout.css"
 
-// This `location` prop will serve as a callback on route change
+const variants = {
+  initial: {
+    opacity: 0,
+  },
+  enter: {
+    opacity: 1,
+    transition: {
+      duration: 1.5,
+      delay: 0.5,
+      when: "beforeChildren",
+    },
+  },
+  exit: {
+    opacity: 0,
+    transition: { duration: 0.5 },
+  },
+}
+
 const Layout = ({ children, location }) => {
   const [loading, setIsLoading] = useState(true)
   useEffect(() => {
@@ -28,21 +46,28 @@ const Layout = ({ children, location }) => {
   return (
     <>
       <canvas id="canvas" class="noise"></canvas>
-      {/* Here we pass the callbacks to the component. Anything that impacts the innerHeight, for example: Font Loaded */}
-      {loading ? (
+      {/* {loading ? (
         <div>
           <Loader setIsLoading={setIsLoading} />
         </div>
       ) : (
-        <>
-          <Scroll callbacks={location} />
-          <div className="wrapper">
-            <Nav />
-            <main>{children}</main>
-            <Footer />
-          </div>
-        </>
-      )}
+        <> */}
+      <Scroll callbacks={location} />
+      <AnimatePresence>
+        <motion.main
+          key={location}
+          variants={variants}
+          initial="initial"
+          animate="enter"
+          exit="exit"
+        >
+          <Nav />
+          {children}
+          <Footer />
+        </motion.main>
+      </AnimatePresence>
+      {/* </>
+      )} */}
     </>
   )
 }

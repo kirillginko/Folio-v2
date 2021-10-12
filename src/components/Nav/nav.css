@@ -7,6 +7,11 @@
     cursor: pointer;
     color: #fff;
 }
+.nav__header {
+    font-size: .8rem;
+    color: #fff;
+    text-decoration: none;
+}
 .nav__items > ul > li {
     display: inline-block;
     font-size: .5rem;
@@ -18,14 +23,20 @@
     display: flex;
     list-style: none;
 }
-.nav__items > ul > li >h2:hover {
-    color: #000;
-    transition: all 0.2s ease-in-out; 
+
+.nav__header:hover{
+    color: #000; 
+}
+.nav__links{
+font-size: 1.5em;
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+border-bottom: 1px dashed transparent;
 
 }
-.nav__header > h2:hover{
-    color: #000; 
-    transition: all 0.2s ease-in-out; 
+.nav__links:hover{
+    color: #000;   
 }
 .un{
     border-bottom: 1px dashed transparent;    

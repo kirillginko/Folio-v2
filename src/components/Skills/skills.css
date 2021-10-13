@@ -1,0 +1,79 @@
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.main-page {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.nav-main,
+.contet-page {
+  z-index: 10;
+  position: relative;
+}
+
+.list-interests{
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: flex-end; */
+    margin: 10rem 2rem 8rem 8rem;
+    text-align: end;
+    cursor: zoom-in;
+
+
+}
+.list-interests > h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    filter: blur(.7px);
+
+}
+.list-interests > h2:hover{
+    filter: blur(0px);
+}
+
+.list-main {
+  font-size: calc(8vmax * 9 / 16);
+  padding-bottom: 70px;
+  margin: 8rem 1.5rem;
+  filter: blur(.7px);
+}
+
+.blur-effect {
+  filter: blur(50px);
+  transition: filter 0.7s ease-in;
+}
+
+.blur-effect.is-inview {
+  filter: blur(0px);
+}
+
+.list-description {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  margin: 0rem 1.5rem;
+}
+
+.list-main,
+.list-description {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+  .list-description {
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+  }
+}

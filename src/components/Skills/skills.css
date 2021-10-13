@@ -8,13 +8,13 @@ li {
   list-style: none;
 }
 
-.main-page {
+/* .main-page {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-left: 30px;
   padding-right: 30px;
-}
+} */
 
 .nav-main,
 .contet-page {
@@ -42,6 +42,20 @@ li {
 .list-interests > h2:hover{
     filter: blur(0px);
 }
+.svg{
+    color: #fff;
+    font-size: 2rem;
+    margin: 2rem 2rem;
+    animation-name:rotate;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotate{
+    100%{
+      transform:rotate(360deg);
+    }
+  }
 
 .list-main {
   font-size: calc(8vmax * 9 / 16);

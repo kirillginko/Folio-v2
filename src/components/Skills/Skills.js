@@ -1,9 +1,21 @@
-import React from "react"
+import React, { useEffect } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCertificate } from "@fortawesome/free-solid-svg-icons"
 import "../Skills/skills.css"
 
 function Skills() {
+  useEffect(() => {}, [])
   return (
     <div className="contet-page" data-scroll-section>
+      <div
+        data-scroll
+        data-scroll-direction="vertical"
+        data-scroll-target="#direction"
+        data-scroll-speed="-2"
+        data-scroll-delay=".05"
+      >
+        <FontAwesomeIcon icon={faCertificate} className="svg" />
+      </div>
       <div
         className="list-interests"
         data-scroll

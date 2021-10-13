@@ -3,66 +3,64 @@ import "./design.css"
 
 function Designer() {
   return (
-    <div id="wrapper">
-      {/* <canvas id="canvas" class="noise"></canvas> */}
-      <div id="js-scroll" class="main-page">
-        <nav class="nav-main" data-scroll-section>
-          <ul class="nav-list" id="direction">
-            <li class="nav-list__item">
-              <div
-                class="item__translate"
-                data-scroll
-                data-scroll-direction="horizontal"
-                data-scroll-target="#direction"
-                data-scroll-speed="8"
-                data-scroll-delay="0.05"
-              >
-                <div class="item__container">
-                  <span class="item-first-title">Creative</span>
-                  <span class="arrow">*</span>
-                  <span class="item-second-title">Creative</span>
-                  <span class="arrow">*</span>
-                  <span class="item-third-title">Creative</span>
-                </div>
+    <div id="js-scroll" class="main-page">
+      <nav class="nav-main" data-scroll-section>
+        <ul class="nav-list" id="direction">
+          <li class="nav-list__item">
+            <div
+              class="item__translate"
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="8"
+              data-scroll-delay="0.05"
+            >
+              <div class="item__container">
+                <span class="item-first-title">Creative</span>
+                <span class="arrow">*</span>
+                <span class="item-second-title">Creative</span>
+                <span class="arrow">*</span>
+                <span class="item-third-title">Creative</span>
               </div>
-            </li>
-            <li class="nav-list__item">
-              <div
-                class="item__translate"
-                data-scroll
-                data-scroll-direction="horizontal"
-                data-scroll-target="#direction"
-                data-scroll-speed="-5"
-                data-scroll-delay="0.05"
-              >
-                <div class="item__container">
-                  <span class="item-first-title">Designer</span>
-                  <span class="arrow">*</span>
-                  <span class="item-second-title">Designer</span>
-                  <span class="arrow">*</span>
-                  <span class="item-third-title">Designer</span>
-                </div>
+            </div>
+          </li>
+          <li class="nav-list__item">
+            <div
+              class="item__translate"
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="-5"
+              data-scroll-delay="0.05"
+            >
+              <div class="item__container">
+                <span class="item-first-title">Designer</span>
+                <span class="arrow">*</span>
+                <span class="item-second-title">Designer</span>
+                <span class="arrow">*</span>
+                <span class="item-third-title">Designer</span>
               </div>
-            </li>
-            <li class="nav-list__item">
-              <div
-                class="item__translate"
-                data-scroll
-                data-scroll-direction="horizontal"
-                data-scroll-target="#direction"
-                data-scroll-speed="8"
-                data-scroll-delay="0.05"
-              >
-                <div class="item__container">
-                  <span class="item-first-title">And</span>
-                  <span class="arrow">*</span>
-                  <span class="item-second-title">And</span>
-                  <span class="arrow">*</span>
-                  <span class="item-third-title">And</span>
-                </div>
+            </div>
+          </li>
+          <li class="nav-list__item">
+            <div
+              class="item__translate"
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="8"
+              data-scroll-delay="0.05"
+            >
+              <div class="item__container">
+                <span class="item-first-title">And</span>
+                <span class="arrow">*</span>
+                <span class="item-second-title">And</span>
+                <span class="arrow">*</span>
+                <span class="item-third-title">And</span>
               </div>
-            </li>
-            {/* <li class="nav-list__item">
+            </div>
+          </li>
+          {/* <li class="nav-list__item">
               <div
                 class="item__translate"
                 data-scroll
@@ -80,45 +78,44 @@ function Designer() {
                 </div>
               </div>
             </li> */}
-            <li class="nav-list__item">
-              <div
-                class="item__translate"
-                data-scroll
-                data-scroll-direction="horizontal"
-                data-scroll-target="#direction"
-                data-scroll-speed="-8"
-                data-scroll-delay="0.05"
-              >
-                <div class="item__container">
-                  <span class="item-first-title">Developer</span>
-                  <span class="arrow">*</span>
-                  <span class="item-second-title">Developer</span>
-                  <span class="arrow">*</span>
-                  <span class="item-third-title">Developer</span>
-                </div>
+          <li class="nav-list__item">
+            <div
+              class="item__translate"
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="-8"
+              data-scroll-delay="0.05"
+            >
+              <div class="item__container">
+                <span class="item-first-title">Developer</span>
+                <span class="arrow">*</span>
+                <span class="item-second-title">Developer</span>
+                <span class="arrow">*</span>
+                <span class="item-third-title">Developer</span>
               </div>
-            </li>
-            <li class="nav-list__item">
-              <div
-                class="item__translate"
-                data-scroll
-                data-scroll-direction="horizontal"
-                data-scroll-target="#direction"
-                data-scroll-speed="10"
-                data-scroll-delay=".01"
-              >
-                {/* <div class="item__container">
+            </div>
+          </li>
+          <li class="nav-list__item">
+            <div
+              class="item__translate"
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="10"
+              data-scroll-delay=".01"
+            >
+              {/* <div class="item__container">
                   <span class="item-first-title">Contact</span>
                   <span class="arrow">→</span>
                   <span class="item-second-title">Contact</span>
                   <span class="arrow">→</span>
                   <span class="item-third-title">Contact</span>
                 </div> */}
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </div>
   )
 }

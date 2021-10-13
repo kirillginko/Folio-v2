@@ -1,7 +1,7 @@
 .container__distort{
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     height: 60vh;
     width: 100%;
     z-index: 30;

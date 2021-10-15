@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import "./locomotive-scroll.css"
 import noise from "./Noise/noise"
 import Nav from "../components/Nav/Nav"
-import Loader from "../components/Loader"
+// import Loader from "../components/Loader"
 import Footer from "../components/Footer/Footer"
 import "./layout.css"
 
@@ -29,7 +29,7 @@ const variants = {
 }
 
 const Layout = ({ children, location }) => {
-  const [loading, setIsLoading] = useState(true)
+  // const [loading, setIsLoading] = useState(true)
   useEffect(() => {
     noise()
   }, [])
@@ -45,7 +45,7 @@ const Layout = ({ children, location }) => {
 
   return (
     <>
-      <canvas id="canvas" class="noise"></canvas>
+      <canvas id="canvas" className="noise"></canvas>
       {/* {loading ? (
         <div>
           <Loader setIsLoading={setIsLoading} />

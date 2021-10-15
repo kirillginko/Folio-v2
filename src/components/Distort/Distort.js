@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import "./distort.css"
 import hoverEffect from "hover-effect"
 import image from "../../images/image.jpg"
@@ -8,7 +8,7 @@ import overlay from "../../images/overlay.png"
 
 function Distort() {
   useEffect(() => {
-    var image_animate = new hoverEffect({
+    const image_animate = new hoverEffect({
       parent: document.querySelector(".item-image"),
       intensity: 0.3,
       image1: image,

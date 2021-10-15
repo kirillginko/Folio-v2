@@ -11,7 +11,7 @@ function Nav() {
       <div className="nav__items">
         <ul>
           <li>
-            <Link to="/" className="nav__links">
+            <Link to="/projects" className="nav__links">
               <p className="un">Work</p>
             </Link>
           </li>

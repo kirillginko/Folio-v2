@@ -59,7 +59,7 @@ li {
 
 .list-main {
   font-size: calc(8vmax * 9 / 16);
-  padding-bottom: 70px;
+  padding-bottom: 1rem;
   margin: 8rem 1.5rem;
   filter: blur(.7px);
 }

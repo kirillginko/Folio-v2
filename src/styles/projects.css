@@ -1,7 +1,8 @@
 .main__container ul {
   position: relative;
-  padding-left: 5vw;
+  margin: 1.5rem 1.5rem;
   overflow: auto;
+  background: rgba(0, 248, 8, 0.05);
 }
 
 .project__item_container {
@@ -16,12 +17,12 @@
 
 img {
   position: fixed;
-  left: 40vw;
+  left: 65vw;
   width: auto;
-  height: clamp(200px, 20vw, 20vw);
+  height: clamp(200px, 30vw, 25vw);
   -o-object-fit: cover;
      object-fit: cover;
-  top: 30vh;
+  top: 10vh;
   pointer-events: none;
   -webkit-transition: -webkit-transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: -webkit-transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -30,10 +31,13 @@ img {
 }
 
 .menu__title {
-  font-size: 8.5vw;
-  text-transform: lowercase;
+  font-size: 7.5vw;
+  color: black;
+  text-transform: uppercase;
   z-index: 1;
   line-height: 1.1;
+  -webkit-filter: blur(0.7);
+          filter: blur(0.7);
 }
 
 .info__block {

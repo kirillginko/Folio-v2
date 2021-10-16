@@ -1,8 +1,10 @@
 .main__container {
   ul {
     position: relative;
-    padding-left: 5vw;
+    margin: 1.5rem 1.5rem;
+    // padding-left: 5vw;
     overflow: auto;
+    background: rgba(0, 248, 8, 0.05);
   }
 }
 .project__item_container {
@@ -15,19 +17,21 @@
 }
 img {
   position: fixed;
-  left: 40vw;
+  left: 65vw;
   width: auto;
-  height: clamp(200px, 20vw, 20vw);
+  height: clamp(200px, 30vw, 25vw);
   object-fit: cover;
-  top: 30vh;
+  top: 10vh;
   pointer-events: none;
   transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .menu__title {
-  font-size: 8.5vw;
-  text-transform: lowercase;
+  font-size: 7.5vw;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
   z-index: 1;
   line-height: 1.1;
+  filter: blur(0.7);
 }
 .info__block {
   position: fixed;

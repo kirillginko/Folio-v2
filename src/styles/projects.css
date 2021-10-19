@@ -1,6 +1,6 @@
 .main__container ul {
   position: relative;
-  margin: 1.5rem 1.5rem;
+  margin: 1.5rem 2.5rem;
   overflow: auto;
   background: rgba(0, 248, 8, 0.05);
 }
@@ -17,7 +17,7 @@
 
 img {
   position: fixed;
-  left: 65vw;
+  left: 50vw;
   width: auto;
   height: clamp(200px, 30vw, 25vw);
   -o-object-fit: cover;
@@ -36,8 +36,13 @@ img {
   text-transform: uppercase;
   z-index: 1;
   line-height: 1.1;
-  -webkit-filter: blur(0.7);
-          filter: blur(0.7);
+}
+
+.menu__title:hover {
+  color: #fff;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+  background-position: 0%;
 }
 
 .info__block {
@@ -53,7 +58,7 @@ img {
 
 .info__block .info__block_header {
   margin-bottom: 1.5rem;
-  color: black;
+  color: #362db9;
   font-weight: 500;
   font-size: 1.5rem;
 }
@@ -69,12 +74,16 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .info__block p {
   margin-bottom: 10px;
   overflow: hidden;
-  color: white;
+  color: #362db9;
+  -webkit-filter: blur(0.7);
+          filter: blur(0.7);
 }
 
 .info__block p span {
@@ -82,5 +91,36 @@ img {
   opacity: 0;
   -webkit-transition: all 0.25 ease-in-out;
   transition: all 0.25 ease-in-out;
+}
+
+.info__block.is-active p:nth-child(1n) span {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.info__block.is-active p:nth-child(2n) span {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.info__block.is-active p:nth-child(3n) span {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.info__block.is-active p:nth-child(4n) span {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.info__block.is-active p:nth-child(5n) span {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.info__block.is-active span {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 /*# sourceMappingURL=projects.css.map */

@@ -8,30 +8,27 @@ li {
   list-style: none;
 }
 
-/* .main-page {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 30px;
-  padding-right: 30px;
-} */
 
-.nav-main,
-.contet-page {
+
+.content-page {
   z-index: 10;
   position: relative;
+  background-color: red;
+  margin: 0rem 1.5rem;
 }
 
 .list-interests{
-    grid-template-columns: 1fr 1fr;
-    /* justify-content: flex-end; */
-    margin: 10rem 2rem 8rem 8rem;
-    text-align: end;
+  position: absolute;
+  text-align: right;
+    justify-content: end;
+    /* margin: 10rem 2rem 8rem 8rem; */
     cursor: zoom-in;
 
+}
+.focus__card{
 
 }
-.list-interests > h2{
+.focus__card > h2{
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -39,7 +36,7 @@ li {
     filter: blur(.7px);
 
 }
-.list-interests > h2:hover{
+.focus__card > h2:hover{
     filter: blur(0px);
 }
 .svg{
@@ -50,6 +47,7 @@ li {
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    z-index: 20;
 }
 @keyframes rotate{
     100%{

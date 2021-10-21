@@ -6,7 +6,7 @@ import "../Skills/skills.css"
 function Skills() {
   useEffect(() => {}, [])
   return (
-    <div className="contet-page" data-scroll-section>
+    <div className="content-page" data-scroll-section>
       <div
         data-scroll
         data-scroll-direction="vertical"
@@ -24,11 +24,13 @@ function Skills() {
         data-scroll-speed="2"
         data-scroll-delay=".05"
       >
-        <h2>
-          My focus is to create unique digital products that bring a
-          user-friendy, design-driven interactive experience to companies and
-          brands.
-        </h2>
+        <div className="focus__card">
+          <h2>
+            My focus is to create unique digital products that bring a
+            user-friendy, design-driven interactive experience to companies and
+            brands.
+          </h2>
+        </div>
       </div>
       <div className="list-main">
         <ul className="list-main__books">

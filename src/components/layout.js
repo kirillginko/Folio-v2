@@ -6,6 +6,8 @@ import { motion, AnimatePresence } from "framer-motion"
 import "./locomotive-scroll.css"
 import noise from "./Noise/noise"
 import Nav from "../components/Nav/Nav"
+import CursorManager from "./CustomCursor/CursorManager"
+import CustomCursor from "./CustomCursor/"
 // import Loader from "../components/Loader"
 import Footer from "../components/Footer/Footer"
 import "./layout.css"
@@ -66,8 +68,6 @@ const Layout = ({ children, location }) => {
           <Footer />
         </motion.main>
       </AnimatePresence>
-      {/* </>
-      )} */}
     </>
   )
 }

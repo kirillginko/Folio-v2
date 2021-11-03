@@ -3,114 +3,114 @@ import "./design.css"
 
 function Designer() {
   return (
-    <div id="js-scroll" class="main-page">
-      <nav class="nav-main" data-scroll-section>
-        <ul class="nav-list" id="direction">
-          <li class="nav-list__item">
+    <div id="js-scroll" className="main-page">
+      <nav className="nav-main" data-scroll-section>
+        <ul className="nav-list" id="direction">
+          <li className="nav-list__item">
             <div
-              class="item__translate"
+              className="item__translate"
               data-scroll
               data-scroll-direction="horizontal"
               data-scroll-target="#direction"
               data-scroll-speed="8"
               data-scroll-delay="0.05"
             >
-              <div class="item__container">
-                <span class="item-first-title">Creative</span>
-                <span class="arrow">*</span>
-                <span class="item-second-title">Creative</span>
-                <span class="arrow">*</span>
-                <span class="item-third-title">Creative</span>
+              <div className="item__container">
+                <span className="item-first-title">Creative</span>
+                <span className="arrow">*</span>
+                <span className="item-second-title">Creative</span>
+                <span className="arrow">*</span>
+                <span className="item-third-title">Creative</span>
               </div>
             </div>
           </li>
-          <li class="nav-list__item">
+          <li className="nav-list__item">
             <div
-              class="item__translate"
+              className="item__translate"
               data-scroll
               data-scroll-direction="horizontal"
               data-scroll-target="#direction"
               data-scroll-speed="-5"
               data-scroll-delay="0.05"
             >
-              <div class="item__container">
-                <span class="item-first-title">Designer</span>
-                <span class="arrow">*</span>
-                <span class="item-second-title">Designer</span>
-                <span class="arrow">*</span>
-                <span class="item-third-title">Designer</span>
+              <div className="item__container">
+                <span className="item-first-title">Designer</span>
+                <span className="arrow">*</span>
+                <span className="item-second-title">Designer</span>
+                <span className="arrow">*</span>
+                <span className="item-third-title">Designer</span>
               </div>
             </div>
           </li>
-          <li class="nav-list__item">
+          <li className="nav-list__item">
             <div
-              class="item__translate"
+              className="item__translate"
               data-scroll
               data-scroll-direction="horizontal"
               data-scroll-target="#direction"
               data-scroll-speed="8"
               data-scroll-delay="0.05"
             >
-              <div class="item__container">
-                <span class="item-first-title">And</span>
-                <span class="arrow">*</span>
-                <span class="item-second-title">And</span>
-                <span class="arrow">*</span>
-                <span class="item-third-title">And</span>
+              <div className="item__container">
+                <span className="item-first-title">And</span>
+                <span className="arrow">*</span>
+                <span className="item-second-title">And</span>
+                <span className="arrow">*</span>
+                <span className="item-third-title">And</span>
               </div>
             </div>
           </li>
-          {/* <li class="nav-list__item">
+          {/* <li className="nav-list__item">
               <div
-                class="item__translate"
+                className="item__translate"
                 data-scroll
                 data-scroll-direction="horizontal"
                 data-scroll-target="#direction"
                 data-scroll-speed="8"
                 data-scroll-delay="0.1"
               >
-                <div class="item__container">
-                  <span class="item-first-title">Interactive</span>
-                  <span class="arrow">*</span>
-                  <span class="item-second-title">Interactive</span>
-                  <span class="arrow">*</span>
-                  <span class="item-third-title">Interactive</span>
+                <div className="item__container">
+                  <span className="item-first-title">Interactive</span>
+                  <span className="arrow">*</span>
+                  <span className="item-second-title">Interactive</span>
+                  <span className="arrow">*</span>
+                  <span className="item-third-title">Interactive</span>
                 </div>
               </div>
             </li> */}
-          <li class="nav-list__item">
+          <li className="nav-list__item">
             <div
-              class="item__translate"
+              className="item__translate"
               data-scroll
               data-scroll-direction="horizontal"
               data-scroll-target="#direction"
               data-scroll-speed="-8"
               data-scroll-delay="0.05"
             >
-              <div class="item__container">
-                <span class="item-first-title">Developer</span>
-                <span class="arrow">*</span>
-                <span class="item-second-title">Developer</span>
-                <span class="arrow">*</span>
-                <span class="item-third-title">Developer</span>
+              <div className="item__container">
+                <span className="item-first-title">Developer</span>
+                <span className="arrow">*</span>
+                <span className="item-second-title">Developer</span>
+                <span className="arrow">*</span>
+                <span className="item-third-title">Developer</span>
               </div>
             </div>
           </li>
-          <li class="nav-list__item">
+          <li className="nav-list__item">
             <div
-              class="item__translate"
+              className="item__translate"
               data-scroll
               data-scroll-direction="horizontal"
               data-scroll-target="#direction"
               data-scroll-speed="10"
               data-scroll-delay=".01"
             >
-              {/* <div class="item__container">
-                  <span class="item-first-title">Contact</span>
-                  <span class="arrow">→</span>
-                  <span class="item-second-title">Contact</span>
-                  <span class="arrow">→</span>
-                  <span class="item-third-title">Contact</span>
+              {/* <div className="item__container">
+                  <span className="item-first-title">Contact</span>
+                  <span className="arrow">→</span>
+                  <span className="item-second-title">Contact</span>
+                  <span className="arrow">→</span>
+                  <span className="item-third-title">Contact</span>
                 </div> */}
             </div>
           </li>

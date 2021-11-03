@@ -26,6 +26,10 @@ li {
 
 }
 .focus__card{
+  display: flex;
+  max-width: 20rem;
+  justify-content: flex-end;
+  background-color: blue;
 
 }
 .focus__card > h2{

@@ -8,16 +8,21 @@ import Contacts from "../components/Contacts/Contact"
 import Skills from "../components/Skills/Skills"
 import Project from "../components/ProjectItem/Project"
 import About from "../components/About/About"
+import CursorManager from "../components/CustomCursor/CursorManager"
+import CustomCursor from "../components/CustomCursor/"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Design />
-    <Skills />
-    <Project />
-    <Contacts />
-    <About />
-  </Layout>
+  <CursorManager>
+    <CustomCursor />
+    <Layout>
+      <SEO title="Home" />
+      <Design />
+      <Skills />
+      <Project />
+      <Contacts />
+      <About />
+    </Layout>
+  </CursorManager>
 )
 
 export default IndexPage

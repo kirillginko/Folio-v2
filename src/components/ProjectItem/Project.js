@@ -1,6 +1,6 @@
 import React from "react"
 import "../../styles/projects.css"
-import ProjectItem from "../ProjectItem/ProjectItem"
+import ProjectItem from "./ProjectItem"
 import pageData from "../../data"
 
 function Project() {

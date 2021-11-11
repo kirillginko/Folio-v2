@@ -77,20 +77,20 @@ const Footer = () => {
   return (
     <>
       <FixedWrapper data-scroll-section>
-        <ContactsWrapper>
+        {/* <ContactsWrapper>
           <Links>
             <ul>
               <p>Contacts</p>
-              <a href="">Email: kirillginko@gmail.com</a>
-              <a href="">Github</a>
-              <a href="">Instagram</a>
-              <a href="">Dribbble</a>
+              <a href="/">Email: kirillginko@gmail.com</a>
+              <a href="/">Github</a>
+              <a href="/">Instagram</a>
+              <a href="/">Dribbble</a>
             </ul>
           </Links>
           <Contacts>
             <ul>
               <p>Social</p>
-              <a href="">facebook</a>
+              <a href="/">facebook</a>
             </ul>
           </Contacts>
           <Pages>
@@ -99,7 +99,7 @@ const Footer = () => {
             <p>Projects</p>
             <p>About</p>
           </Pages>
-        </ContactsWrapper>
+        </ContactsWrapper> */}
         <StyledFooter>
           <small>
             <StyledText>&copy; {y}</StyledText>

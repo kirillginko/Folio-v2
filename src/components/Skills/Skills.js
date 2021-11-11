@@ -23,14 +23,7 @@ function Skills() {
         // data-scroll-target="#direction"
         // data-scroll-speed="2"
         // data-scroll-delay=".05"
-      >
-        <div className="focus__card">
-          <h2>
-            My focus is to create unique digital products that bring a
-            user-friendy, design-driven experience to companies and brands.
-          </h2>
-        </div>
-      </div>
+      ></div>
       <div className="list-main">
         <ul className="list-main__books">
           <li

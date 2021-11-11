@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react"
 import { gsap } from "gsap"
-import Overflow from "../styles/overflow"
-import mixins from "../styles/mixins"
-import useRandomInterval from "../hooks/useRandomInterval"
+import Overflow from "../../styles/overflow"
+import mixins from "../../styles/mixins"
+import useRandomInterval from "../../hooks/useRandomInterval"
 import styled from "styled-components"
 
 const LoaderWrapper = styled.div`

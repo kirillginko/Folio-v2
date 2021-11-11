@@ -4,13 +4,14 @@ import CircleType from "circletype"
 
 const FixedWrapper = styled.div`
   position: relative;
+  left: 50vw;
   /* background-color: red; */
-  width: 100vw;
+  width: 15vw;
   height: 20vh;
 `
 const AboutHeader = styled.div`
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   margin-top: 2rem;
   /* background-color: #ffffff; */
 `
@@ -31,11 +32,10 @@ const Circle = styled.div`
     }
   }
 `
-const AboutText = styled.div``
 
 function About() {
   useEffect(() => {
-    let circ = new CircleType(document.getElementById("circle"))
+    new CircleType(document.getElementById("circle"))
   }, [])
   return (
     <FixedWrapper data-scroll-section>

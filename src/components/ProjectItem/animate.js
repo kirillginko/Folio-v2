@@ -1,3 +1,4 @@
+// https://gist.github.com/gre/1650294
 const easing = {
   // no easing, no acceleration
   linear: t => t,
@@ -29,20 +30,30 @@ const easing = {
     t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t,
 }
 
-function getValue(start, end, elapsed, duration, easeMethod) {
+/**
+ * Given a start/end point of a scroll and time elapsed, calculate the scroll position we should be at
+ * @param start - the initial value
+ * @param stop - the final desired value
+ * @param elapsed - the amount of time elapsed since we started animating
+ * @param - duration - the duration of the animation
+ * @return - The value we should use on the next tick
+ */
+const getValue = (start, end, elapsed, duration, easeMethod) => {
   if (elapsed > duration) return end
-
   return start + (end - start) * easing[easeMethod](elapsed / duration)
 }
 
-export default function animate({
+/**
+ * Smoothly animate between two values
+ */
+const animate = ({
   fromValue,
   toValue,
   onUpdate,
   onComplete,
   duration = 600,
   easeMethod = "linear",
-}) {
+}) => {
   const startTime = performance.now()
 
   const tick = () => {
@@ -51,10 +62,13 @@ export default function animate({
     window.requestAnimationFrame(() => {
       return onUpdate(
         getValue(fromValue, toValue, elapsed, duration, easeMethod),
-
-        elapsed < duration ? tick : onComplete
+        // Callback
+        elapsed <= duration ? tick : onComplete
       )
     })
   }
+
   tick()
 }
+
+export default animate

@@ -1,20 +1,22 @@
 import React from "react"
+import cn from "classnames"
 
 export default function Image({
   url,
-  opacity,
+  active,
+  rotationPosition,
   parallaxPos,
   scale,
-  rotationPosition,
+  opacity,
 }) {
   return (
     <img
-      src={url}
-      alt=""
+      className={cn({ active })}
       style={{
-        opacity,
-        transform: `translate3d(${parallaxPos.x}px,${parallaxPos.y}px,0px) rotate(${rotationPosition}deg) scale(${scale})`,
+        opacity: opacity,
+        transform: `translate3d(${parallaxPos.x}px, ${parallaxPos.y}px, 0px) rotate(${rotationPosition}deg) scale(${scale}) `,
       }}
+      src={url}
     />
   )
 }

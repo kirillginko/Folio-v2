@@ -8,7 +8,7 @@ import overlay from "../../images/overlay.png"
 
 function Distort() {
   useEffect(() => {
-    const image_animate = new hoverEffect({
+    new hoverEffect({
       parent: document.querySelector(".item-image"),
       intensity: 0.3,
       image1: image,

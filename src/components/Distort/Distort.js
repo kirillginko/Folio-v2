@@ -15,7 +15,7 @@ function Distort() {
       image2: image2,
       displacementImage: overlay,
     })
-  })
+  }, [])
   return (
     <div className="container__distort" data-scroll-section>
       <div

@@ -32,6 +32,13 @@ canvas {
   height: 100vh;
   opacity: 1;
 }
+.loader__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
 /* body {
   margin: 0;
   padding: 0;

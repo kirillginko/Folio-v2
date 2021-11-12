@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import "./Locomotive/locomotive-scroll.css"
 import noise from "./Noise/noise"
 import Nav from "../components/Nav/Nav"
-// import Loader from "../components/Loader"
+import Loader from "../components/Loader/Loader"
 import Footer from "../components/Footer/Footer"
 import "./layout.css"
 
@@ -29,7 +29,7 @@ const variants = {
 }
 
 const Layout = ({ children, location }) => {
-  // const [loading, setIsLoading] = useState(true)
+  const [loading, setIsLoading] = useState(true)
   useEffect(() => {
     noise()
   }, [])
@@ -46,30 +46,31 @@ const Layout = ({ children, location }) => {
   return (
     <>
       <canvas id="canvas" className="noise"></canvas>
-      {/* {loading ? (
+      {loading ? (
         <div>
           <Loader setIsLoading={setIsLoading} />
         </div>
       ) : (
-        <> */}
-      <Scroll callbacks={location} />
-      <AnimatePresence>
-        <motion.main
-          key={location}
-          variants={variants}
-          initial="initial"
-          animate="enter"
-          exit="exit"
-        >
-          <Nav />
-          {children}
-          <Footer />
-        </motion.main>
-      </AnimatePresence>
+        <>
+          <Scroll callbacks={location} />
+          <AnimatePresence>
+            <motion.main
+              key={location}
+              variants={variants}
+              initial="initial"
+              animate="enter"
+              exit="exit"
+            >
+              <Nav />
+              {children}
+              <Footer />
+            </motion.main>
+          </AnimatePresence>
+        </>
+      )}
     </>
   )
 }
-
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }

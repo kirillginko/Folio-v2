@@ -1,12 +1,38 @@
 import React from "react"
-import Layout from "../components/layout"
 import Project from "../components/ProjectItem/Project"
+import { motion, AnimatePresence } from "framer-motion"
 
-function projects() {
+const variants = {
+  initial: {
+    opacity: 0,
+  },
+  enter: {
+    opacity: 1,
+    transition: {
+      duration: 1.5,
+      delay: 0.5,
+      when: "beforeChildren",
+    },
+  },
+  exit: {
+    opacity: 0,
+    transition: { duration: 0.5 },
+  },
+}
+
+function projects({ location }) {
   return (
-    <Layout>
-      <Project />
-    </Layout>
+    <AnimatePresence>
+      <motion.main
+        key={location}
+        variants={variants}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+      >
+        <Project />
+      </motion.main>
+    </AnimatePresence>
   )
 }
 

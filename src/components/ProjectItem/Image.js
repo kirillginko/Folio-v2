@@ -3,6 +3,7 @@ import cn from "classnames"
 
 export default function Image({
   url,
+  title,
   active,
   rotationPosition,
   parallaxPos,
@@ -17,6 +18,7 @@ export default function Image({
         transform: `translate3d(${parallaxPos.x}px, ${parallaxPos.y}px, 0px) rotate(${rotationPosition}deg) scale(${scale}) `,
       }}
       src={url}
+      alt={title}
     />
   )
 }

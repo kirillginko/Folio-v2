@@ -3,6 +3,8 @@ import React from "react"
 export default function Title({ title, handleMouseEnter, handleMouseLeave }) {
   return (
     <div
+      role="link"
+      tabIndex={0}
       className="title-item"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

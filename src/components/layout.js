@@ -4,6 +4,8 @@ import PropTypes from "prop-types"
 import Scroll from "./Locomotive/locomotiveScroll"
 import { motion, AnimatePresence } from "framer-motion"
 import "./Locomotive/locomotive-scroll.css"
+import CursorManager from "./CustomCursor/CursorManager"
+import CustomCursor from "./CustomCursor"
 import noise from "./Noise/noise"
 import Nav from "../components/Nav/Nav"
 import Loader from "../components/Loader/Loader"
@@ -52,20 +54,23 @@ const Layout = ({ children, location }) => {
         </div>
       ) : (
         <>
-          <Scroll callbacks={location} />
-          <AnimatePresence>
-            <motion.main
-              key={location}
-              variants={variants}
-              initial="initial"
-              animate="enter"
-              exit="exit"
-            >
-              <Nav />
-              {children}
-              <Footer />
-            </motion.main>
-          </AnimatePresence>
+          <CursorManager>
+            <CustomCursor />
+            <Scroll callbacks={location} />
+            <AnimatePresence>
+              <motion.main
+                key={location}
+                variants={variants}
+                initial="initial"
+                animate="enter"
+                exit="exit"
+              >
+                <Nav />
+                {children}
+                <Footer />
+              </motion.main>
+            </AnimatePresence>
+          </CursorManager>
         </>
       )}
     </>

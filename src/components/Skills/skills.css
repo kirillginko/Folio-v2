@@ -1,15 +1,4 @@
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-
-
 .content-page {
   z-index: 10;
   position: relative;
@@ -25,13 +14,13 @@ li {
     cursor: zoom-in;
 
 }
-.focus__card{
+/* .focus__card{
   display: flex;
   max-width: 20rem;
   justify-content: flex-end;
   background-color: blue;
 
-}
+} */
 .focus__card > h2{
     font-size: 1.5rem;
     font-weight: bold;
@@ -46,7 +35,7 @@ li {
 .svg{
     color: #fff;
     font-size: 2rem;
-    margin: 2rem 2rem;
+    margin: 0rem 2rem;
     animation-name:rotate;
     animation-duration: 7s;
     animation-iteration-count: infinite;
@@ -91,5 +80,8 @@ li {
   .list-description {
     font-size: 1.1rem;
     letter-spacing: 0.05rem;
+  }
+  .content-page{
+
   }
 }

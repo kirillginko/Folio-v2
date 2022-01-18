@@ -1,7 +1,7 @@
 import React from "react"
-import "./design.css"
+import "./hero.css"
 
-function Designer() {
+function Hero() {
   return (
     <div id="js-scroll" className="main-page">
       <nav className="nav-main" data-scroll-section>
@@ -120,4 +120,4 @@ function Designer() {
   )
 }
 
-export default Designer
+export default Hero

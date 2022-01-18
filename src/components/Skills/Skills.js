@@ -25,7 +25,7 @@ function Skills() {
         // data-scroll-delay=".05"
       ></div>
       <div className="list-main">
-        <ul className="list-main__books">
+        <ul className="list-main__skills">
           <li
             className="list-main__item blur-effect item-0"
             data-scroll

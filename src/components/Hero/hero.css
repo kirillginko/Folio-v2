@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
 .main-page {
   width: 100%;
   margin-right: auto;
@@ -19,7 +10,7 @@ li {
 
 .nav-main,
 .contet-page {
-  z-index: 10;
+  z-index: -10;
   position: relative;
 }
 

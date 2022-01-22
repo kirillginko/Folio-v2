@@ -38,11 +38,13 @@ const HeadLink = styled(Link)`
   font-size: 0.8rem;
   color: #fff;
   text-decoration: none;
+  z-index: 10;
   &:hover {
     color: #000;
   }
 `
 const NavItems = styled.div`
+  z-index: 10;
   ul > li {
     display: inline-block;
     font-size: 0.5rem;
@@ -56,7 +58,6 @@ const NavLink = styled(Link)`
   text-decoration: none;
   font-weight: bold;
   border-bottom: 1px dashed transparent;
-  z-index: 20;
   }
   &:hover {
     border-bottom: 1px dashed #000;

@@ -5,6 +5,9 @@ import styled from "styled-components"
 const FixedWrapper = styled.div`
   position: relative;
   background-color: #000000;
+  margin-top: 10rem;
+  height: 10vh;
+  margin-top: 20rem;
 `
 const ContactsWrapper = styled.div`
   display: flex;

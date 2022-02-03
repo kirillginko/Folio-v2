@@ -15,6 +15,13 @@ function Distort() {
       image2: image2,
       displacementImage: overlay,
     })
+    new hoverEffect({
+      parent: document.querySelector(".item-image2"),
+      intensity: 0.3,
+      image1: image,
+      image2: image2,
+      displacementImage: overlay,
+    })
   }, [])
   return (
     <div className="container__distort" data-scroll-section>
@@ -31,6 +38,23 @@ function Distort() {
           <div className="item-header-heading2">01/06</div>
         </div>
         <div className="item-image"></div>
+        <div className="item-footer">
+          <div className="item-footer-quote">Lofi Hip-hop React Player</div>
+        </div>
+      </div>
+      <div
+        className="item"
+        data-scroll
+        data-scroll-direction="vertical"
+        // data-scroll-target="#direction"
+        data-scroll-speed="2"
+        data-scroll-delay="0.05"
+      >
+        <div className="item-header">
+          <div className="item-header-heading">Lofi Player</div>
+          <div className="item-header-heading2">01/06</div>
+        </div>
+        <div className="item-image2"></div>
         <div className="item-footer">
           <div className="item-footer-quote">Lofi Hip-hop React Player</div>
         </div>

@@ -8,6 +8,9 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
+    "@react-three/drei": "^7.1.1",
+    "@react-three/fiber": "^7.0.5",
+    "babel-plugin-glsl": "^1.0.0",
     "circletype": "^2.3.0",
     "classnames": "^2.3.1",
     "framer-motion": "^4.1.17",
@@ -21,6 +24,8 @@
     "gatsby-plugin-sharp": "^2.14.4",
     "gatsby-source-filesystem": "^2.11.1",
     "gatsby-transformer-sharp": "^2.12.1",
+    "glsl-noise": "^0.0.0",
+    "glslify": "^7.1.1",
     "gsap": "^3.8.0",
     "hover-effect": "^1.1.0",
     "locomotive-scroll": "^3.5.4",
@@ -30,9 +35,11 @@
     "react-dom": "^16.12.0",
     "react-feather": "^2.0.9",
     "react-helmet": "^6.0.0",
+    "react-spring": "^8.0.27",
+    "react-three-fiber": "^5.3.14",
     "sass": "^1.43.4",
     "styled-components": "^5.3.1",
-    "three": "^0.133.1"
+    "three": "^0.135.0"
   },
   "devDependencies": {
     "prettier": "2.0.5"

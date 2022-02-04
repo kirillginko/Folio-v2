@@ -6,6 +6,8 @@ import glsl from "babel-plugin-glsl/macro"
 import { motion, AnimatePresence } from "framer-motion"
 import styled from "styled-components"
 import selfie from "../images/selfie.jpg"
+import sign from "../images/sign.jpg"
+import pumpkin from "../images/pumpkin.jpg"
 
 const variants = {
   initial: {
@@ -78,25 +80,25 @@ const WaveShaderMaterial = shaderMaterial(
 
 extend({ WaveShaderMaterial })
 
-const Wave = () => {
+const Wave = ({ texture, size }) => {
   const ref = useRef()
   useFrame(({ clock }) => (ref.current.uTime = clock.getElapsedTime()))
 
-  const [image] = useLoader(THREE.TextureLoader, [selfie])
+  const [image] = useLoader(THREE.TextureLoader, [texture])
 
   return (
     <mesh>
-      <planeBufferGeometry args={[0.8, 0.8, 16, 16]} />
+      <planeBufferGeometry args={size} />
       <waveShaderMaterial uColor={"hotpink"} ref={ref} uTexture={image} />
     </mesh>
   )
 }
 
-const Scene = () => {
+const Scene = ({ texture, size }) => {
   return (
     <Canvas camera={{ fov: 14, position: [0, 0, 5] }}>
       <Suspense fallback={null}>
-        <Wave />
+        <Wave texture={texture} size={size} />
       </Suspense>
     </Canvas>
   )
@@ -113,15 +115,21 @@ function About({ location }) {
         exit="exit"
       >
         <ContentWrapper data-scroll-section>
-          <SceneWrapper>
-            <Name>Hello, my name is Kirill</Name>
-            <Desc>
-              I'm a Full-Stack Developer currently based in Montreal. <br /> I
-              come from a Photography/Design background and love <br />
-              to infuse a critical vision to online experiences.
-            </Desc>
-            <Scene />
-          </SceneWrapper>
+          {/* <Name>Hello, my name is Kirill</Name>
+          <Desc>
+            I'm a Full-Stack Developer currently based in Montreal. <br /> I
+            come from a Photography/Design background and love <br />
+            to infuse a critical vision to online experiences.
+          </Desc> */}
+          <Image1>
+            <Scene texture={selfie} size={[0.8, 0.8, 16, 16]} />
+          </Image1>
+          <Image2>
+            <Scene texture={sign} size={[0.4, 0.6, 16, 16]} />
+          </Image2>
+          <Image3>
+            <Scene texture={pumpkin} size={[0.7, 1, 16, 16]} />
+          </Image3>
         </ContentWrapper>
       </motion.main>
     </AnimatePresence>
@@ -155,10 +163,31 @@ const Desc = styled.h2`
     text-align: center;
   }
 `
-const SceneWrapper = styled.div`
+const Image1 = styled.div`
   position: relative;
-  left: 15%;
+  left: 20%;
   width: 100%;
+  margin-top: -2rem;
+  @media (max-width: 900px) {
+    left: 5%;
+    width: 90%;
+  }
+`
+const Image2 = styled.div`
+  position: relative;
+  left: -30%;
+  width: 100%;
+  margin-top: -20rem;
+  @media (max-width: 900px) {
+    left: 5%;
+    width: 90%;
+  }
+`
+const Image3 = styled.div`
+  position: relative;
+  left: 20%;
+  width: 100%;
+  margin-top: -20rem;
   @media (max-width: 900px) {
     left: 5%;
     width: 90%;

@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import Scroll from "./Locomotive/locomotiveScroll"
 import { motion, AnimatePresence } from "framer-motion"
 import "./Locomotive/locomotive-scroll.css"
+import CustomCursor from "../components/CustomCursor/CustomCursor"
 import noise from "./Noise/noise"
 import Nav from "../components/Nav/Nav"
 import Loader from "../components/Loader/Loader"
@@ -45,6 +46,7 @@ const Layout = ({ children, location }) => {
 
   return (
     <>
+      <CustomCursor />
       <canvas id="canvas" className="noise"></canvas>
       {loading ? (
         <div>

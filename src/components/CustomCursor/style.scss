@@ -5,24 +5,19 @@
   overflow: hidden;
   transform: translate3d(0, 0, 0);
   position: fixed;
-  background: transparent;
-  border: 3px solid var(--main-color);
-  // mix-blend-mode: difference;
-  transition: width 0.5s cubic-bezier(0.19, 1, 0.22, 1),
-    height 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  transform-origin: center;
-  pointer-events: none;
 
-  &.regular {
-    width: 12rem;
-    height: 12rem;
-  }
-  &.medium {
-    width: 6rem;
-    height: 6rem;
-  }
+  background: #3664e8;
+  opacity: 1;
+  transition: width 0.25s ease-in-out, height 0.25s ease-in-out;
+
   &.small {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 60px;
+    height: 60px;
+  }
+
+  &.hide {
+    width: 0px;
+    height: 0px;
+    transform-origin: center;
   }
 }

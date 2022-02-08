@@ -1,9 +1,9 @@
 {
   "name": "gatsby-locomotivescroll-starter",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A full stack developer interfacing with modern web trends and",
   "version": "0.1.0",
-  "author": "Francis Champagne <hey@fcis.io>",
+  "author": "Kirill Ginko",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",

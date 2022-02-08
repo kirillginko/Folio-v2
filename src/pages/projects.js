@@ -1,5 +1,5 @@
 import React from "react"
-// import Project from "../components/ProjectItem/Project"
+import Project from "../components/Projects/Project"
 import { motion, AnimatePresence } from "framer-motion"
 
 const variants = {
@@ -29,7 +29,9 @@ function projects({ location }) {
         initial="initial"
         animate="enter"
         exit="exit"
-      ></motion.main>
+      >
+        <Project />
+      </motion.main>
     </AnimatePresence>
   )
 }

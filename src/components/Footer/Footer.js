@@ -9,56 +9,6 @@ const FixedWrapper = styled.div`
   height: 10vh;
   margin-top: 20rem;
 `
-const ContactsWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin: 0rem 1.5rem;
-  padding-top: 1rem;
-  /* padding: 0rem 1.5rem; */
-  background-color: #000000;
-`
-const Links = styled.div`
-  ul {
-    display: relative;
-    flex-direction: column;
-  }
-  a {
-    display: block;
-    padding: 1rem 0rem;
-    padding-left: 0.5rem;
-    color: #ffff;
-    font-size: 0.6rem;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  p {
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    color: #fff;
-  }
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  background-color: #bd2f2f;
-`
-const Contacts = styled.div`
-  color: #fff;
-  background-color: #2f49bd;
-`
-const Pages = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  /* padding: 1rem; */
-  background-color: #bd572f;
-  h2 {
-    padding: 0.5rem;
-  }
-  p {
-    padding: 0.5rem;
-  }
-`
-
 const StyledFooter = styled.div`
   display: flex;
   justify-content: space-between;

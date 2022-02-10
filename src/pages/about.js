@@ -6,8 +6,6 @@ import glsl from "babel-plugin-glsl/macro"
 import { motion, AnimatePresence } from "framer-motion"
 import styled from "styled-components"
 import selfie from "../images/selfie.jpg"
-import sign from "../images/sign.jpg"
-import pumpkin from "../images/pumpkin.jpg"
 
 const variants = {
   initial: {
@@ -124,12 +122,6 @@ function About({ location }) {
           <Image1>
             <Scene texture={selfie} size={[0.8, 0.8, 16, 16]} />
           </Image1>
-          <Image2>
-            <Scene texture={sign} size={[0.4, 0.6, 16, 16]} />
-          </Image2>
-          <Image3>
-            <Scene texture={pumpkin} size={[0.7, 1, 16, 16]} />
-          </Image3>
         </ContentWrapper>
       </motion.main>
     </AnimatePresence>
@@ -138,56 +130,12 @@ function About({ location }) {
 const ContentWrapper = styled.div`
   display: relative;
 `
-const Name = styled.h1`
-  display: relative;
-  margin: 0rem 1.5rem;
-  margin-top: 10rem;
-  text-align: left;
-  font-size: 5rem;
-  text-transform: uppercase;
-  @media (max-width: 900px) {
-    text-align: center;
-    font-size: 3rem;
-  }
-`
-const Desc = styled.h2`
-  font-size: 2rem;
-  text-align: left;
-  text-transform: uppercase;
-  margin-top: 2rem;
-  padding-left: 3rem;
-  color: limegreen;
-  @media (max-width: 900px) {
-    padding-left: 0rem;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-`
+
 const Image1 = styled.div`
   position: relative;
   left: 20%;
   width: 100%;
   margin-top: -2rem;
-  @media (max-width: 900px) {
-    left: 5%;
-    width: 90%;
-  }
-`
-const Image2 = styled.div`
-  position: relative;
-  left: -30%;
-  width: 100%;
-  margin-top: -20rem;
-  @media (max-width: 900px) {
-    left: 5%;
-    width: 90%;
-  }
-`
-const Image3 = styled.div`
-  position: relative;
-  left: 20%;
-  width: 100%;
-  margin-top: -20rem;
   @media (max-width: 900px) {
     left: 5%;
     width: 90%;

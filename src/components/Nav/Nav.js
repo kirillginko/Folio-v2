@@ -1,14 +1,31 @@
-import React from "react"
+import React, { useContext } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { CursorContext } from "../CustomCursor/CursorManager"
 
 function Nav() {
+  const mouseContext = useContext(CursorContext)
   return (
     <NavContainer>
-      <HeadLink to="/">
+      <HeadLink
+        to="/"
+        onMouseEnter={() => {
+          mouseContext.setSize("big")
+        }}
+        onMouseLeave={() => {
+          mouseContext.setSize("small")
+        }}
+      >
         <H2>Kirill Ginko</H2>
       </HeadLink>
-      <NavItems>
+      <NavItems
+        onMouseEnter={() => {
+          mouseContext.setSize("big")
+        }}
+        onMouseLeave={() => {
+          mouseContext.setSize("small")
+        }}
+      >
         <ul>
           <li>
             <NavLink to="/projects">

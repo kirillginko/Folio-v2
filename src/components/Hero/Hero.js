@@ -1,12 +1,27 @@
-import React from "react"
+import React, { useContext } from "react"
+import { CursorContext } from "../CustomCursor/CursorManager"
 import "./hero.css"
 
 function Hero() {
+  const mouseContext = useContext(CursorContext)
   return (
     <div id="js-scroll" className="main-page">
-      <nav className="nav-main" data-scroll-section>
-        <ul className="nav-list" id="direction">
-          <li className="nav-list__item">
+      <nav>
+        <ul
+          className="nav-list"
+          id="direction"
+          className="nav-main"
+          data-scroll-section
+        >
+          <li
+            className="nav-list__item"
+            onMouseEnter={() => {
+              mouseContext.setSize("big")
+            }}
+            onMouseLeave={() => {
+              mouseContext.setSize("small")
+            }}
+          >
             <div
               className="item__translate"
               data-scroll
@@ -24,7 +39,15 @@ function Hero() {
               </div>
             </div>
           </li>
-          <li className="nav-list__item">
+          <li
+            className="nav-list__item"
+            onMouseEnter={() => {
+              mouseContext.setSize("big")
+            }}
+            onMouseLeave={() => {
+              mouseContext.setSize("small")
+            }}
+          >
             <div
               className="item__translate"
               data-scroll
@@ -42,7 +65,15 @@ function Hero() {
               </div>
             </div>
           </li>
-          <li className="nav-list__item">
+          <li
+            className="nav-list__item"
+            onMouseEnter={() => {
+              mouseContext.setSize("big")
+            }}
+            onMouseLeave={() => {
+              mouseContext.setSize("small")
+            }}
+          >
             <div
               className="item__translate"
               data-scroll
@@ -60,7 +91,15 @@ function Hero() {
               </div>
             </div>
           </li>
-          <li className="nav-list__item">
+          <li
+            className="nav-list__item"
+            onMouseEnter={() => {
+              mouseContext.setSize("big")
+            }}
+            onMouseLeave={() => {
+              mouseContext.setSize("small")
+            }}
+          >
             <div
               className="item__translate"
               data-scroll
@@ -78,7 +117,15 @@ function Hero() {
               </div>
             </div>
           </li>
-          <li className="nav-list__item">
+          <li
+            className="nav-list__item"
+            onMouseEnter={() => {
+              mouseContext.setSize("big")
+            }}
+            onMouseLeave={() => {
+              mouseContext.setSize("small")
+            }}
+          >
             <div
               className="item__translate"
               data-scroll

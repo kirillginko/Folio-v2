@@ -15,6 +15,7 @@ const LoaderWrapper = styled.div`
   background-color: var(--text);
   color: var(--background);
   ${mixins.flexCenter};
+  cursor: none;
 `
 const Text = styled.p`
   ${mixins.smallText};

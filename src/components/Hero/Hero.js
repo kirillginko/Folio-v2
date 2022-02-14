@@ -4,24 +4,19 @@ import "./hero.css"
 
 function Hero() {
   const mouseContext = useContext(CursorContext)
+
+  const mouseEnterHandler = () => {
+    mouseContext.setSize("big")
+  }
+  const mouseLeaveHandler = () => {
+    mouseContext.setSize("small")
+  }
+
   return (
     <div id="js-scroll" className="main-page">
-      <nav>
-        <ul
-          className="nav-list"
-          id="direction"
-          className="nav-main"
-          data-scroll-section
-        >
-          <li
-            className="nav-list__item"
-            onMouseEnter={() => {
-              mouseContext.setSize("big")
-            }}
-            onMouseLeave={() => {
-              mouseContext.setSize("small")
-            }}
-          >
+      <nav className="nav-main" data-scroll-section>
+        <ul className="nav-list" id="direction">
+          <li className="nav-list__item">
             <div
               className="item__translate"
               data-scroll
@@ -30,7 +25,11 @@ function Hero() {
               data-scroll-speed="8"
               data-scroll-delay="0.05"
             >
-              <div className="item__container">
+              <div
+                className="item__container"
+                onMouseEnter={mouseEnterHandler}
+                onMouseLeave={mouseLeaveHandler}
+              >
                 <span className="item-first-title">Creative</span>
                 <span className="arrow">*</span>
                 <span className="item-second-title">Creative</span>
@@ -39,15 +38,7 @@ function Hero() {
               </div>
             </div>
           </li>
-          <li
-            className="nav-list__item"
-            onMouseEnter={() => {
-              mouseContext.setSize("big")
-            }}
-            onMouseLeave={() => {
-              mouseContext.setSize("small")
-            }}
-          >
+          <li className="nav-list__item">
             <div
               className="item__translate"
               data-scroll
@@ -56,7 +47,11 @@ function Hero() {
               data-scroll-speed="-5"
               data-scroll-delay="0.05"
             >
-              <div className="item__container">
+              <div
+                className="item__container"
+                onMouseEnter={mouseEnterHandler}
+                onMouseLeave={mouseLeaveHandler}
+              >
                 <span className="item-first-title">Designer</span>
                 <span className="arrow">*</span>
                 <span className="item-second-title">Designer</span>
@@ -65,15 +60,7 @@ function Hero() {
               </div>
             </div>
           </li>
-          <li
-            className="nav-list__item"
-            onMouseEnter={() => {
-              mouseContext.setSize("big")
-            }}
-            onMouseLeave={() => {
-              mouseContext.setSize("small")
-            }}
-          >
+          <li className="nav-list__item">
             <div
               className="item__translate"
               data-scroll
@@ -82,7 +69,11 @@ function Hero() {
               data-scroll-speed="8"
               data-scroll-delay="0.05"
             >
-              <div className="item__container">
+              <div
+                className="item__container"
+                onMouseEnter={mouseEnterHandler}
+                onMouseLeave={mouseLeaveHandler}
+              >
                 <span className="item-first-title">And</span>
                 <span className="arrow">*</span>
                 <span className="item-second-title">And</span>
@@ -91,15 +82,7 @@ function Hero() {
               </div>
             </div>
           </li>
-          <li
-            className="nav-list__item"
-            onMouseEnter={() => {
-              mouseContext.setSize("big")
-            }}
-            onMouseLeave={() => {
-              mouseContext.setSize("small")
-            }}
-          >
+          <li className="nav-list__item">
             <div
               className="item__translate"
               data-scroll
@@ -108,7 +91,11 @@ function Hero() {
               data-scroll-speed="-8"
               data-scroll-delay="0.05"
             >
-              <div className="item__container">
+              <div
+                className="item__container"
+                onMouseEnter={mouseEnterHandler}
+                onMouseLeave={mouseLeaveHandler}
+              >
                 <span className="item-first-title">Developer</span>
                 <span className="arrow">*</span>
                 <span className="item-second-title">Developer</span>
@@ -117,15 +104,7 @@ function Hero() {
               </div>
             </div>
           </li>
-          <li
-            className="nav-list__item"
-            onMouseEnter={() => {
-              mouseContext.setSize("big")
-            }}
-            onMouseLeave={() => {
-              mouseContext.setSize("small")
-            }}
-          >
+          <li className="nav-list__item">
             <div
               className="item__translate"
               data-scroll

@@ -1,5 +1,5 @@
 import * as THREE from "three"
-import React, { useRef, Suspense, useContext } from "react"
+import React, { useRef, Suspense, useContext, useEffect } from "react"
 import { CursorContext } from "../components/CustomCursor/CursorManager"
 import { Canvas, extend, useFrame, useLoader } from "@react-three/fiber"
 import { shaderMaterial } from "@react-three/drei"
@@ -76,6 +76,11 @@ const Wave = ({ texture, size }) => {
 }
 
 const Scene = ({ texture, size }) => {
+  const imageRef = useRef()
+
+  useEffect(() => {
+    console.log(imageRef.current)
+  }, [])
   return (
     <Canvas camera={{ fov: 14, position: [0, 0, 5] }}>
       <Suspense fallback={null}>
@@ -87,6 +92,7 @@ const Scene = ({ texture, size }) => {
 
 function About({ location }) {
   const mouseContext = useContext(CursorContext)
+
   return (
     <AnimatePresence>
       <motion.main

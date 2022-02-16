@@ -24,7 +24,9 @@ function Grid() {
 const Container = styled.div`
   height: 100vh;
   margin: 15rem 1.5rem;
+  margin-top: 30rem;
   @media (max-width: 1480px) {
+    margin-top: 5rem;
     height: 120vh;
   }
 `

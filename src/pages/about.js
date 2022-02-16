@@ -111,7 +111,7 @@ function About({ location }) {
           </Desc> */}
           <Box
             onMouseEnter={() => {
-              mouseContext.setSize("big")
+              mouseContext.setSize("bigger")
             }}
             onMouseLeave={() => {
               mouseContext.setSize("small")

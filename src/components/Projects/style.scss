@@ -36,7 +36,8 @@ h1 {
   font-size: 10.5vw;
 }
 .projects__title {
-  font-size: 4.5vw;
+  font-size: 8.5vw;
+  margin-top: 10rem;
   text-align: center;
 }
 .menu__title:hover {
@@ -81,7 +82,7 @@ h1 {
     @for $i from 0 through 4 {
       p:nth-child(#{$i + 1}n) {
         span {
-          transition-delay: #{$i/10}s;
+          // transition-delay: #{$i/10}s;
         }
       }
     }

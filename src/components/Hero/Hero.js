@@ -6,7 +6,7 @@ function Hero() {
   const mouseContext = useContext(CursorContext)
 
   const mouseEnterHandler = () => {
-    mouseContext.setSize("big")
+    mouseContext.setSize("bigger")
   }
   const mouseLeaveHandler = () => {
     mouseContext.setSize("small")

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import SEO from "../components/seo"
 import Design from "../components/Hero/Hero"
 // import Skills from "../components/Skills/Skills"
@@ -6,15 +6,28 @@ import Design from "../components/Hero/Hero"
 // import Project from "../components/Projects/Project"
 import Grid from "../components/Grid/Grid"
 
-const IndexPage = () => (
-  <>
-    <SEO title="Home" />
-    <Design />
-    <Grid />
+const IndexPage = () => {
+  const listenScrollEvent = event => {
+    if (window.scrollY < 73) {
+      console.log("hello world")
+    } else if (window.scrollY > 70) {
+      console.log("goodbye")
+    }
+  }
 
-    {/* <Skills /> */}
-    {/* <About /> */}
-  </>
-)
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent)
+
+    return () => window.removeEventListener("scroll", listenScrollEvent)
+  }, [])
+
+  return (
+    <>
+      <SEO title="Home" />
+      <Design />
+      <Grid />
+    </>
+  )
+}
 
 export default IndexPage

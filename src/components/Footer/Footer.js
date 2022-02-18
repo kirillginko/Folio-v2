@@ -6,7 +6,7 @@ const FixedWrapper = styled.div`
   position: relative;
   background-color: #000000;
   margin-top: 10rem;
-  height: 10vh;
+  /* height: 10vh; */
   margin-top: 20rem;
 `
 const StyledFooter = styled.div`
@@ -22,6 +22,14 @@ const StyledText = styled.span`
   user-select: none;
   ${media.tablet`font-size: 16px;`};
 `
+const ContactsWrapper = styled.div`
+  margin: 0 1.5rem;
+  padding-top: 1rem;
+`
+const Contacts = styled.h2`
+  font-size: 1rem;
+  color: #fff;
+`
 
 const Footer = () => {
   const d = new Date()
@@ -30,6 +38,11 @@ const Footer = () => {
   return (
     <>
       <FixedWrapper data-scroll-section>
+        <ContactsWrapper>
+          <Contacts>Contacts</Contacts>
+          <Contacts>Email: kirillginko@gmail.com</Contacts>
+          <Contacts>Phone: +301-512-4249</Contacts>
+        </ContactsWrapper>
         <StyledFooter>
           <small>
             <StyledText>&copy; {y}</StyledText>

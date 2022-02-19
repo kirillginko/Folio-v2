@@ -1,21 +1,120 @@
-import React from "react"
+import React, { useContext } from "react"
+import { CursorContext } from "../CustomCursor/CursorManager"
 import styled from "styled-components"
+import gradient2 from "../../images/gradient2.png"
 
 function Grid() {
+  const mouseContext = useContext(CursorContext)
+
+  const mouseEnterHandler = () => {
+    mouseContext.setSize("bigger")
+  }
+  const mouseLeaveHandler = () => {
+    mouseContext.setSize("small")
+  }
+
   return (
     <Container data-scroll-section>
-      <Title>SKILLS</Title>
+      <Title
+        data-scroll
+        data-scroll-direction="vertical"
+        data-scroll-target="#direction"
+        data-scroll-speed="1"
+        data-scroll-delay="0.5"
+      >
+        SKILLS
+      </Title>
       <SkillsList>
-        <GridItem>React</GridItem>
-        <GridItem>Node.js</GridItem>
-        <GridItem>WebGL</GridItem>
-        <GridItem>Three.js</GridItem>
-        <GridItem>Express</GridItem>
-        <GridItem>Ruby</GridItem>
-        <GridItem>Photoshop</GridItem>
-        <GridItem>Indesign</GridItem>
-        <GridItem>Final Cut</GridItem>
-        <GridItem>Figma</GridItem>
+        <GridItem
+          data-scroll
+          data-scroll-direction="vertical"
+          data-scroll-target="#direction"
+          data-scroll-speed=".8"
+          data-scroll-delay="0.5"
+        >
+          React
+        </GridItem>
+        <GridItem
+          data-scroll
+          data-scroll-direction="vertical"
+          data-scroll-target="#direction"
+          data-scroll-speed=".8"
+          data-scroll-delay="0.5"
+        >
+          Node.js
+        </GridItem>
+        <GridItem
+          data-scroll
+          data-scroll-direction="vertical"
+          data-scroll-target="#direction"
+          data-scroll-speed=".8"
+          data-scroll-delay="0.5"
+        >
+          WebGL
+        </GridItem>
+        <GridItem
+          data-scroll
+          data-scroll-direction="vertical"
+          data-scroll-target="#direction"
+          data-scroll-speed=".8"
+          data-scroll-delay="0.5"
+        >
+          Three.js
+        </GridItem>
+        <GridItem
+          data-scroll
+          data-scroll-direction="vertical"
+          data-scroll-target="#direction"
+          data-scroll-speed=".8"
+          data-scroll-delay="0.5"
+        >
+          Express
+        </GridItem>
+        <GridItem
+          data-scroll
+          data-scroll-direction="vertical"
+          data-scroll-target="#direction"
+          data-scroll-speed=".8"
+          data-scroll-delay="0.1"
+        >
+          Ruby
+        </GridItem>
+        <GridItem
+          data-scroll
+          data-scroll-direction="vertical"
+          data-scroll-target="#direction"
+          data-scroll-speed=".8"
+          data-scroll-delay="0.1"
+        >
+          Photoshop
+        </GridItem>
+        <GridItem
+          data-scroll
+          data-scroll-direction="vertical"
+          data-scroll-target="#direction"
+          data-scroll-speed=".8"
+          data-scroll-delay="0.1"
+        >
+          Indesign
+        </GridItem>
+        <GridItem
+          data-scroll
+          data-scroll-direction="vertical"
+          data-scroll-target="#direction"
+          data-scroll-speed=".8"
+          data-scroll-delay="0.1"
+        >
+          Final Cut
+        </GridItem>
+        <GridItem
+          data-scroll
+          data-scroll-direction="vertical"
+          data-scroll-target="#direction"
+          data-scroll-speed=".8"
+          data-scroll-delay="0.1"
+        >
+          Figma
+        </GridItem>
       </SkillsList>
     </Container>
   )
@@ -54,7 +153,7 @@ const GridItem = styled.div`
   padding: 2rem 2rem;
   background-color: rgba(151, 151, 151, 0);
   grid-column: span 1;
-  border: 1px solid;
+  border: 0.5px solid;
   background: linear-gradient(to bottom, #000 50%, #ffffff1d 50%);
   background-size: 100% 200%;
   background-position: bottom;
@@ -76,5 +175,9 @@ const Title = styled.div`
   font-weight: bold;
   color: blue;
   margin-bottom: 2rem;
+`
+const Image = styled.img`
+  width: 300px;
+  height: 300px;
 `
 export default Grid

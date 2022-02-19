@@ -27,6 +27,7 @@ const ContentWrapper = styled.div`
 
 const Content = styled.div`
   display: inline-block;
+  justify-content: center;
   margin: 0 1.5rem;
   padding-top: 1rem;
 `

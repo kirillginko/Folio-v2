@@ -103,12 +103,32 @@ function About({ location }) {
         exit="exit"
       >
         <ContentWrapper data-scroll-section>
-          {/* <Name>Hello, my name is Kirill</Name>
-          <Desc>
-            I'm a Full-Stack Developer currently based in Montreal. <br /> I
-            come from a Photography/Design background and love <br />
-            to infuse a critical vision to online experiences.
-          </Desc> */}
+          <TextWrapper>
+            <Name
+              onMouseEnter={() => {
+                mouseContext.setSize("bigger")
+              }}
+              onMouseLeave={() => {
+                mouseContext.setSize("small")
+              }}
+            >
+              Hello, my name is Kirill
+            </Name>
+            <Desc
+              onMouseEnter={() => {
+                mouseContext.setSize("big")
+              }}
+              onMouseLeave={() => {
+                mouseContext.setSize("small")
+              }}
+            >
+              I'm a Full-Stack Developer currently based in Montreal. My
+              Interests are in art and design, and I like to create visual
+              exciting user experiences and strong brand-identities. I like to
+              utilize my skills and background in Photography and Graphic Design
+              and bring it to the world wide web.
+            </Desc>
+          </TextWrapper>
           <Box
             onMouseEnter={() => {
               mouseContext.setSize("bigger")
@@ -116,10 +136,11 @@ function About({ location }) {
             onMouseLeave={() => {
               mouseContext.setSize("small")
             }}
-          />
-          <Image>
-            <Scene texture={selfie} size={[0.8, 0.8, 16, 16]} />
-          </Image>
+          >
+            <Image>
+              <Scene texture={selfie} size={[0.8, 0.8, 16, 16]} />
+            </Image>
+          </Box>
         </ContentWrapper>
       </motion.main>
     </AnimatePresence>
@@ -144,30 +165,68 @@ const variants = {
 }
 
 const ContentWrapper = styled.div`
-  display: relative;
+  position: relative;
+  top: 0;
+  left: 0rem;
 `
 
 const Image = styled.div`
   position: relative;
-  left: 20%;
+  top: -5rem;
+  /* left: 25rem; */
 
-  margin-top: -2rem;
+  /* margin-top: -2rem; */
   @media (max-width: 900px) {
     left: 5%;
     width: 90%;
   }
 `
 const Box = styled.div`
-  position: absolute;
-  top: 8rem;
-  left: 62rem;
+  position: relative;
+  top: -15rem;
+  left: 65rem;
   width: 44rem;
-  height: 42rem;
-  /* border: 1px solid red; */
-  z-index: 100;
-  @media (max-width: 900px) {
+  height: 45rem;
+  border: 1px solid red;
+  /* z-index: 100; */
+  @media (max-width: 1200px) {
+    top: 15rem;
     left: 5%;
     width: 90%;
+  }
+`
+const TextWrapper = styled.div`
+  position: relative;
+  left: 15rem;
+  top: 15rem;
+  width: 60rem;
+  z-index: 100;
+  @media (max-width: 1200px) {
+    top: 15rem;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+  }
+`
+const Name = styled.h2`
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  @media (max-width: 1200px) {
+    font-size: 4rem;
+  }
+`
+
+const Desc = styled.p`
+  color: #fff;
+  width: 50rem;
+  /* padding: 0rem 2rem; */
+  font-size: 2rem;
+  text-align: center;
+  @media (max-width: 1200px) {
+    width: 90%;
+    font-size: 1.5rem;
+    margin: auto;
   }
 `
 

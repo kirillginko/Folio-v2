@@ -14,7 +14,7 @@ function Grid() {
   }
 
   return (
-    <Container data-scroll-section>
+    <Container data-scroll-section id="direction">
       <Title
         data-scroll
         data-scroll-direction="vertical"

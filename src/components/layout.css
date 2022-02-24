@@ -26,6 +26,9 @@ canvas {
   display: block;
   z-index: -1;
 }
+a:link {
+  text-decoration: none;
+}
 .main{
   display: inline-block;
 }

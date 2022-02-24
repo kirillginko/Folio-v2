@@ -1,46 +1,7 @@
 import React from "react"
+import { Link } from "gatsby"
 import { media } from "../../styles/media"
 import styled from "styled-components"
-
-const FixedWrapper = styled.div`
-  position: relative;
-  background-color: #000000;
-  height: 20vh;
-  margin-top: 20rem;
-`
-const StyledFooter = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem 1.5rem;
-  text-transform: uppercase;
-`
-const StyledText = styled.span`
-  color: #fff;
-  font-size: 1rem;
-  user-select: none;
-  ${media.tablet`font-size: 16px;`};
-`
-const ContentWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-`
-
-const Content = styled.div`
-  display: inline-block;
-  justify-content: center;
-  margin: 0 1.5rem;
-  padding-top: 1rem;
-`
-const H1 = styled.h2`
-  font-size: 0.9rem;
-  color: #fff;
-`
-const H2 = styled.h2`
-  font-size: 0.8rem;
-  padding-top: 0.5rem;
-  font-weight: 100;
-  color: #fff;
-`
 
 const Footer = () => {
   const d = new Date()
@@ -52,7 +13,14 @@ const Footer = () => {
         <ContentWrapper>
           <Content>
             <H1>Contact</H1>
-            <H2>Email: kirillginko@gmail.com</H2>
+            <StyledLink
+              href="mailto:kirillginko@gmail.com?subject=Lets Make Something Cool!&body=Hi"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+              Email: kirillginko@gmail.com
+            </StyledLink>
             <H2>Phone: +301-512-4249</H2>
           </Content>
           <Content>
@@ -80,5 +48,64 @@ const Footer = () => {
     </>
   )
 }
+
+const FixedWrapper = styled.div`
+  position: relative;
+  background-color: #000000;
+  height: 20vh;
+  margin-top: 20rem;
+`
+const StyledFooter = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  text-transform: uppercase;
+`
+const StyledText = styled.span`
+  color: #fff;
+  font-size: 1rem;
+  user-select: none;
+  @media (max-width: 1000px) {
+    font-size: .8rem;
+  }
+  /* ${media.tablet`font-size: 16px;`}; */
+`
+const ContentWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 0rem 1.5rem;
+  @media (max-width: 500px) {
+    display: grid;
+    justify-content: space-between;
+    align-content: center;
+    grid-template-columns: repeat(3, 12.8rem);
+  }
+`
+
+const Content = styled.div`
+  display: inline-block;
+  justify-content: center;
+  /* margin: 0 1.5rem; */
+  padding-top: 1rem;
+`
+const H1 = styled.h2`
+  font-size: 0.9rem;
+  color: #fff;
+  padding-bottom: 0.5rem;
+`
+const StyledLink = styled(Link)`
+  font-size: 0.8rem;
+  padding: 1rem 0rem;
+  font-weight: 100;
+  color: #fff;
+  text-decoration: none;
+`
+const H2 = styled.h2`
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+  font-weight: 100;
+  color: #fff;
+`
 
 export default Footer

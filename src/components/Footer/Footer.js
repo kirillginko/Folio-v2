@@ -95,8 +95,9 @@ const H1 = styled.h2`
   padding-bottom: 0.5rem;
 `
 const StyledLink = styled(Link)`
+  display: block;
   font-size: 0.8rem;
-  padding: 1rem 0rem;
+  padding-bottom: 0.5rem;
   font-weight: 100;
   color: #fff;
   text-decoration: none;

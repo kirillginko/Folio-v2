@@ -7,6 +7,14 @@ const Footer = () => {
   const d = new Date()
   const y = d.getFullYear()
 
+  const scrollToTop = () => {
+    const rootElement = document.documentElement
+    rootElement.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
   return (
     <>
       <FixedWrapper data-scroll-section>
@@ -14,7 +22,7 @@ const Footer = () => {
           <Content>
             <H1>Contact</H1>
             <StyledLink
-              href="mailto:kirillginko@gmail.com?subject=Lets Make Something Cool!&body=Hi"
+              href="mailto:kirillginko@gmail.com?subject=Lets Make Something Cool!&body=Hi Kirill,"
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none" }}
@@ -25,15 +33,22 @@ const Footer = () => {
           </Content>
           <Content>
             <H1>Socials</H1>
-            <H2>Instagram</H2>
-            <H2>Github</H2>
+            <StyledLink
+              to="https://www.instagram.com/co_existenz/"
+              target="_blank"
+            >
+              Instagram
+            </StyledLink>
+            <StyledLink to="https://www.github.com/kirillginko" target="_blank">
+              Github
+            </StyledLink>
             <H2>Behence</H2>
           </Content>
           <Content>
             <H1>Pages</H1>
-            <H2>Home</H2>
-            <H2>Work</H2>
-            <H2>About</H2>
+            <StyledLink to="/">Home</StyledLink>
+            <StyledLink to="/projects">Work</StyledLink>
+            <StyledLink to="/about">About</StyledLink>
           </Content>
         </ContentWrapper>
         <StyledFooter>
@@ -73,7 +88,6 @@ const StyledText = styled.span`
 const ContentWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
   margin: 0rem 1.5rem;
   @media (max-width: 500px) {
     display: grid;
@@ -101,6 +115,11 @@ const StyledLink = styled(Link)`
   font-weight: 100;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    color: #1937df;
+  }
 `
 const H2 = styled.h2`
   font-size: 0.8rem;

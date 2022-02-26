@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import SEO from "../components/seo"
 import Design from "../components/Hero/Hero"
+import Tech from "../components/Tech/Tech"
 // import Skills from "../components/Skills/Skills"
 // import About from "../components/About/About"
 // import Project from "../components/Projects/Project"
@@ -25,7 +26,8 @@ const IndexPage = () => {
     <>
       <SEO title="Home" />
       <Design />
-      <Grid />
+      <Tech />
+      {/* <Grid /> */}
     </>
   )
 }

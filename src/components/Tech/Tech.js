@@ -17,7 +17,7 @@ const Tech = () => {
         amount: 0.4,
       },
     })
-    tl.from(".line", {
+    tl.from(Line, {
       duration: 1,
       width: "0%",
       stagger: {
@@ -25,7 +25,7 @@ const Tech = () => {
       },
     })
     tl.from(
-      ".work-item h1, .work-item p",
+      "h1,p",
       {
         y: 150,
         duration: 0.5,
@@ -44,7 +44,8 @@ const Tech = () => {
           <TechItem>
             <Item1>
               <H1>
-                These are the tech <Space1 /> I like to use
+                These are the tech <Space1 /> I like <Space1 />
+                to use
               </H1>
               <P>2022</P>
             </Item1>
@@ -52,24 +53,145 @@ const Tech = () => {
           <Line />
         </Span>
       </TechItems>
-      <TechItems>
-        <Span>
-          <TechItem>
-            <Item1>
-              <Space2 />
-              <H1>React</H1>
-              <P>2022</P>
-            </Item1>
-          </TechItem>
-          <Line />
-        </Span>
-      </TechItems>
+      <Span>
+        <TechItem>
+          <Item1>
+            <Space2 />
+            <H1>React</H1>
+            <P>2022</P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <Space2 />
+            <H1>Gatsby</H1>
+            <P>2022</P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <Space2 />
+            <H1>Next</H1>
+            <P>2022</P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <Space2 />
+            <H1>Threejs</H1>
+            <P>2022</P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <Space2 />
+            <H1>WebGL</H1>
+            <P>2022</P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <Space2 />
+            <H1>Express</H1>
+            <P>2022</P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <Space2 />
+            <H1>Node</H1>
+            <P>2022</P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <Space2 />
+            <H1>Figma</H1>
+            <P>2022</P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <Space2 />
+            <H1>Framer Motion</H1>
+            <P>2022</P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <Space2 />
+            <H1>gsap</H1>
+            <P>2022</P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <Space2 />
+            <H1>styled components</H1>
+            <P>2022</P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <Space2 />
+            <H1>Photoshop</H1>
+            <P>2022</P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <Space2 />
+            <H1>Illustrator</H1>
+            <P>2022</P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
     </TechContainer>
   )
 }
 
 const TechContainer = styled.div`
   margin: 20rem 1.5rem;
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+  }
 `
 const TechItems = styled.div`
   display: flex;
@@ -101,7 +223,7 @@ const Space2 = styled.span`
   }
 `
 const H1 = styled.h1`
-  font-size: 10rem;
+  font-size: 8rem;
   padding: 5px;
   cursor: pointer;
   @media (max-width: 768px) {

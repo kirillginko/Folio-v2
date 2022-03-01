@@ -38,7 +38,7 @@ const Tech = () => {
   }, [])
 
   return (
-    <TechContainer data-scroll-section>
+    <TechContainer data-scroll-section id="direction">
       <TechItems>
         <Span>
           <TechItem>
@@ -52,7 +52,189 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1 style={{ paddingLeft: "60vw" }}>React</H1>
+            <H1
+              style={{ paddingLeft: "57vw" }}
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="-2"
+              data-scroll-delay="0.05"
+            >
+              React
+            </H1>
+            <P
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="-2"
+              data-scroll-delay="0.05"
+            >
+              2022
+            </P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <H1
+              style={{ paddingLeft: "10vw" }}
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="1"
+              data-scroll-delay="0.10"
+            >
+              Gatsby
+            </H1>
+            <P
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="1"
+              data-scroll-delay="0.10"
+            >
+              2022
+            </P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <H1
+              style={{ paddingLeft: "47vw" }}
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="-2"
+              data-scroll-delay="0.15"
+            >
+              Next
+            </H1>
+            <P
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="-2"
+              data-scroll-delay="0.15"
+            >
+              2022
+            </P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <H1
+              style={{ paddingLeft: "20vw" }}
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="1"
+              data-scroll-delay="0.05"
+            >
+              Threejs
+            </H1>
+            <P
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="1"
+              data-scroll-delay="0.05"
+            >
+              2022
+            </P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <H1
+              style={{ paddingLeft: "2vw" }}
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="-2"
+              data-scroll-delay="0.25"
+            >
+              WebGL
+            </H1>
+            <P
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="-2"
+              data-scroll-delay="0.25"
+            >
+              2022
+            </P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <H1
+              style={{ paddingLeft: "54vw" }}
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="1"
+              data-scroll-delay="0.15"
+            >
+              Express
+            </H1>
+            <P
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="1"
+              data-scroll-delay="0.15"
+            >
+              2022
+            </P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <H1
+              style={{ paddingLeft: "28vw" }}
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="-2"
+              data-scroll-delay="0.15"
+            >
+              Node
+            </H1>
+            <P
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-target="#direction"
+              data-scroll-speed="-2"
+              data-scroll-delay="0.15"
+            >
+              2022
+            </P>
+          </Item1>
+        </TechItem>
+        <Line />
+      </Span>
+      <Span>
+        <TechItem>
+          <Item1>
+            <H1 style={{ paddingLeft: "45vw" }}>Figma</H1>
             <P>2022</P>
           </Item1>
         </TechItem>
@@ -61,7 +243,7 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1 style={{ paddingLeft: "10vw" }}>Gatsby</H1>
+            <H1 style={{ paddingLeft: "60vw" }}>gsap</H1>
             <P>2022</P>
           </Item1>
         </TechItem>
@@ -70,7 +252,7 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1 style={{ paddingLeft: "50vw" }}>Next</H1>
+            <H1 style={{ paddingLeft: "0vw" }}>Framer Motion</H1>
             <P>2022</P>
           </Item1>
         </TechItem>
@@ -79,7 +261,7 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1 style={{ paddingLeft: "20vw" }}>Threejs</H1>
+            <H1 style={{ paddingLeft: "7vw" }}>styled components</H1>
             <P>2022</P>
           </Item1>
         </TechItem>
@@ -88,7 +270,7 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1 style={{ paddingLeft: "2vw" }}>WebGL</H1>
+            <H1 style={{ paddingLeft: "53vw" }}>Photoshop</H1>
             <P>2022</P>
           </Item1>
         </TechItem>
@@ -97,70 +279,7 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1 style={{ paddingLeft: "54vw" }}>Express</H1>
-            <P>2022</P>
-          </Item1>
-        </TechItem>
-        <Line />
-      </Span>
-      <Span>
-        <TechItem>
-          <Item1>
-            <H1 style={{ paddingLeft: "28vw" }}>Node</H1>
-            <P>2022</P>
-          </Item1>
-        </TechItem>
-        <Line />
-      </Span>
-      <Span>
-        <TechItem>
-          <Item1>
-            <H1 style={{ paddingLeft: "0vw" }}>Figma</H1>
-            <P>2022</P>
-          </Item1>
-        </TechItem>
-        <Line />
-      </Span>
-      <Span>
-        <TechItem>
-          <Item1>
-            <H1 style={{ paddingLeft: "12vw" }}>Framer Motion</H1>
-            <P>2022</P>
-          </Item1>
-        </TechItem>
-        <Line />
-      </Span>
-      <Span>
-        <TechItem>
-          <Item1>
-            <H1 style={{ paddingLeft: "70vw" }}>gsap</H1>
-            <P>2022</P>
-          </Item1>
-        </TechItem>
-        <Line />
-      </Span>
-      <Span>
-        <TechItem>
-          <Item1>
-            <H1 style={{ paddingLeft: "19vw" }}>styled components</H1>
-            <P>2022</P>
-          </Item1>
-        </TechItem>
-        <Line />
-      </Span>
-      <Span>
-        <TechItem>
-          <Item1>
-            <H1 style={{ paddingLeft: "5vw" }}>Photoshop</H1>
-            <P>2022</P>
-          </Item1>
-        </TechItem>
-        <Line />
-      </Span>
-      <Span>
-        <TechItem>
-          <Item1>
-            <H1 style={{ paddingLeft: "40vw" }}>Illustrator</H1>
+            <H1 style={{ paddingLeft: "0vw" }}>Illustrator</H1>
             <P>2022</P>
           </Item1>
         </TechItem>

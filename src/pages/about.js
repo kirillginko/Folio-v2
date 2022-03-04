@@ -187,10 +187,10 @@ const Box = styled.div`
   left: 65rem;
   width: 44rem;
   height: 45rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* z-index: 100; */
   @media (max-width: 1200px) {
-    top: 15rem;
+    top: 10rem;
     left: 5%;
     width: 90%;
   }
@@ -202,7 +202,7 @@ const TextWrapper = styled.div`
   width: 60rem;
   z-index: 100;
   @media (max-width: 1200px) {
-    top: 15rem;
+    top: 10rem;
     left: 5%;
     width: 90%;
     text-align: center;

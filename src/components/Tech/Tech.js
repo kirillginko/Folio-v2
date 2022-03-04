@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+import { StaticImage } from "gatsby-plugin-image"
 import { gsap, Power3 } from "gsap"
 import "./tech.css"
 import image1 from "../../images/gradient1.png"
@@ -44,6 +45,7 @@ const Tech = () => {
           <TechItem>
             <Item1>
               <Title>These are the tech I like to use</Title>
+              <StaticImage src={image1} alt="Art" />
             </Item1>
           </TechItem>
           <Line />
@@ -52,25 +54,8 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1
-              style={{ paddingLeft: "57vw" }}
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-target="#direction"
-              data-scroll-speed="-2"
-              data-scroll-delay="0.05"
-            >
-              React
-            </H1>
-            <P
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-target="#direction"
-              data-scroll-speed="-2"
-              data-scroll-delay="0.05"
-            >
-              2022
-            </P>
+            <H1 style={{ paddingLeft: "57vw" }}>React</H1>
+            <P>2022</P>
           </Item1>
         </TechItem>
         <Line />
@@ -78,25 +63,8 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1
-              style={{ paddingLeft: "10vw" }}
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-target="#direction"
-              data-scroll-speed="1"
-              data-scroll-delay="0.10"
-            >
-              Gatsby
-            </H1>
-            <P
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-target="#direction"
-              data-scroll-speed="1"
-              data-scroll-delay="0.10"
-            >
-              2022
-            </P>
+            <H1 style={{ paddingLeft: "10vw" }}>Gatsby</H1>
+            <P>2022</P>
           </Item1>
         </TechItem>
         <Line />
@@ -104,25 +72,8 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1
-              style={{ paddingLeft: "47vw" }}
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-target="#direction"
-              data-scroll-speed="-2"
-              data-scroll-delay="0.15"
-            >
-              Next
-            </H1>
-            <P
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-target="#direction"
-              data-scroll-speed="-2"
-              data-scroll-delay="0.15"
-            >
-              2022
-            </P>
+            <H1 style={{ paddingLeft: "47vw" }}>Next</H1>
+            <P>2022</P>
           </Item1>
         </TechItem>
         <Line />
@@ -130,25 +81,8 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1
-              style={{ paddingLeft: "20vw" }}
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-target="#direction"
-              data-scroll-speed="1"
-              data-scroll-delay="0.05"
-            >
-              Threejs
-            </H1>
-            <P
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-target="#direction"
-              data-scroll-speed="1"
-              data-scroll-delay="0.05"
-            >
-              2022
-            </P>
+            <H1 style={{ paddingLeft: "20vw" }}>Threejs</H1>
+            <P>2022</P>
           </Item1>
         </TechItem>
         <Line />
@@ -156,25 +90,8 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1
-              style={{ paddingLeft: "2vw" }}
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-target="#direction"
-              data-scroll-speed="-2"
-              data-scroll-delay="0.25"
-            >
-              WebGL
-            </H1>
-            <P
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-target="#direction"
-              data-scroll-speed="-2"
-              data-scroll-delay="0.25"
-            >
-              2022
-            </P>
+            <H1 style={{ paddingLeft: "2vw" }}>WebGL</H1>
+            <P>2022</P>
           </Item1>
         </TechItem>
         <Line />
@@ -182,25 +99,8 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1
-              style={{ paddingLeft: "54vw" }}
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-target="#direction"
-              data-scroll-speed="1"
-              data-scroll-delay="0.15"
-            >
-              Express
-            </H1>
-            <P
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-target="#direction"
-              data-scroll-speed="1"
-              data-scroll-delay="0.15"
-            >
-              2022
-            </P>
+            <H1 style={{ paddingLeft: "45vw" }}>Express</H1>
+            <P>2022</P>
           </Item1>
         </TechItem>
         <Line />
@@ -208,25 +108,8 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1
-              style={{ paddingLeft: "28vw" }}
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-target="#direction"
-              data-scroll-speed="-2"
-              data-scroll-delay="0.15"
-            >
-              Node
-            </H1>
-            <P
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-target="#direction"
-              data-scroll-speed="-2"
-              data-scroll-delay="0.15"
-            >
-              2022
-            </P>
+            <H1 style={{ paddingLeft: "28vw" }}>Node</H1>
+            <P>2022</P>
           </Item1>
         </TechItem>
         <Line />
@@ -270,7 +153,7 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1 style={{ paddingLeft: "53vw" }}>Photoshop</H1>
+            <H1 style={{ paddingLeft: "43vw" }}>Photoshop</H1>
             <P>2022</P>
           </Item1>
         </TechItem>

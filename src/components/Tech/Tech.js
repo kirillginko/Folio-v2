@@ -1,41 +1,16 @@
 import React, { useEffect } from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { gsap, Power3 } from "gsap"
-import "./tech.css"
+import { gsap, Power3, Linear } from "gsap"
+import star from "../../svg/flower.svg"
 import image1 from "../../images/gradient1.png"
 import image2 from "../../images/gradient2.png"
 import image3 from "../../images/gradient3.png"
 import image4 from "../../images/gradient4.png"
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 
 const Tech = () => {
   useEffect(() => {
     const tl = gsap.timeline()
-    tl.from(".sub-header", {
-      y: -100,
-      duration: 0.5,
-      stagger: {
-        amount: 0.4,
-      },
-    })
-    tl.from(Line, {
-      duration: 1,
-      width: "0%",
-      stagger: {
-        amount: 2,
-      },
-    })
-    tl.from(
-      "h1,p",
-      {
-        y: 150,
-        duration: 0.5,
-        stagger: {
-          amount: 2.5,
-        },
-      },
-      "-=3"
-    )
   }, [])
 
   return (
@@ -45,7 +20,7 @@ const Tech = () => {
           <TechItem>
             <Item1>
               <Title>These are the tech I like to use</Title>
-              <StaticImage src={image1} alt="Art" />
+              <Flower src={star} />
             </Item1>
           </TechItem>
           <Line />
@@ -173,7 +148,8 @@ const Tech = () => {
 }
 
 const TechContainer = styled.div`
-  margin: 20rem 1.5rem;
+  margin: 0rem 1.5rem;
+  margin-top: 40rem;
   @media (max-width: 768px) {
     margin-top: 1rem;
   }
@@ -239,4 +215,21 @@ const Line = styled.div`
   transform-origin: left top;
 `
 
+const Rotate360 = keyframes`
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+`
+const Flower = styled.img`
+  margin: orem 1.5rem;
+  top: -1rem;
+  left: 77vw;
+  width: 100px;
+  height: 100px;
+  animation: ${Rotate360} 10s linear infinite;
+`
 export default Tech

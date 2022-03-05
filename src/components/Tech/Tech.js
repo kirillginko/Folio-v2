@@ -20,7 +20,9 @@ const Tech = () => {
           <TechItem>
             <Item1>
               <Title>These are the tech I like to use</Title>
-              <Flower src={star} />
+              <TitleContainer>
+                <Flower src={star} />
+              </TitleContainer>
             </Item1>
           </TechItem>
           <Line />
@@ -110,7 +112,7 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1 style={{ paddingLeft: "0vw" }}>Framer Motion</H1>
+            <H1 style={{ paddingLeft: "0vw" }}>Javascript</H1>
             <P>2022</P>
           </Item1>
         </TechItem>
@@ -119,7 +121,7 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1 style={{ paddingLeft: "7vw" }}>styled components</H1>
+            <H1 style={{ paddingLeft: "27vw" }}>HTML</H1>
             <P>2022</P>
           </Item1>
         </TechItem>
@@ -128,7 +130,7 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1 style={{ paddingLeft: "43vw" }}>Photoshop</H1>
+            <H1 style={{ paddingLeft: "50vw" }}>Css</H1>
             <P>2022</P>
           </Item1>
         </TechItem>
@@ -137,7 +139,7 @@ const Tech = () => {
       <Span>
         <TechItem>
           <Item1>
-            <H1 style={{ paddingLeft: "0vw" }}>Illustrator</H1>
+            <H1 style={{ paddingLeft: "12vw" }}>Adobe Suite</H1>
             <P>2022</P>
           </Item1>
         </TechItem>
@@ -176,12 +178,15 @@ const Item1 = styled.div`
 `
 
 const Title = styled.h1`
-  font-size: 5rem;
-  justify-content: center;
-  text-align: center;
+  font-size: 6vw;
+  justify-content: left;
+  text-align: left;
   @media (max-width: 768px) {
-    font-size: 2rem;
   }
+`
+const TitleContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
 `
 const H1 = styled.h1`
   font-size: 8rem;
@@ -225,11 +230,17 @@ const Rotate360 = keyframes`
 }
 `
 const Flower = styled.img`
-  margin: orem 1.5rem;
-  top: -1rem;
-  left: 77vw;
-  width: 100px;
-  height: 100px;
+  display: block;
+  top: 0.2rem;
+  left: 83vw;
+  width: 85px;
+  height: 85px;
   animation: ${Rotate360} 10s linear infinite;
+  @media (max-width: 768px) {
+    top: 1vw;
+    left: 77vw;
+    width: 60px;
+    height: 60px;
+  }
 `
 export default Tech

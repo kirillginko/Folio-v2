@@ -21,7 +21,7 @@ body {
   font-family: "Questrial", sans-serif;
 }
 canvas {
-  max-width: 100vw;
+  width: 100vw;
   height: 100vh;
   display: block;
   z-index: -1;

@@ -25,6 +25,7 @@ const MagneticButton = ({
     gsap.set($hover.current, {
       scale: scale,
       borderRadius,
+      background: debug ? "rgba(0, 125, 255, .4)" : "transparent",
     })
 
     rootBound.current = $root.current.getBoundingClientRect()
@@ -128,7 +129,7 @@ function Buttons() {
           console.log("click")
         }}
       >
-        Hello
+        Contact
       </MagneticButton>
 
       <MagneticButton

@@ -10,6 +10,7 @@ import noise from "./Noise/noise"
 import Nav from "../components/Nav/Nav"
 import Loader from "../components/Loader/Loader"
 import Footer from "../components/Footer/Footer"
+import { GlobalStyles } from "../styles/GlobalStyles"
 import "./layout.css"
 
 const Layout = ({ children, location }) => {
@@ -30,6 +31,7 @@ const Layout = ({ children, location }) => {
   return (
     <>
       <canvas id="canvas" className="noise"></canvas>
+      <GlobalStyles />
       {loading ? (
         <div>
           <Loader setIsLoading={setIsLoading} />

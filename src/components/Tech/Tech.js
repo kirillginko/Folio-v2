@@ -178,6 +178,7 @@ const Item1 = styled.div`
 `
 
 const Title = styled.h1`
+  font-family: PangramLight;
   font-size: 6vw;
   justify-content: left;
   text-align: left;
@@ -189,6 +190,8 @@ const TitleContainer = styled.div`
   justify-content: space-between;
 `
 const H1 = styled.h1`
+  font-family: Hatton;
+  font-weight: light;
   font-size: 8rem;
   padding: 5px;
   text-align: center;
@@ -201,9 +204,9 @@ const P = styled.p`
   align-self: flex-start;
   padding-top: 25px;
   padding-left: 5px;
-  font-family: "Neutral Face";
-  font-weight: lighter;
-  font-size: 15px;
+  font-family: Hatton;
+  font-weight: light;
+  font-size: 0.8rem;
   @media (max-width: 768px) {
     padding-top: 0px;
     padding-left: 0px;
@@ -231,8 +234,8 @@ const Rotate360 = keyframes`
 `
 const Flower = styled.img`
   display: block;
-  top: 0.2rem;
-  left: 83vw;
+  top: 1rem;
+  left: 90vw;
   width: 85px;
   height: 85px;
   animation: ${Rotate360} 10s linear infinite;

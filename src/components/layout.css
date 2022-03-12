@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Questrial&display=swap");
-html {
+/* body {
+  /* margin: 0;
+  padding: 0;
+  background-color: rgb(151, 151, 151);
+  box-sizing: border-box; */
+  /* font-family: "Questrial", sans-serif; */
+/*
+/* html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -13,13 +20,7 @@ html {
 
 
 }
-body {
-  margin: 0;
-  padding: 0;
-  background-color: rgb(151, 151, 151);
-  box-sizing: border-box;
-  font-family: "Questrial", sans-serif;
-}
+
 canvas {
   width: 100vw;
   height: 100vh;
@@ -46,4 +47,4 @@ a:link {
   justify-content: center;
   flex-direction: column;
 
-}
+} */

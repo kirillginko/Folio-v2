@@ -7,16 +7,11 @@ function Marquees() {
     <>
       <MarqueeContainer data-scroll-section>
         <Element />
-        <Marquee speed={120} gradient={false} pauseOnHover={true}>
+        <Marquee speed={120} gradient={false}>
           <H1>Lets Chat!</H1>
           <H1>Lets Chat!</H1>
         </Marquee>
-        <Marquee
-          speed={120}
-          direction={"right"}
-          gradient={false}
-          pauseOnHover={true}
-        >
+        <Marquee speed={120} direction={"right"} gradient={false}>
           <H1>Lets Chat!</H1>
 
           <H1>Lets Chat!</H1>
@@ -30,7 +25,7 @@ const MarqueeContainer = styled.div`
   position: relative;
   justify-content: center;
   margin: 0 1.5rem;
-  height: 50vh;
+  height: 53vh;
 `
 const Element = styled.div`
   border-top: 2px solid white;

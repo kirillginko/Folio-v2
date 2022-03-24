@@ -6,6 +6,7 @@ import image1 from "../../images/gradient1.png"
 import image2 from "../../images/gradient2.png"
 import image3 from "../../images/gradient3.png"
 import image4 from "../../images/gradient4.png"
+import MagneticButton from "../Buttons/Buttons"
 import styled, { keyframes } from "styled-components"
 
 const Tech = () => {
@@ -152,6 +153,7 @@ const Tech = () => {
 const TechContainer = styled.div`
   margin: 0rem 1.5rem;
   margin-top: 40rem;
+  margin-bottom: 20rem;
   @media (max-width: 768px) {
     margin-top: 1rem;
   }
@@ -183,6 +185,7 @@ const Title = styled.h1`
   justify-content: left;
   text-align: left;
   @media (max-width: 768px) {
+    font-size: 5.5vw;
   }
 `
 const TitleContainer = styled.div`
@@ -190,8 +193,8 @@ const TitleContainer = styled.div`
   justify-content: space-between;
 `
 const H1 = styled.h1`
-  font-family: Hatton;
-  font-weight: light;
+  font-family: Questrial;
+  font-weight: 500;
   font-size: 8rem;
   padding: 5px;
   text-align: center;
@@ -234,16 +237,16 @@ const Rotate360 = keyframes`
 `
 const Flower = styled.img`
   display: block;
-  top: 1rem;
-  left: 90vw;
+  top: 2.5rem;
+  left: 92vw;
   width: 85px;
   height: 85px;
   animation: ${Rotate360} 10s linear infinite;
   @media (max-width: 768px) {
-    top: 1vw;
-    left: 77vw;
-    width: 60px;
-    height: 60px;
+    top: 0vw;
+    left: 83vw;
+    width: 30px;
+    height: 30px;
   }
 `
 export default Tech

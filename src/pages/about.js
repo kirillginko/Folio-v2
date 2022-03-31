@@ -112,7 +112,8 @@ function About({ location }) {
                 mouseContext.setSize("small")
               }}
             >
-              Hello, my name is Kirill
+              <Header>Hello,</Header>
+              my name is Kirill
             </Name>
             <Desc
               onMouseEnter={() => {
@@ -172,22 +173,31 @@ const ContentWrapper = styled.div`
 
 const Image = styled.div`
   position: relative;
-  top: -5rem;
+  top: -8rem;
   /* left: 25rem; */
-
   /* margin-top: -2rem; */
   @media (max-width: 900px) {
     left: 5%;
+    top: -7rem;
     width: 90%;
   }
 `
+const Header = styled.h2`
+  font-size: 18rem;
+  color: white;
+  text-align: left;
+  @media (max-width: 900px) {
+    font-size: 8.5rem;
+  }
+  /* padding-left: 2rem; */
+`
 const Box = styled.div`
   position: relative;
-  top: -15rem;
+  top: -27rem;
   left: 65rem;
   width: 44rem;
   height: 45rem;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   /* z-index: 100; */
   @media (max-width: 1200px) {
     top: 10rem;
@@ -197,23 +207,25 @@ const Box = styled.div`
 `
 const TextWrapper = styled.div`
   position: relative;
-  left: 15rem;
-  top: 15rem;
+  left: 5rem;
+  top: 10rem;
   width: 60rem;
   z-index: 100;
+  border: 1px solid red;
   @media (max-width: 1200px) {
     top: 10rem;
     left: 5%;
     width: 90%;
-    text-align: center;
   }
 `
 const Name = styled.h2`
   font-size: 6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #fff;
+  text-align: left;
+  text-transform: uppercase;
   @media (max-width: 1200px) {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 `
 
@@ -222,7 +234,7 @@ const Desc = styled.p`
   width: 50rem;
   /* padding: 0rem 2rem; */
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
   @media (max-width: 1200px) {
     width: 90%;
     font-size: 1.5rem;

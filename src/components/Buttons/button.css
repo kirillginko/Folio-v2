@@ -45,4 +45,25 @@
   font-weight: bold;
   margin: 30px auto;
 }
+
+.button-3 {
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px dashed #075ab3;
+  color: #075ab3;
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 30px auto;
+}
 /*# sourceMappingURL=button.css.map */

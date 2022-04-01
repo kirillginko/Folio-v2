@@ -124,7 +124,7 @@ function About({ location }) {
               }}
             >
               My background is in art & design and I strive to bring more
-              intuitivness, usability and a design-driven user experience to
+              intuitivness, usability and a design-driven user-experience to
               every project I take on. I love to work on projects that
               incorporate a strong aesthetic while focusing on accessibility and
               utilizing the latest tech. When I’m not coding I like to explore
@@ -190,7 +190,7 @@ const Box = styled.div`
   left: 67rem;
   width: 40vw;
   height: 45rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* z-index: 100; */
   @media (max-width: 1200px) {
     top: 10rem;

@@ -67,8 +67,8 @@ const Footer = () => {
 const FixedWrapper = styled.div`
   position: relative;
   background-color: #000000;
-  height: 20vh;
-  margin-top: 20rem;
+  /* height: 20vh; */
+  top: 0vh;
 `
 const StyledFooter = styled.div`
   display: flex;

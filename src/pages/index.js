@@ -4,6 +4,7 @@ import Design from "../components/Hero/Hero"
 import Tech from "../components/Tech/Tech"
 import Button from "../components/Buttons/Buttons"
 import Marquees from "../components/Marquee/Marquees"
+import Contact from "../components/ContactMe/Contact"
 // import Skills from "../components/Skills/Skills"
 // import About from "../components/About/About"
 // import Project from "../components/Projects/Project"
@@ -15,8 +16,8 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Design />
       <Tech />
-      <Button />
       <Marquees />
+      <Contact />
       {/* <Recognitions /> */}
     </>
   )

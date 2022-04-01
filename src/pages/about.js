@@ -112,7 +112,7 @@ function About({ location }) {
                 mouseContext.setSize("small")
               }}
             >
-              <Header>Hello,</Header>
+              <Hello>Hello,</Hello>
               my name is Kirill
             </Name>
             <Desc
@@ -123,11 +123,12 @@ function About({ location }) {
                 mouseContext.setSize("small")
               }}
             >
-              I'm a Full-Stack Developer currently based in Montreal. My
-              Interests are in art and design, and I like to create visual
-              exciting user experiences and strong brand-identities. I like to
-              utilize my skills and background in Photography and Graphic Design
-              and bring it to the world wide web.
+              My background is in art & design and I strive to bring more
+              intuitivness, usability and a design-driven user experience to
+              every project I take on. I love to work on projects that
+              incorporate a strong aesthetic while focusing on accessibility and
+              utilizing the latest tech. When I’m not coding I like to explore
+              sound-design and audio-recording.
             </Desc>
           </TextWrapper>
           <Box
@@ -173,29 +174,21 @@ const ContentWrapper = styled.div`
 
 const Image = styled.div`
   position: relative;
-  top: -8rem;
+  top: -7rem;
+  width: 40vw;
   /* left: 25rem; */
   /* margin-top: -2rem; */
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
     left: 5%;
     top: -7rem;
     width: 90%;
   }
 `
-const Header = styled.h2`
-  font-size: 18rem;
-  color: white;
-  text-align: left;
-  @media (max-width: 900px) {
-    font-size: 8.5rem;
-  }
-  /* padding-left: 2rem; */
-`
 const Box = styled.div`
   position: relative;
-  top: -27rem;
-  left: 65rem;
-  width: 44rem;
+  top: -10rem;
+  left: 67rem;
+  width: 40vw;
   height: 45rem;
   border: 1px solid red;
   /* z-index: 100; */
@@ -207,38 +200,50 @@ const Box = styled.div`
 `
 const TextWrapper = styled.div`
   position: relative;
-  left: 5rem;
+  left: 10rem;
   top: 10rem;
   width: 60rem;
   z-index: 100;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   @media (max-width: 1200px) {
     top: 10rem;
     left: 5%;
     width: 90%;
   }
 `
+const Hello = styled.h2`
+  font-size: 20vw;
+  margin-left: -1rem;
+  color: white;
+  @media (max-width: 900px) {
+    padding-bottom: 0.5rem;
+    margin-left: -0.5rem;
+    font-size: 27.5vw;
+  }
+  /* padding-left: 2rem; */
+`
 const Name = styled.h2`
-  font-size: 6rem;
+  font-size: 5.8vw;
   margin-bottom: 1rem;
   color: #fff;
   text-align: left;
   text-transform: uppercase;
   @media (max-width: 1200px) {
-    font-size: 3.2rem;
+    font-size: 10.4vw;
   }
 `
 
 const Desc = styled.p`
   color: #fff;
-  width: 50rem;
+  width: 60rem;
   /* padding: 0rem 2rem; */
-  font-size: 2rem;
+  font-size: 1.5vw;
   text-align: left;
   @media (max-width: 1200px) {
-    width: 90%;
-    font-size: 1.5rem;
-    margin: auto;
+    /* padding-top: 0.5rem; */
+    width: 100%;
+    font-size: 4vw;
+    /* margin: auto; */
   }
 `
 

@@ -5,7 +5,7 @@ const GlobalStyles = createGlobalStyle`
     ${Fonts};
 
     :root{
-        --black: #0f0e0e;
+        --black: rgba(0, 0, 0, 1);
         --burlywood: #f6c9a0;
         --grey: rgb(151, 151, 151);
     }
@@ -21,9 +21,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--grey);
-    min-height: 100vh;
+    height: 100%;
     min-height: -webkit-fill-available;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     font-family: "Questrial", sans-serif;
 }
 h1, h2, h3, h4, h5, p, a{
@@ -48,6 +49,7 @@ html    {
     min-height: -webkit-fill-available;
     }
 canvas {
+    flex: 1;
     width: 100vw;
     height: 100vh;
     display: block;
@@ -60,7 +62,7 @@ a:link {
      display: inline-block;
 }
 .noise {
-     position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

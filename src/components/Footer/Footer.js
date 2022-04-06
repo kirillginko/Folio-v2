@@ -65,25 +65,20 @@ const Footer = () => {
 }
 
 const FixedWrapper = styled.div`
-  position: relative;
-  background-color: #000000;
-  /* height: 20vh; */
-  top: 0vh;
+  top: 0;
+  margin-top: 15rem;
+  background-color: var(--black);
 `
 const StyledFooter = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 2rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   text-transform: uppercase;
 `
 const StyledText = styled.span`
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.7rem;
   user-select: none;
-  @media (max-width: 1000px) {
-    font-size: .8rem;
-  }
-  /* ${media.tablet`font-size: 16px;`}; */
 `
 const ContentWrapper = styled.div`
   display: flex;

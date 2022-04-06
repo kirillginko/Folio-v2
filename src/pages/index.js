@@ -5,19 +5,17 @@ import Tech from "../components/Tech/Tech"
 import Button from "../components/Buttons/Buttons"
 import Marquees from "../components/Marquee/Marquees"
 import Contact from "../components/ContactMe/Contact"
-// import Skills from "../components/Skills/Skills"
-// import About from "../components/About/About"
-// import Project from "../components/Projects/Project"
-// import Grid from "../components/Grid/Grid"
+import Distort from "../components/Distort/Distort"
 
 const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
       <Design />
-      <Tech />
+      <Distort />
+      {/* <Tech />
       <Marquees />
-      <Contact />
+      <Contact /> */}
       {/* <Recognitions /> */}
     </>
   )

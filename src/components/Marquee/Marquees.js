@@ -28,13 +28,13 @@ const MarqueeContainer = styled.div`
   height: 53vh;
 `
 const Element = styled.div`
-  border-top: 2px solid white;
+  border-top: 4px solid white;
 `
 const H1 = styled.h1`
   color: white;
   font-family: Hatton;
   font-weight: Lighter;
-  border-bottom: 2px solid white;
+  border-bottom: 4px solid white;
   font-size: 12rem;
   padding: 2rem;
 `

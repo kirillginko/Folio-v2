@@ -13,6 +13,8 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Design />
       <Distort />
+      <Marquees />
+      <Contact />
       {/* <Tech />
       <Marquees />
       <Contact /> */}

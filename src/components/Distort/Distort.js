@@ -42,13 +42,15 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   height: 60vh;
   width: 100%;
-  margin: 20rem auto;
+  margin: 20rem 6.5rem;
   z-index: 30;
-  @media (max-width: 1200px) {
+  @media (max-width: 1440px) {
     flex-direction: column;
+    margin: 20rem auto;
+    margin-bottom: 30rem;
   }
 `
 const Item = styled.div`
@@ -57,6 +59,10 @@ const Item = styled.div`
   flex-direction: column;
   width: 30rem;
   cursor: pointer;
+  @media (max-width: 1440px) {
+    justify-content: flex-start;
+    width: 28.1rem;
+  }
 `
 const Header = styled.div`
   display: flex;
@@ -98,19 +104,20 @@ const About = styled.div`
   display: flex;
   justify-content: center;
   border: 1px solid red;
-  width: 65vw;
+  width: 55vw;
   text-align: left;
   margin: 1rem 1.5rem;
-  padding-left: 5rem;
-  @media (max-width: 1200px) {
-    width: 95vw;
+  @media (max-width: 1440px) {
+    width: 90vw;
+    text-align: center;
     padding-left: 0rem;
+    margin-top: 5rem;
   }
 `
 const H2 = styled.h2`
-  font-size: calc(8vmax * 9 / 16);
-  @media (max-width: 1200px) {
-    /* font-size: 10vw; */
+  font-size: calc(7vmax * 9 / 16);
+  text-transform: uppercase;
+  @media (max-width: 1440px) {
   }
 `
 

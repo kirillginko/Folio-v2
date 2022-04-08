@@ -22,7 +22,6 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 15rem;
-  margin-bottom: 8rem;
 `
 
 export default Contact

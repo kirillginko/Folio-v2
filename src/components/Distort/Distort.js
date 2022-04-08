@@ -1,12 +1,14 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useContext } from "react"
 // import { StaticImage } from "gatsby-plugin-image"
 import hoverEffect from "hover-effect"
 import image from "../../images/gradient3.png"
 import image2 from "../../images/selfie.jpg"
 import overlay from "../../images/overlay.png"
 import styled from "styled-components"
+import { CursorContext } from "../CustomCursor/CursorManager"
 
 function Distort() {
+  const mouseContext = useContext(CursorContext)
   useEffect(() => {
     new hoverEffect({
       parent: document.querySelector(Image),
@@ -18,7 +20,15 @@ function Distort() {
   }, [])
   return (
     <Container data-scroll-section>
-      <Item data-scroll data-scroll-direction="vertical">
+      <Item
+        data-scroll
+        onMouseEnter={() => {
+          mouseContext.setSize("bigger")
+        }}
+        onMouseLeave={() => {
+          mouseContext.setSize("small")
+        }}
+      >
         <Header>
           <Name>The Developer</Name>
           <Span>01/06</Span>
@@ -28,7 +38,14 @@ function Distort() {
           <BottomSpan>current (image)</BottomSpan>
         </BottomText>
       </Item>
-      <About>
+      <About
+        onMouseEnter={() => {
+          mouseContext.setSize("bigger")
+        }}
+        onMouseLeave={() => {
+          mouseContext.setSize("small")
+        }}
+      >
         <H2>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
           minima molestiae totam vitae nisi, tempora adipisci error eaque natus
@@ -42,10 +59,10 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 60vh;
   width: 100%;
-  margin: 20rem 6.5rem;
+  margin: 20rem 0.5rem;
   z-index: 30;
   @media (max-width: 1440px) {
     flex-direction: column;
@@ -104,7 +121,7 @@ const About = styled.div`
   display: flex;
   justify-content: center;
   border: 1px solid red;
-  width: 55vw;
+  width: 50vw;
   text-align: left;
   margin: 1rem 1.5rem;
   @media (max-width: 1440px) {

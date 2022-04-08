@@ -66,7 +66,7 @@ const Footer = () => {
 
 const FixedWrapper = styled.div`
   top: 0;
-  margin-top: 15rem;
+  margin-top: 10rem;
   background-color: var(--black);
 `
 const StyledFooter = styled.div`

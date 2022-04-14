@@ -26,6 +26,7 @@
 }
 
 .button-2 {
+  font-family: HattonBold;
   height: 250px;
   width: 250px;
   border-radius: 50%;
@@ -38,8 +39,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px dashed #075ab3;
-  color: #075ab3;
+  border: 2px dashed var(--blue);
+  color: var(--blue);
   display: block;
   font-size: 3rem;
   font-weight: bold;
@@ -47,8 +48,9 @@
 }
 
 .button-3 {
-  height: 450px;
-  width: 450px;
+  font-family: Hatton;
+  height: 420px;
+  width: 420px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,11 +61,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px dashed #075ab3;
-  color: #075ab3;
+  border: 2px dashed var(--blue);
+  color: var(--blue);
   display: block;
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 3.5rem;
+  font-weight: 300;
   margin: 30px auto;
 }
+
 /*# sourceMappingURL=button.css.map */

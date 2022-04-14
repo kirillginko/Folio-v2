@@ -22,6 +22,7 @@ function Distort() {
     <Container data-scroll-section>
       <Item
         data-scroll
+        data-scroll-speed="3.8"
         onMouseEnter={() => {
           mouseContext.setSize("bigger")
         }}
@@ -46,7 +47,7 @@ function Distort() {
           mouseContext.setSize("small")
         }}
       >
-        <H2>
+        <H2 data-scroll data-scroll-speed="1.2">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
           minima molestiae totam vitae nisi, tempora adipisci error eaque natus
           voluptatem!
@@ -62,7 +63,7 @@ const Container = styled.div`
   justify-content: space-around;
   height: 60vh;
   width: 100%;
-  margin: 20rem 0.5rem;
+  margin: 20rem 2.5rem;
   z-index: 30;
   @media (max-width: 1440px) {
     flex-direction: column;
@@ -83,7 +84,7 @@ const Item = styled.div`
 `
 const Header = styled.div`
   display: flex;
-  color: antiquewhite;
+  color: var(--white);
   align-items: center;
   justify-content: space-between;
   padding-bottom: 0.5vh;
@@ -112,11 +113,11 @@ const Image = styled.div`
 const BottomText = styled.div`
   display: flex;
   align-items: center;
-  border-top: 1px dashed antiquewhite;
+  border-top: 1px dashed var(--white);
   padding-top: 5px;
 `
 const BottomSpan = styled.span`
-  color: antiquewhite;
+  color: var(--white);
   font-size: 1vh;
   font-weight: bold;
   text-transform: uppercase;
@@ -124,7 +125,7 @@ const BottomSpan = styled.span`
 const About = styled.div`
   display: flex;
   justify-content: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 50vw;
   text-align: left;
   margin: 1rem 1.5rem;
@@ -136,7 +137,7 @@ const About = styled.div`
   }
 `
 const H2 = styled.h2`
-  font-size: calc(7vmax * 9 / 16);
+  font-size: calc(6.8vmax * 9 / 16);
   text-transform: uppercase;
   @media (max-width: 1440px) {
   }

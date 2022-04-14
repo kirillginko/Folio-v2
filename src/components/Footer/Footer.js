@@ -1,9 +1,11 @@
-import React from "react"
+import React, { useContext } from "react"
 import { Link } from "gatsby"
 import { media } from "../../styles/media"
 import styled from "styled-components"
+import { CursorContext } from "../CustomCursor/CursorManager"
 
 const Footer = () => {
+  const mouseContext = useContext(CursorContext)
   const d = new Date()
   const y = d.getFullYear()
 
@@ -19,7 +21,14 @@ const Footer = () => {
     <>
       <FixedWrapper data-scroll-section>
         <ContentWrapper>
-          <Content>
+          <Content
+            onMouseEnter={() => {
+              mouseContext.setSize("big")
+            }}
+            onMouseLeave={() => {
+              mouseContext.setSize("small")
+            }}
+          >
             <H1>Contact</H1>
             <StyledLink
               href="mailto:kirillginko@gmail.com?subject=Lets Make Something Cool!&body=Hi Kirill,"
@@ -31,7 +40,14 @@ const Footer = () => {
             </StyledLink>
             <H2>Phone: +301-512-4249</H2>
           </Content>
-          <Content>
+          <Content
+            onMouseEnter={() => {
+              mouseContext.setSize("big")
+            }}
+            onMouseLeave={() => {
+              mouseContext.setSize("small")
+            }}
+          >
             <H1>Socials</H1>
             <StyledLink
               to="https://www.instagram.com/co_existenz/"
@@ -44,7 +60,14 @@ const Footer = () => {
             </StyledLink>
             <H2>Behence</H2>
           </Content>
-          <Content>
+          <Content
+            onMouseEnter={() => {
+              mouseContext.setSize("big")
+            }}
+            onMouseLeave={() => {
+              mouseContext.setSize("small")
+            }}
+          >
             <H1>Pages</H1>
             <StyledLink to="/">Home</StyledLink>
             <StyledLink to="/projects">Work</StyledLink>
@@ -76,7 +99,7 @@ const StyledFooter = styled.div`
   text-transform: uppercase;
 `
 const StyledText = styled.span`
-  color: #fff;
+  color: var(--white);
   font-size: 0.7rem;
   user-select: none;
 `
@@ -100,7 +123,7 @@ const Content = styled.div`
 `
 const H1 = styled.h2`
   font-size: 0.9rem;
-  color: #fff;
+  color: var(--white);
   padding-bottom: 0.5rem;
 `
 const StyledLink = styled(Link)`
@@ -108,19 +131,19 @@ const StyledLink = styled(Link)`
   font-size: 0.8rem;
   padding-bottom: 0.5rem;
   font-weight: 100;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   &:hover {
-    color: #1937df;
+    color: var(--blue);
   }
 `
 const H2 = styled.h2`
   font-size: 0.8rem;
   padding-bottom: 0.5rem;
   font-weight: 100;
-  color: #fff;
+  color: var(--white);
 `
 
 export default Footer

@@ -1,11 +1,21 @@
-import React from "react"
+import React, { useContext } from "react"
 import Marquee from "react-fast-marquee"
 import styled from "styled-components"
+import { CursorContext } from "../CustomCursor/CursorManager"
 
 function Marquees() {
+  const mouseContext = useContext(CursorContext)
   return (
     <>
-      <MarqueeContainer data-scroll-section>
+      <MarqueeContainer
+        data-scroll-section
+        onMouseEnter={() => {
+          mouseContext.setSize("big")
+        }}
+        onMouseLeave={() => {
+          mouseContext.setSize("small")
+        }}
+      >
         <Element />
         <Marquee speed={120} gradient={false}>
           <H1>Lets Chat!</H1>
@@ -26,6 +36,7 @@ const MarqueeContainer = styled.div`
   justify-content: center;
   margin: 0 1.5rem;
   height: 53vh;
+  cursor: none;
 `
 const Element = styled.div`
   border-top: 4px solid white;

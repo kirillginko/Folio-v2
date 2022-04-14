@@ -8,6 +8,8 @@ const GlobalStyles = createGlobalStyle`
         --black: rgba(0, 0, 0, 1);
         --burlywood: #f6c9a0;
         --grey: rgb(151, 151, 151);
+        --white #fff;
+        --blue #1937df;
     }
 
 *   {

@@ -68,7 +68,7 @@ const Container = styled.div`
   @media (max-width: 1440px) {
     flex-direction: column;
     margin: 20rem auto;
-    margin-bottom: 30rem;
+    margin-bottom: 20rem;
   }
 `
 const Item = styled.div`

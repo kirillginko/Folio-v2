@@ -7,6 +7,7 @@ import glsl from "babel-plugin-glsl/macro"
 import { motion, AnimatePresence } from "framer-motion"
 import styled from "styled-components"
 import selfie from "../images/selfie.jpg"
+import gradient3 from "../images/gradient3.png"
 
 const WaveShaderMaterial = shaderMaterial(
   // Uniform
@@ -140,7 +141,7 @@ function About({ location }) {
             }}
           >
             <Image>
-              <Scene texture={selfie} size={[0.8, 0.8, 16, 16]} />
+              <Scene texture={gradient3} size={[0.8, 0.8, 16, 16]} />
             </Image>
           </Box>
         </ContentWrapper>
@@ -179,9 +180,8 @@ const Image = styled.div`
   /* left: 25rem; */
   /* margin-top: -2rem; */
   @media (max-width: 1200px) {
-    left: 5%;
-    top: -7rem;
-    width: 90%;
+    left: 0%;
+    width: 100%;
   }
 `
 const Box = styled.div`

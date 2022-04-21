@@ -152,7 +152,6 @@ const Tech = () => {
 
 const TechContainer = styled.div`
   margin: 0rem 1.5rem;
-  margin-top: 40rem;
   margin-bottom: 20rem;
   @media (max-width: 768px) {
     margin-top: 1rem;
@@ -181,11 +180,11 @@ const Item1 = styled.div`
 
 const Title = styled.h1`
   font-family: PangramLight;
-  font-size: 6vw;
+  font-size: calc(11vmax * 9 / 16);
   justify-content: left;
   text-align: left;
   @media (max-width: 768px) {
-    font-size: 5.5vw;
+    font-size: calc(5.5vmax * 9 / 16);
   }
 `
 const TitleContainer = styled.div`
@@ -244,7 +243,7 @@ const Flower = styled.img`
   animation: ${Rotate360} 10s linear infinite;
   @media (max-width: 768px) {
     top: 0vw;
-    left: 83vw;
+    left: 84vw;
     width: 30px;
     height: 30px;
   }

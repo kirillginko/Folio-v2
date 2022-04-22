@@ -4,6 +4,7 @@ import Design from "../components/Hero/Hero"
 import Marquees from "../components/Marquee/Marquees"
 import Contact from "../components/ContactMe/Contact"
 import Distort from "../components/Distort/Distort"
+import Skills from "../components/Skills/Skills"
 
 const IndexPage = () => {
   return (
@@ -11,6 +12,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Design />
       <Distort />
+      <Skills />
       <Marquees />
       <Contact />
     </>

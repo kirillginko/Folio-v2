@@ -1,116 +1,62 @@
-import React, { useEffect } from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCertificate } from "@fortawesome/free-solid-svg-icons"
-import "../Skills/skills.css"
+import React from "react"
+import styled from "styled-components"
 
 function Skills() {
-  useEffect(() => {}, [])
   return (
-    <div className="content-page" data-scroll-section>
-      <div
-        data-scroll
-        data-scroll-direction="vertical"
-        data-scroll-target="#direction"
-        data-scroll-speed="-2"
-        data-scroll-delay=".05"
-      >
-        <FontAwesomeIcon icon={faCertificate} className="svg" />
-      </div>
-      <div
-        className="list-interests"
-        data-scroll
-        // data-scroll-direction="vertical"
-        // data-scroll-target="#direction"
-        // data-scroll-speed="2"
-        // data-scroll-delay=".05"
-      ></div>
-      <div className="list-main">
-        <ul className="list-main__skills">
-          <li
-            className="list-main__item blur-effect item-0"
-            data-scroll
-            data-scroll-delay="1"
-            data-scroll-speed=".05"
-            data-scroll-call="item-0"
-          >
-            Skills:
-          </li>
-          <li
-            className="list-main__item blur-effect item-1"
-            data-scroll
-            data-scroll-delay="0.8"
-            data-scroll-speed=".05"
-            data-scroll-call="item-1"
-          >
-            React
-          </li>
-          <li
-            className="list-main__item blur-effect item-2"
-            data-scroll
-            data-scroll-delay="0.6"
-            data-scroll-speed=".05"
-            data-scroll-call="item-2"
-          >
-            Node.js
-          </li>
-          <li
-            className="list-main__item blur-effect item-3"
-            data-scroll
-            data-scroll-delay="0.4"
-            data-scroll-speed=".05"
-            data-scroll-call="item-3"
-          >
-            HTML/CSS
-          </li>
-          <li
-            className="list-main__item blur-effect item-4"
-            data-scroll
-            data-scroll-delay="0.2"
-            data-scroll-speed=".05"
-            data-scroll-call="item-4"
-          >
-            Javascript
-          </li>
-          <li
-            className="list-main__item blur-effect item-5"
-            data-scroll
-            data-scroll-delay="0.10"
-            data-scroll-speed=".05"
-            data-scroll-call="item-5"
-          >
-            Three.js
-          </li>
-          <li
-            className="list-main__item blur-effect item-6"
-            data-scroll
-            data-scroll-delay="0.06"
-            data-scroll-speed=".05"
-            data-scroll-call="item-6"
-          >
-            Photoshop
-          </li>
-          <li
-            className="list-main__item blur-effect item-7"
-            data-scroll
-            data-scroll-delay="0.04"
-            data-scroll-speed=".05"
-            data-scroll-call="item-7"
-          >
-            Figma
-          </li>
-          <li
-            className="list-main__item blur-effect item-8"
-            data-scroll
-            data-scroll-delay="0.02"
-            data-scroll-speed=".05"
-            data-scroll-call="item-8"
-          >
-            Express
-          </li>
-        </ul>
-      </div>
-    </div>
+    <Container data-scroll-section>
+      <SkillItem>
+        <A>1</A>React
+      </SkillItem>
+      <SkillItem>
+        <A>2</A>Gatsby
+      </SkillItem>
+      <SkillItem>
+        <A>3</A>Threejs
+      </SkillItem>
+      <SkillItem>
+        <A>4</A>WebGL
+      </SkillItem>
+      <SkillItem>
+        <A>5</A>NextJs
+      </SkillItem>
+      <SkillItem>
+        <A>6</A>Express
+      </SkillItem>
+      <SkillItem>
+        <A>6</A>JavaScript
+      </SkillItem>
+      <SkillItem>
+        <A>7</A>Nodejs
+      </SkillItem>
+      <SkillItem>
+        <A>8</A>CSS
+      </SkillItem>
+      <SkillItem>
+        <A>9</A>HTML
+      </SkillItem>
+    </Container>
   )
 }
+
+const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  border: 1px solid red;
+  max-width: 100%;
+  margin: 10rem 1.5rem;
+`
+const SkillItem = styled.h1`
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  font-size: 5vw;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+`
+const A = styled.a`
+  font-size: 2vw;
+  padding-right: 0.5rem;
+`
 
 export default Skills

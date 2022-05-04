@@ -75,9 +75,9 @@ const Item = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 35rem;
+  width: 40rem;
   cursor: pointer;
-  @media (max-width: 1440px) {
+  @media (max-width: 900px) {
     justify-content: flex-start;
     width: 28.1rem;
   }
@@ -102,11 +102,11 @@ const Span = styled.span`
   text-transform: uppercase;
 `
 const Image = styled.div`
-  height: 35rem;
+  height: 40rem;
   background-color: gray;
   margin: 10px 0px;
   cursor: none;
-  @media (max-width: 1440px) {
+  @media (max-width: 900px) {
     height: 25rem;
   }
 `

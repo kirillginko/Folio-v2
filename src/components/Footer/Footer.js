@@ -1,8 +1,10 @@
 import React, { useContext } from "react"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import { media } from "../../styles/media"
 import styled from "styled-components"
 import { CursorContext } from "../CustomCursor/CursorManager"
+import globe from "../../svg/globe-solid.svg"
 
 const Footer = () => {
   const mouseContext = useContext(CursorContext)
@@ -21,15 +23,8 @@ const Footer = () => {
     <>
       <FixedWrapper data-scroll-section>
         <ContentWrapper>
-          <Content
-            onMouseEnter={() => {
-              mouseContext.setSize("big")
-            }}
-            onMouseLeave={() => {
-              mouseContext.setSize("small")
-            }}
-          >
-            <H1>Contact</H1>
+          <Content style={{ width: "15rem" }}>
+            <Title style={{ textAlign: "left" }}>Contacts</Title>
             <StyledLink
               href="mailto:kirillginko@gmail.com?subject=Lets Make Something Cool!&body=Hi Kirill,"
               target="_blank"
@@ -40,15 +35,8 @@ const Footer = () => {
             </StyledLink>
             <H2>Phone: +301-512-4249</H2>
           </Content>
-          <Content
-            onMouseEnter={() => {
-              mouseContext.setSize("big")
-            }}
-            onMouseLeave={() => {
-              mouseContext.setSize("small")
-            }}
-          >
-            <H1>Socials</H1>
+          <Content>
+            <Title>Socials</Title>
             <StyledLink
               to="https://www.instagram.com/co_existenz/"
               target="_blank"
@@ -58,29 +46,23 @@ const Footer = () => {
             <StyledLink to="https://www.github.com/kirillginko" target="_blank">
               Github
             </StyledLink>
-            <H2>Behence</H2>
+            <StyledLink
+              to="https://www.linkedin.com/in/kirill-ginko-a613433a/"
+              target="_blank"
+            >
+              LinkdIn
+            </StyledLink>
           </Content>
-          <Content
-            onMouseEnter={() => {
-              mouseContext.setSize("big")
-            }}
-            onMouseLeave={() => {
-              mouseContext.setSize("small")
-            }}
-          >
-            <H1>Pages</H1>
+          <Content>
+            <Title style={{ textAlign: "right" }}>Links</Title>
             <StyledLink to="/">Home</StyledLink>
             <StyledLink to="/projects">Work</StyledLink>
             <StyledLink to="/about">About</StyledLink>
           </Content>
         </ContentWrapper>
         <StyledFooter>
-          <small>
-            <StyledText>&copy; {y}</StyledText>
-          </small>
-          <small>
-            <StyledText>45.5017° N, 73.5673° W</StyledText>
-          </small>
+          <StyledText>&copy; {y}</StyledText>
+          <StyledText>45.5017° N, 73.5673° W</StyledText>
         </StyledFooter>
       </FixedWrapper>
     </>
@@ -88,9 +70,74 @@ const Footer = () => {
 }
 
 const FixedWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   top: 0;
   margin-top: 10rem;
   background-color: var(--black);
+`
+const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 12rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0rem 1.5rem;
+`
+const Content = styled.div`
+  height: 9rem;
+  width: 12rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 1rem;
+  &:nth-child(1) {
+    text-align: left;
+  }
+  &:nth-child(3) {
+    text-align: right;
+  }
+`
+const StyledLink = styled(Link)`
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: var(--blue);
+  }
+`
+const Title = styled.h2`
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: var(--white);
+  padding-bottom: 0.5rem;
+`
+const H2 = styled.h2`
+  font-size: 0.8rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color: var(--blue);
+  }
+`
+const Globe = styled.img`
+  display: relative;
+  justify-content: flex;
+  align-items: flex-end;
+  background-color: red;
+  height: 1rem;
+  width: 1rem;
 `
 const StyledFooter = styled.div`
   display: flex;
@@ -99,51 +146,10 @@ const StyledFooter = styled.div`
   text-transform: uppercase;
 `
 const StyledText = styled.span`
+  display: absolute;
   color: var(--white);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   user-select: none;
-`
-const ContentWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin: 0rem 1.5rem;
-  @media (max-width: 500px) {
-    display: grid;
-    justify-content: space-between;
-    align-content: center;
-    grid-template-columns: repeat(3, 12.8rem);
-  }
-`
-
-const Content = styled.div`
-  display: inline-block;
-  justify-content: center;
-  /* margin: 0 1.5rem; */
-  padding-top: 1rem;
-`
-const H1 = styled.h2`
-  font-size: 0.9rem;
-  color: var(--white);
-  padding-bottom: 0.5rem;
-`
-const StyledLink = styled(Link)`
-  display: block;
-  font-size: 0.8rem;
-  padding-bottom: 0.5rem;
-  font-weight: 100;
-  color: var(--white);
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  &:hover {
-    color: var(--blue);
-  }
-`
-const H2 = styled.h2`
-  font-size: 0.8rem;
-  padding-bottom: 0.5rem;
-  font-weight: 100;
-  color: var(--white);
 `
 
 export default Footer

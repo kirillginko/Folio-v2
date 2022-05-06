@@ -5,6 +5,7 @@ import "./style.css"
 // TODO: Hide if cursor not moved
 const CustomCursor = () => {
   const { size } = useContext(CursorContext)
+  const firstCursor = React.useRef(null)
   const secondaryCursor = React.useRef(null)
   const positionRef = React.useRef({
     mouseX: 0,
@@ -15,6 +16,21 @@ const CustomCursor = () => {
     distanceY: 0,
     key: -1,
   })
+
+  React.useEffect(() => {
+    document.addEventListener("mousemove", event => {
+      const { clientX, clientY } = event
+
+      const mouseX = clientX
+      const mouseY = clientY
+
+      firstCursor.current.style.transform = `translate3d(${
+        mouseX - firstCursor.current.clientWidth / 2
+      }px, ${mouseY - firstCursor.current.clientHeight / 2}px, 0)`
+    })
+
+    return () => {}
+  }, [])
 
   React.useEffect(() => {
     document.addEventListener("mousemove", event => {
@@ -67,6 +83,7 @@ const CustomCursor = () => {
   }, [])
   return (
     <div className="cursor-wrapper">
+      <div className={`first-cursor ${size}`} ref={firstCursor}></div>
       <div className={`secondary-cursor ${size}`} ref={secondaryCursor}></div>
     </div>
   )

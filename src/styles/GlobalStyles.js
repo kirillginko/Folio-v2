@@ -28,6 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Questrial", sans-serif;
+    cursor: none;
 }
 h1, h2, h3, h4, h5, p, a{
     color: var(--black);

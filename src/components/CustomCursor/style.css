@@ -1,3 +1,15 @@
+.first-cursor {
+  z-index: 1000;
+  border-radius: 50%;
+  pointer-events: none;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+
+  background: #ffffff;
+  opacity: 1;
+  transition: width 0.25s ease-in-out, height 0.25s ease-in-out;
+}
 .secondary-cursor {
   z-index: 1000;
   border-radius: 50%;
@@ -36,4 +48,8 @@
   height: 0px;
   -webkit-transform-origin: center;
           transform-origin: center;
+}
+.first-cursor.small {
+  width: 10px;
+  height: 10px;
 }

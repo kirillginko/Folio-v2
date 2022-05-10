@@ -103,7 +103,7 @@
 
 .nav-list__item,
 .text-description {
-  cursor: ew-resize;
+  /* cursor: ew-resize; */
 }
 
 .list-main {

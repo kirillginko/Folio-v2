@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import Helmet from "react-helmet"
 import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 import Scroll from "./Locomotive/locomotiveScroll"
@@ -31,6 +32,9 @@ const Layout = ({ children, location }) => {
   return (
     <>
       <canvas id="canvas" className="noise"></canvas>
+      <Helmet>
+        <script src="https://unpkg.com/blotterjs-fork@0.1.0/build/blotter.min.js"></script>
+      </Helmet>
       <GlobalStyles />
       {loading ? (
         <div>

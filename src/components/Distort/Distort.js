@@ -6,6 +6,7 @@ import image2 from "../../images/selfie.jpg"
 import overlay from "../../images/overlay.png"
 import styled from "styled-components"
 import { CursorContext } from "../CustomCursor/CursorManager"
+import { LiquidDistortion } from "../Blotter/liquidDistortion"
 
 function Distort() {
   const mouseContext = useContext(CursorContext)
@@ -19,49 +20,66 @@ function Distort() {
     })
   }, [])
   return (
-    <Container data-scroll-section>
-      <Item
-        data-scroll
-        data-scroll-speed="3.8"
-        onMouseEnter={() => {
-          mouseContext.setSize("bigger")
-        }}
-        onMouseLeave={() => {
-          mouseContext.setSize("small")
-        }}
-      >
-        <Header>
-          <Name>The Developer</Name>
-          <Span>01/06</Span>
-        </Header>
-        <Image></Image>
-        <BottomText>
-          <BottomSpan>current (image)</BottomSpan>
-        </BottomText>
-      </Item>
-      <About
-        onMouseEnter={() => {
-          mouseContext.setSize("bigger")
-        }}
-        onMouseLeave={() => {
-          mouseContext.setSize("small")
-        }}
-      >
-        <H2 data-scroll data-scroll-speed="1.2">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-          minima molestiae totam vitae nisi, tempora adipisci error eaque natus
-          voluptatem!
-        </H2>
-      </About>
-    </Container>
+    <>
+      <AboutContainer data-scroll-section>
+        <Title data-scroll data-scroll-speed="2.0">
+          <LiquidDistortion text={"ABOUT"} />
+          <Line />
+        </Title>
+        <MainContainer>
+          <Item
+            data-scroll
+            data-scroll-speed="3.8"
+            onMouseEnter={() => {
+              mouseContext.setSize("bigger")
+            }}
+            onMouseLeave={() => {
+              mouseContext.setSize("small")
+            }}
+          >
+            <Header>
+              <Name>The Developer</Name>
+              <Span>01/06</Span>
+            </Header>
+            <Image></Image>
+            <BottomText>
+              <BottomSpan>current (image)</BottomSpan>
+            </BottomText>
+          </Item>
+          <About
+            onMouseEnter={() => {
+              mouseContext.setSize("bigger")
+            }}
+            onMouseLeave={() => {
+              mouseContext.setSize("small")
+            }}
+          >
+            <H2 data-scroll data-scroll-speed="1.8">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
+              minima molestiae totam vitae nisi, tempora adipisci error eaque
+              natus voluptatem!
+            </H2>
+          </About>
+        </MainContainer>
+      </AboutContainer>
+    </>
   )
 }
-const Container = styled.div`
+const AboutContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  border: 1px solid blue;
+  margin: 10rem 2.5rem;
+`
+
+const MainContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
-  height: 60vh;
+  height: min-content;
   width: 100%;
   margin: 20rem 2.5rem;
   z-index: 30;
@@ -70,6 +88,29 @@ const Container = styled.div`
     margin: 20rem auto;
     margin-bottom: 20rem;
   }
+`
+const Title = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 0vh;
+  width: auto;
+  top: 12rem;
+  border: 1px solid red;
+  margin: 0rem 2.5rem;
+  @media (max-width: 1440px) {
+    top: 10rem;
+  }
+`
+const Line = styled.div`
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  border: 3px solid black;
+  height: 0px;
+  width: 22rem;
 `
 const Item = styled.div`
   display: flex;

@@ -2,7 +2,6 @@ import React, { useContext } from "react"
 import { CursorContext } from "./CursorManager"
 import "./style.css"
 
-// TODO: Hide if cursor not moved
 const CustomCursor = () => {
   const { size } = useContext(CursorContext)
   const firstCursor = React.useRef(null)

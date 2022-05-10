@@ -48,8 +48,8 @@ const NavContainer = styled.div`
   margin: 1.5rem;
   font-size: 0.8rem;
   text-transform: uppercase;
-  cursor: pointer;
   color: #fff;
+  cursor: none;
 `
 const HeadLink = styled(Link)`
   font-size: 0.8rem;

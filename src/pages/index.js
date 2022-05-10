@@ -13,8 +13,8 @@ const IndexPage = () => {
       <Design />
       <Distort />
       <Skills />
-      <Marquees />
-      <Contact />
+      {/* <Marquees />
+      <Contact /> */}
     </>
   )
 }

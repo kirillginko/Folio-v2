@@ -1,23 +1,10 @@
-import React, { useContext } from "react"
+import React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import { media } from "../../styles/media"
 import styled from "styled-components"
-import { CursorContext } from "../CustomCursor/CursorManager"
-import globe from "../../svg/globe-solid.svg"
 
 const Footer = () => {
-  const mouseContext = useContext(CursorContext)
   const d = new Date()
   const y = d.getFullYear()
-
-  const scrollToTop = () => {
-    const rootElement = document.documentElement
-    rootElement.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    })
-  }
 
   return (
     <>
@@ -72,8 +59,8 @@ const Footer = () => {
 const FixedWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100%;
   top: 0;
-  margin-top: 10rem;
   background-color: var(--black);
 `
 const ContentWrapper = styled.div`
@@ -106,7 +93,6 @@ const StyledLink = styled(Link)`
   margin-bottom: 0.5rem;
   color: var(--white);
   text-decoration: none;
-  cursor: pointer;
   transition: all 0.3s ease-in-out;
   &:hover {
     color: var(--blue);
@@ -126,7 +112,6 @@ const H2 = styled.h2`
   text-transform: uppercase;
   color: var(--white);
   transition: all 0.3s ease-in-out;
-  cursor: pointer;
   &:hover {
     color: var(--blue);
   }

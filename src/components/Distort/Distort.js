@@ -23,7 +23,7 @@ function Distort() {
     <>
       <AboutContainer data-scroll-section>
         <Title data-scroll data-scroll-speed="2.0">
-          <LiquidDistortion text={"ABOUT"} />
+          <H2>ABOUT</H2>
           <Line />
         </Title>
         <MainContainer>
@@ -71,7 +71,7 @@ const AboutContainer = styled.div`
   justify-content: space-between;
   height: 100vh;
   border: 1px solid blue;
-  margin: 10rem 2.5rem;
+  margin: 30rem 1.5rem;
 `
 
 const MainContainer = styled.div`
@@ -79,14 +79,13 @@ const MainContainer = styled.div`
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
-  height: min-content;
   width: 100%;
   margin: 20rem 2.5rem;
   z-index: 30;
   @media (max-width: 1440px) {
     flex-direction: column;
     margin: 20rem auto;
-    margin-bottom: 20rem;
+    margin-bottom: 30rem;
   }
 `
 const Title = styled.div`
@@ -108,15 +107,18 @@ const Line = styled.div`
   position: relative;
   text-align: center;
   justify-content: center;
-  border: 3px solid black;
+  border: 2px solid black;
   height: 0px;
-  width: 22rem;
+  width: calc(25vmax * 9 / 16);
+  @media (max-width: 1440px) {
+    width: calc(30vmax * 9 / 16);
+  }
 `
 const Item = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 40rem;
+  width: 35rem;
   cursor: pointer;
   @media (max-width: 900px) {
     justify-content: flex-start;
@@ -143,7 +145,8 @@ const Span = styled.span`
   text-transform: uppercase;
 `
 const Image = styled.div`
-  height: 40rem;
+  position: relative;
+  height: 35rem;
   background-color: gray;
   margin: 10px 0px;
   cursor: none;
@@ -174,13 +177,14 @@ const About = styled.div`
     width: 90vw;
     text-align: center;
     padding-left: 0rem;
-    margin-top: 5rem;
+    margin-top: 0rem;
   }
 `
 const H2 = styled.h2`
-  font-size: calc(6.8vmax * 9 / 16);
+  font-size: calc(7.1vmax * 9 / 16);
   text-transform: uppercase;
   @media (max-width: 1440px) {
+    font-size: calc(9vmax * 9 / 16);
   }
 `
 

@@ -41,6 +41,10 @@ const MarqueeContainer = styled.div`
   margin-bottom: 10rem;
   height: 100vh;
   cursor: none;
+  @media (max-width: 1440px) {
+    margin-top: 40rem;
+    margin-bottom: 0rem;
+  }
 `
 const Element = styled.div`
   border-top: 2px solid blue;
@@ -48,7 +52,7 @@ const Element = styled.div`
 const H1 = styled.h1`
   color: blue;
   font-family: Hatton;
-  font-weight: Lighter;
+  font-weight: lighter;
   font-style: italic;
   border-bottom: 2px solid blue;
   font-size: 15rem;

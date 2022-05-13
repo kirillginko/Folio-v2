@@ -143,7 +143,7 @@ const H2 = styled.h2`
   font-size: calc(7.1vmax * 9 / 16);
   text-transform: uppercase;
   @media (max-width: 1440px) {
-    font-size: calc(15vmax * 9 / 16);
+    font-size: calc(12vmax * 9 / 16);
   }
 `
 const A = styled.a`

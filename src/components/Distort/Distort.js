@@ -119,7 +119,7 @@ const Item = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 35rem;
+  width: 38rem;
   cursor: pointer;
   @media (max-width: 900px) {
     justify-content: flex-start;
@@ -147,7 +147,7 @@ const Span = styled.span`
 `
 const Image = styled.div`
   position: relative;
-  height: 35rem;
+  height: 38rem;
   background-color: gray;
   margin: 10px 0px;
   cursor: none;
@@ -184,14 +184,14 @@ const H1 = styled.h2`
   font-size: calc(7.1vmax * 9 / 16);
   text-transform: uppercase;
   @media (max-width: 1440px) {
-    font-size: calc(10vmax * 9 / 16);
+    font-size: calc(7vmax * 9 / 16);
   }
 `
 const H2 = styled.h2`
   font-size: calc(7.1vmax * 9 / 16);
   text-transform: uppercase;
   @media (max-width: 1440px) {
-    font-size: calc(15vmax * 9 / 16);
+    font-size: calc(12vmax * 9 / 16);
   }
 `
 

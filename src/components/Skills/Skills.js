@@ -63,15 +63,22 @@ function Skills() {
 }
 
 const Container = styled.div`
+  display: inline-block;
+  flex-direction: column;
   margin: 20rem 1.5rem;
-  max-width: 100%;
+  margin-top: 0rem;
+  max-width: 100vw;
   height: 100vh;
+  top: 0;
   border: 1px solid red;
+  @media (max-width: 1440px) {
+    margin: 20rem 1.5rem;
+  }
 `
 const SkillsList = styled.div`
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  position: relative;
   justify-content: flex-start;
 `
 const SkillItem = styled.h1`
@@ -94,8 +101,7 @@ const SkillItem = styled.h1`
 const Title = styled.div`
   display: flex;
   justify-content: flex-start;
-  margin-top: 10rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   fontweight: 600;
 `
 const AboutTitle = styled.div`
@@ -106,9 +112,8 @@ const AboutTitle = styled.div`
   height: 0vh;
   width: auto;
   border: 1px solid red;
-  margin: 12rem 2.5rem;
+  margin: 10rem 2.5rem;
   @media (max-width: 1440px) {
-    top: 10rem;
   }
 `
 const Line = styled.div`
@@ -119,7 +124,7 @@ const Line = styled.div`
   height: 0px;
   width: calc(24vmax * 9 / 16);
   @media (max-width: 1440px) {
-    width: calc(30vmax * 9 / 16);
+    width: calc(38vmax * 9 / 16);
   }
 `
 const H1 = styled.h1`
@@ -138,7 +143,7 @@ const H2 = styled.h2`
   font-size: calc(7.1vmax * 9 / 16);
   text-transform: uppercase;
   @media (max-width: 1440px) {
-    font-size: calc(9vmax * 9 / 16);
+    font-size: calc(15vmax * 9 / 16);
   }
 `
 const A = styled.a`

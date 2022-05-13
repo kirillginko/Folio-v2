@@ -54,11 +54,11 @@ function Distort() {
               mouseContext.setSize("small")
             }}
           >
-            <H2 data-scroll data-scroll-speed="1.8">
+            <H1 data-scroll data-scroll-speed="1.8">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
               minima molestiae totam vitae nisi, tempora adipisci error eaque
               natus voluptatem!
-            </H2>
+            </H1>
           </About>
         </MainContainer>
       </AboutContainer>
@@ -71,7 +71,8 @@ const AboutContainer = styled.div`
   justify-content: space-between;
   height: 100vh;
   border: 1px solid blue;
-  margin: 30rem 1.5rem;
+  margin: 10rem 1.5rem;
+  margin-bottom: 20rem;
 `
 
 const MainContainer = styled.div`
@@ -96,11 +97,11 @@ const Title = styled.div`
   flex-direction: column;
   height: 0vh;
   width: auto;
-  top: 12rem;
+  top: 13rem;
   border: 1px solid red;
   margin: 0rem 2.5rem;
   @media (max-width: 1440px) {
-    top: 10rem;
+    top: 13rem;
   }
 `
 const Line = styled.div`
@@ -111,7 +112,7 @@ const Line = styled.div`
   height: 0px;
   width: calc(25vmax * 9 / 16);
   @media (max-width: 1440px) {
-    width: calc(30vmax * 9 / 16);
+    width: calc(40vmax * 9 / 16);
   }
 `
 const Item = styled.div`
@@ -169,22 +170,28 @@ const BottomSpan = styled.span`
 const About = styled.div`
   display: flex;
   justify-content: center;
-  /* border: 1px solid red; */
   width: 50vw;
   text-align: left;
-  margin: 1rem 1.5rem;
+  margin: 0rem 1.5rem;
   @media (max-width: 1440px) {
-    width: 90vw;
+    margin: 0rem 1.5rem;
+    width: 95vw;
     text-align: center;
     padding-left: 0rem;
-    margin-top: 0rem;
+  }
+`
+const H1 = styled.h2`
+  font-size: calc(7.1vmax * 9 / 16);
+  text-transform: uppercase;
+  @media (max-width: 1440px) {
+    font-size: calc(10vmax * 9 / 16);
   }
 `
 const H2 = styled.h2`
   font-size: calc(7.1vmax * 9 / 16);
   text-transform: uppercase;
   @media (max-width: 1440px) {
-    font-size: calc(9vmax * 9 / 16);
+    font-size: calc(15vmax * 9 / 16);
   }
 `
 

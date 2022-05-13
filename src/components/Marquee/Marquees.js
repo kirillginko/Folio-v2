@@ -37,19 +37,21 @@ function Marquees() {
 const MarqueeContainer = styled.div`
   position: relative;
   justify-content: center;
-  margin: 0 1.5rem;
-  height: 53vh;
+  margin: 10rem 1.5rem;
+  margin-bottom: 10rem;
+  height: 100vh;
   cursor: none;
 `
 const Element = styled.div`
-  border-top: 4px solid white;
+  border-top: 2px solid blue;
 `
 const H1 = styled.h1`
-  color: white;
+  color: blue;
   font-family: Hatton;
   font-weight: Lighter;
-  border-bottom: 4px solid white;
-  font-size: 12rem;
+  font-style: italic;
+  border-bottom: 2px solid blue;
+  font-size: 15rem;
   padding: 2rem;
 `
 

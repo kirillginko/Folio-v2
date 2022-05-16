@@ -47,10 +47,12 @@ const Footer = () => {
             <StyledLink to="/about">About</StyledLink>
           </Content>
         </ContentWrapper>
-        <StyledFooter>
-          <StyledText>&copy; {y}</StyledText>
-          <StyledText>45.5017° N, 73.5673° W</StyledText>
-        </StyledFooter>
+        <StyledWrapper>
+          <StyledFooter>
+            <StyledText>&copy; {y}</StyledText>
+            <StyledText>45.5017° N, 73.5673° W</StyledText>
+          </StyledFooter>
+        </StyledWrapper>
       </FixedWrapper>
     </>
   )
@@ -66,13 +68,14 @@ const FixedWrapper = styled.div`
 const ContentWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  height: 12rem;
+  height: 100%;
   align-items: flex-start;
   justify-content: space-between;
   margin: 0rem 1.5rem;
+  margin-bottom: 2rem;
 `
 const Content = styled.div`
-  height: 9rem;
+  height: 8rem;
   width: 12rem;
   align-items: center;
   text-align: center;
@@ -98,6 +101,14 @@ const StyledLink = styled(Link)`
     color: var(--blue);
   }
 `
+const StyledWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 4rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+`
 const Title = styled.h2`
   display: block;
   text-align: center;
@@ -116,16 +127,9 @@ const H2 = styled.h2`
     color: var(--blue);
   }
 `
-const Globe = styled.img`
-  display: relative;
-  justify-content: flex;
-  align-items: flex-end;
-  background-color: red;
-  height: 1rem;
-  width: 1rem;
-`
 const StyledFooter = styled.div`
   display: flex;
+  top: 0;
   justify-content: space-between;
   padding: 0.5rem 1.5rem;
   text-transform: uppercase;

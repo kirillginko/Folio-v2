@@ -25,8 +25,8 @@ body {
     background-color: var(--grey);
     height: 100%;
     min-height: -webkit-fill-available;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     font-family: "Questrial", sans-serif;
     cursor: none;
 }

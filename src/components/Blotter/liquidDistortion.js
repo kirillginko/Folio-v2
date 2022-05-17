@@ -8,12 +8,12 @@ export const LiquidDistortion = ({ text }) => {
         fontFamily="questrial"
         fontStyle="italic"
         fontWeight={600}
-        fontSize={100}
-        fill="black"
+        fontSize={400}
+        fill="white"
         speed={0.2}
         volatility={0.05}
         paddingLeft={40}
-        paddingRight={40}
+        paddingRight={70}
       />
     </>
   )

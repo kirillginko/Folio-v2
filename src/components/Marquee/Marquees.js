@@ -9,6 +9,8 @@ function Marquees() {
     <>
       <MarqueeContainer
         data-scroll-section
+        data-scroll
+        data-scroll-speed="1"
         onMouseEnter={() => {
           mouseContext.setSize("big")
         }}
@@ -36,14 +38,14 @@ function Marquees() {
 
 const MarqueeContainer = styled.div`
   position: relative;
-  justify-content: center;
+  display: inline-block;
   margin: 10rem 1.5rem;
-  margin-bottom: 10rem;
-  height: 100vh;
+  /* margin-bottom: 10rem; */
+  height: 100%;
   cursor: none;
   @media (max-width: 1440px) {
-    margin-top: 40rem;
-    margin-bottom: 0rem;
+    /* margin-top: 40rem;
+    margin-bottom: 0rem; */
   }
 `
 const Element = styled.div`

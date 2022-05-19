@@ -25,16 +25,19 @@ const Footer = () => {
           <Content>
             <Title>Socials</Title>
             <StyledLink
-              to="https://www.instagram.com/co_existenz/"
+              href="https://www.instagram.com/co_existenz/"
               target="_blank"
             >
               Instagram
             </StyledLink>
-            <StyledLink to="https://www.github.com/kirillginko" target="_blank">
+            <StyledLink
+              href="https://www.github.com/kirillginko"
+              target="_blank"
+            >
               Github
             </StyledLink>
             <StyledLink
-              to="https://www.linkedin.com/in/kirill-ginko-a613433a/"
+              href="https://www.linkedin.com/in/kirill-ginko-a613433a/"
               target="_blank"
             >
               LinkdIn
@@ -42,9 +45,9 @@ const Footer = () => {
           </Content>
           <Content>
             <Title style={{ textAlign: "right" }}>Links</Title>
-            <StyledLink to="/">Home</StyledLink>
-            <StyledLink to="/projects">Work</StyledLink>
-            <StyledLink to="/about">About</StyledLink>
+            <StyledNav to="/">Home</StyledNav>
+            <StyledNav to="/projects">Work</StyledNav>
+            <StyledNav to="/about">About</StyledNav>
           </Content>
         </ContentWrapper>
         <StyledWrapper>
@@ -88,7 +91,20 @@ const Content = styled.div`
     text-align: right;
   }
 `
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: var(--blue);
+  }
+`
+const StyledNav = styled(Link)`
   display: block;
   font-size: 0.8rem;
   font-weight: 100;

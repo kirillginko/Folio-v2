@@ -1,6 +1,6 @@
 import React from "react"
 import { LiquidDistortionText } from "react-text-fun"
-export const LiquidDistortion = ({ text }) => {
+export const LiquidDistortion = ({ text, fontSize }) => {
   return (
     <>
       <LiquidDistortionText
@@ -8,8 +8,8 @@ export const LiquidDistortion = ({ text }) => {
         fontFamily="questrial"
         fontStyle="italic"
         fontWeight={600}
-        fontSize={400}
-        fill="white"
+        fontSize={fontSize}
+        fill="black"
         speed={0.2}
         volatility={0.05}
         paddingLeft={40}

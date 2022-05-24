@@ -22,14 +22,14 @@ function Distort() {
   return (
     <>
       <AboutContainer data-scroll-section>
-        <Title data-scroll data-scroll-speed="2.0">
+        <Title>
           <H2>ABOUT</H2>
           <Line />
         </Title>
         <MainContainer>
           <Item
             data-scroll
-            data-scroll-speed="3.8"
+            data-scroll-speed="2.8"
             onMouseEnter={() => {
               mouseContext.setSize("bigger")
             }}
@@ -85,7 +85,7 @@ const MainContainer = styled.div`
   z-index: 30;
   @media (max-width: 1440px) {
     flex-direction: column;
-    margin: 20rem auto;
+    margin: 30rem auto;
     margin-bottom: 30rem;
   }
 `
@@ -99,9 +99,10 @@ const Title = styled.div`
   width: auto;
   top: 13rem;
   border: 1px solid red;
-  margin: 0rem 2.5rem;
+  margin: 5rem 2.5rem;
+  margin-bottom: 10rem;
   @media (max-width: 1440px) {
-    top: 13rem;
+    top: 25rem;
   }
 `
 const Line = styled.div`
@@ -175,6 +176,7 @@ const About = styled.div`
   margin: 0rem 1.5rem;
   @media (max-width: 1440px) {
     margin: 0rem 1.5rem;
+    margin-top: 5rem;
     width: 95vw;
     text-align: center;
     padding-left: 0rem;

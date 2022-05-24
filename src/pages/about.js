@@ -52,7 +52,16 @@ function About({ location }) {
           >
             <LiquidDistortion text={"HELLO"} fontSize={400} />
           </Title>
-          <Mobile data-scroll data-scroll-speed="3.8">
+          <Mobile
+            data-scroll
+            data-scroll-speed="3.8"
+            onMouseEnter={() => {
+              mouseContext.setSize("bigger")
+            }}
+            onMouseLeave={() => {
+              mouseContext.setSize("small")
+            }}
+          >
             Hello
           </Mobile>
           <MainContainer>

@@ -4,7 +4,7 @@ import styled from "styled-components"
 function Skills() {
   return (
     <Container data-scroll-section>
-      <AboutTitle data-scroll data-scroll-speed="2.0">
+      <AboutTitle>
         <H2>Skills</H2>
         <Line />
       </AboutTitle>
@@ -72,7 +72,8 @@ const Container = styled.div`
   top: 0;
   border: 1px solid red;
   @media (max-width: 1440px) {
-    margin: 20rem 1.5rem;
+    margin: 0rem 1.5rem;
+    margin-bottom: 30rem;
   }
 `
 const SkillsList = styled.div`
@@ -102,7 +103,7 @@ const Title = styled.div`
   display: flex;
   justify-content: flex-start;
   padding-bottom: 2rem;
-  fontweight: 600;
+  font-weight: 600;
 `
 const AboutTitle = styled.div`
   display: flex;
@@ -113,7 +114,9 @@ const AboutTitle = styled.div`
   width: auto;
   border: 1px solid red;
   margin: 10rem 2.5rem;
+  margin-bottom: 20rem;
   @media (max-width: 1440px) {
+    margin-top: 20rem;
   }
 `
 const Line = styled.div`

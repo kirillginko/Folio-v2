@@ -57,8 +57,8 @@ const Container = styled.div`
   justify-content: center;
   height: 100vh;
   margin: 0rem 1.5rem;
-  margin-top: 60rem;
-  margin-bottom: 30rem;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
   border: 1px solid red;
 `
 const TextContainer = styled.div`
@@ -82,9 +82,11 @@ const BottomContent = styled.div`
 `
 const H2 = styled.h2`
   font-size: calc(20vmax * 9 / 16);
+  font-family: ivypresto-display, serif;
   position: relative;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 100;
+  font-style: bold;
   padding-bottom: 2rem;
   @media (max-width: 1440px) {
     font-size: calc(10vmax * 9 / 16);

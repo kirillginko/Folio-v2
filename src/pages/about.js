@@ -153,8 +153,8 @@ const Title = styled.div`
   flex-direction: column;
   height: 0vh;
   width: auto;
-  top: 13rem;
-  margin-left: 12rem;
+  top: 15rem;
+  margin-left: 10rem;
   border: 1px solid red;
   @media (max-width: 1440px) {
     margin-left: -3rem;

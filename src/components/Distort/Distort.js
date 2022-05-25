@@ -70,7 +70,7 @@ const AboutContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin: 10rem 1.5rem;
   margin-bottom: 20rem;
 `
@@ -98,7 +98,7 @@ const Title = styled.div`
   height: 0vh;
   width: auto;
   top: 13rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 5rem 2.5rem;
   margin-bottom: 10rem;
   @media (max-width: 1440px) {

@@ -30,7 +30,7 @@ const Container = styled.div`
   height: 100%;
   width: 100%;
   @media (max-width: 1440px) {
-    margin-top: 30rem;
+    margin-top: 0rem;
   }
 `
 

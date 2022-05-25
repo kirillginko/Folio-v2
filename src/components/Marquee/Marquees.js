@@ -6,7 +6,7 @@ import { CursorContext } from "../CustomCursor/CursorManager"
 function Marquees() {
   const mouseContext = useContext(CursorContext)
   return (
-    <>
+    <Container>
       <MarqueeContainer
         data-scroll-section
         data-scroll
@@ -32,31 +32,40 @@ function Marquees() {
           <H1>Lets Chat!</H1>
         </Marquee>
       </MarqueeContainer>
-    </>
+    </Container>
   )
 }
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid red;
+  @media (max-width: 1440px) {
+    margin-top: 50rem;
+  }
+`
 
 const MarqueeContainer = styled.div`
   position: relative;
   display: inline-block;
   margin: 10rem 1.5rem;
-  /* margin-bottom: 10rem; */
-  height: 100%;
   cursor: none;
+  height: min-content;
   @media (max-width: 1440px) {
     /* margin-top: 40rem;
     margin-bottom: 0rem; */
   }
 `
 const Element = styled.div`
-  border-top: 2px solid blue;
+  border-top: 4px solid black;
 `
 const H1 = styled.h1`
-  color: blue;
   font-family: Hatton;
-  font-weight: lighter;
+  font-weight: 600;
   font-style: italic;
-  border-bottom: 2px solid blue;
+  border-bottom: 4px solid black;
   font-size: 15rem;
   padding: 2rem;
 `

@@ -13,12 +13,12 @@ const Footer = () => {
           <Content style={{ width: "15rem" }}>
             <Title style={{ textAlign: "left" }}>Contacts</Title>
             <StyledLink
-              href="mailto:kirillginko@gmail.com?subject=Lets Make Something Cool!&body=Hi Kirill,"
+              href="mailto:kirill@kirillginko.com?subject=Lets Make Something Cool!&body=Hi Kirill,"
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: "none" }}
             >
-              Email: kirillginko@gmail.com
+              Email: kirill@kirillginko.com
             </StyledLink>
             <H2>Phone: +301-512-4249</H2>
           </Content>
@@ -53,7 +53,7 @@ const Footer = () => {
         <StyledWrapper>
           <StyledFooter>
             <StyledText>&copy; {y}</StyledText>
-            <StyledText>45.5017° N, 73.5673° W</StyledText>
+            <StyledText>40.7128° N, 74.0060° W</StyledText>
           </StyledFooter>
         </StyledWrapper>
       </FixedWrapper>

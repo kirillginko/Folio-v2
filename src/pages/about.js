@@ -9,16 +9,7 @@ import image from "../images/gradient3.png"
 import image2 from "../images/selfie.jpg"
 
 function About({ location }) {
-  const [isMobile, setMobile] = useState(window.innerHeight > 1450)
-  const updateText = () => {
-    setMobile(window.innerHeight > 1450)
-  }
   const mouseContext = useContext(CursorContext)
-  useEffect(() => {
-    console.log("hello")
-    window.addEventListener("resize", updateText)
-    return () => window.removeEventListener("resize", updateText)
-  }, [setMobile])
 
   useEffect(() => {
     new hoverEffect({

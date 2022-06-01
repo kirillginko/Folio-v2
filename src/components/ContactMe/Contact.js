@@ -22,8 +22,8 @@ function Contact() {
 
 const Container = styled.div`
   display: inline-block;
-  /* flex-direction: column;
-  justify-content: center; */
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 5rem;
   border: 1px solid red;
   top: 0;

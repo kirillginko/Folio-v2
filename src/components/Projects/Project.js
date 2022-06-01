@@ -1,5 +1,5 @@
 import React from "react"
-import "./style.scss"
+import "./style.css"
 import ProjectItem from "./ProjectItem"
 import pageData from "../../data"
 

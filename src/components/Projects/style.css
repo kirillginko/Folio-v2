@@ -16,9 +16,9 @@
 
 img {
   position: fixed;
-  left: 50vw;
-  width: auto;
-  height: clamp(200px, 30vw, 25vw);
+  left: 10vw;
+  width: 10vw;
+  height: clamp(600px, 30vw, 25vw);
   -o-object-fit: cover;
      object-fit: cover;
   top: 10vh;

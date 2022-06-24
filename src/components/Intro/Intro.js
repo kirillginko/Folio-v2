@@ -44,7 +44,7 @@ function Intro() {
           data-scroll-delay="1.5"
           style={{ fontWeight: "100", fontStyle: "italic" }}
         >
-          Front-End Development
+          Full-Stack Development
         </H2>
       </Text>
     </Container>

@@ -8,96 +8,73 @@ function Location() {
   }, [])
   return (
     <Container data-scroll-section>
-      <ContentWrapper>
-        <TextContainer>
-          <H2
-            data-scroll
-            data-scroll-delay="0.18"
-            data-scroll-speed="-.5"
-            data-scroll-repeat
-          >
-            Currently
-          </H2>
-          <H2
-            data-scroll
-            data-scroll-delay="0.14"
-            data-scroll-speed="-.5"
-            data-scroll-repeat
-            style={{ textAlign: "end" }}
-          >
-            Based In
-          </H2>
-          <BottomContent>
-            <H2
-              data-scroll
-              data-scroll-delay="0.06"
-              data-scroll-speed="-.5"
-              data-scroll-repeat
-              style={{ textAlign: "end" }}
-            >
-              NYC
-            </H2>
-            <CircleWrapper>
-              <Circle id="circle">
-                <div className="text">
-                  Based in NYC . Based in NYC . Based in NYC . Based in NYC .
-                </div>
-              </Circle>
-            </CircleWrapper>
-          </BottomContent>
-        </TextContainer>
-      </ContentWrapper>
+      <TopContent>
+        <H2>Currently</H2>
+      </TopContent>
+      <TopContent style={{ justifyContent: "flex-start" }}>
+        <H2>Based</H2>
+      </TopContent>
+      <TopContent style={{ justifyContent: "center" }}>
+        <H2>in</H2>
+      </TopContent>
+      <TopContent style={{ justifyContent: "flex-end" }}>
+        <H2>nyc</H2>
+        <CircleWrapper>
+          <Circle id="circle">
+            <div className="text">
+              Based in NYC . Based in NYC . Based in NYC . Based in NYC .
+            </div>
+          </Circle>
+        </CircleWrapper>
+      </TopContent>
     </Container>
   )
 }
 
 const Container = styled.div`
+  position: relative
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   height: 100vh;
   margin: 0rem 1.5rem;
   margin-top: 20rem;
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
   border: 1px solid red;
 `
-const TextContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  text-align: start;
-  width: min-content;
-  flex-direction: column;
-  border: 1px solid blue;
-`
-const ContentWrapper = styled.div`
-  display: flex;
+const TopContent = styled.div`
+  position: relative;
+  display: Flex;
   flex-direction: row;
   justify-content: flex-end;
-  /* margin-left: 12rem; */
-`
-const BottomContent = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
+  text-align: center;
+  height: min-content;
+  margin: 0rem 10rem;
+  border: 1px solid red;
+  @media (max-width: 1440px) {
+    justify-content: center;
+    margin: 0rem 0rem;
+  }
 `
 const H2 = styled.h2`
-  font-size: calc(20vmax * 9 / 16);
-  font-family: ivypresto-display, serif;
+  font-size: calc(17vmax * 9 / 16);
+  /* font-family: ivypresto-display, serif; */
   position: relative;
   text-transform: uppercase;
   font-weight: 100;
   font-style: bold;
   padding-bottom: 2rem;
   @media (max-width: 1440px) {
-    font-size: calc(10vmax * 9 / 16);
-    padding-bottom: 2rem;
+    font-size: calc(15vmax * 9 / 16);
   }
 `
 const CircleWrapper = styled.div`
   position: relative;
+  display: flex;
+  justify-content: center;
   height: min-content;
-  padding-right: 8rem;
-  padding-left: 10rem;
+  margin: 0rem 15rem;
+  border: 1px solid blue;
 `
 const Circle = styled.div`
   position: relative;
@@ -111,7 +88,7 @@ const Circle = styled.div`
   animation: spin 14s linear infinite;
   color: #181bcc;
   @media (max-width: 1440px) {
-    font-size: calc(1.5vmax * 9 / 16);
+    font-size: calc(2.5vmax * 9 / 16);
   }
   /* filter: blur(0.6px); */
   .text:after {

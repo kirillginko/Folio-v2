@@ -103,85 +103,85 @@ const MagneticButton = ({
   )
 }
 
-// function Buttons() {
-//   return (
-//     <div className="App" data-scroll-section>
-//       <MagneticButton
-//         className="button-1"
-//         scale={1.5}
-//         tollerance={0.8}
-//         speed={0.5}
-//         borderRadius="30px"
-//         onClick={() => {
-//           console.log("click")
-//         }}
-//       >
-//         Button
-//       </MagneticButton>
+function Buttons() {
+  return (
+    <div className="App" data-scroll-section>
+      <MagneticButton
+        className="button-1"
+        scale={1.5}
+        tollerance={0.8}
+        speed={0.5}
+        borderRadius="30px"
+        onClick={() => {
+          console.log("click")
+        }}
+      >
+        Button
+      </MagneticButton>
 
-//       <MagneticButton
-//         className="button-2"
-//         scale={2}
-//         tollerance={0.8}
-//         speed={0.3}
-//         borderRadius="50%"
-//         onClick={() => {
-//           console.log("click")
-//         }}
-//       >
-//         Contact
-//       </MagneticButton>
+      <MagneticButton
+        className="button-2"
+        scale={2}
+        tollerance={0.8}
+        speed={0.3}
+        borderRadius="50%"
+        onClick={() => {
+          console.log("click")
+        }}
+      >
+        Contact
+      </MagneticButton>
 
-//       <MagneticButton
-//         className="button-1"
-//         style={{ backgroundColor: "transparent" }}
-//         scale={2}
-//         tollerance={0.8}
-//         speed={0.3}
-//         borderRadius="50%"
-//         onClick={() => {
-//           console.log("click")
-//         }}
-//       >
-//         <MagneticButton
-//           className="button-1"
-//           scale={4}
-//           tollerance={1}
-//           speed={0.5}
-//           borderRadius="50%"
-//           onClick={() => {
-//             console.log("click")
-//           }}
-//         >
-//           Inception
-//         </MagneticButton>
-//       </MagneticButton>
-//     </div>
-//   )
-// }
+      <MagneticButton
+        className="button-1"
+        style={{ backgroundColor: "transparent" }}
+        scale={2}
+        tollerance={0.8}
+        speed={0.3}
+        borderRadius="50%"
+        onClick={() => {
+          console.log("click")
+        }}
+      >
+        <MagneticButton
+          className="button-1"
+          scale={4}
+          tollerance={1}
+          speed={0.5}
+          borderRadius="50%"
+          onClick={() => {
+            console.log("click")
+          }}
+        >
+          Inception
+        </MagneticButton>
+      </MagneticButton>
+    </div>
+  )
+}
 
-// const Button1 = styled.button`
-//   border: none;
-//   padding: 0;
-//   background: transparent;
-//   cursor: pointer;
-//   position: relative;
-//   z-index: 1;
-//   touch-action: none;
-//   background: #075ab3;
-//   color: white;
-//   border-radius: 30px;
-//   border: none;
-//   padding: 20px 40px;
-//   &:hover {
-//     content: "";
-//     position: absolute;
-//     z-index: -1;
-//     left: 0;
-//     top: 0;
-//     width: 100%;
-//     height: 100%;
-//   }
-// `
+const Button1 = styled.button`
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  touch-action: none;
+  background: #075ab3;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  padding: 20px 40px;
+  &:hover {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+`
 
 export default MagneticButton

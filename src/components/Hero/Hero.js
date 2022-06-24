@@ -13,11 +13,11 @@ function Hero() {
   }
 
   return (
-    <Container id="js-scroll" className="main-page">
-      <Nav className="nav-main" data-scroll-section>
-        <NavUl className="nav-list" id="direction">
+    <Container id="js-scroll">
+      <Nav data-scroll-section>
+        <NavUl id="direction">
           <li className="nav-list__item">
-            <div
+            <Item
               className="item__translate"
               data-scroll
               data-scroll-direction="horizontal"
@@ -36,10 +36,10 @@ function Hero() {
                 <span className="arrow">*</span>
                 <span className="item-third-title">Creative</span>
               </div>
-            </div>
+            </Item>
           </li>
           <li className="nav-list__item">
-            <div
+            <Item
               className="item__translate"
               data-scroll
               data-scroll-direction="horizontal"
@@ -58,10 +58,10 @@ function Hero() {
                 <span className="arrow">*</span>
                 <span className="item-third-title">Designer</span>
               </div>
-            </div>
+            </Item>
           </li>
           <li className="nav-list__item">
-            <div
+            <Item
               className="item__translate"
               data-scroll
               data-scroll-direction="horizontal"
@@ -80,10 +80,10 @@ function Hero() {
                 <span className="arrow">*</span>
                 <span className="item-third-title">And</span>
               </div>
-            </div>
+            </Item>
           </li>
           <li className="nav-list__item">
-            <div
+            <Item
               className="item__translate"
               data-scroll
               data-scroll-direction="horizontal"
@@ -102,17 +102,17 @@ function Hero() {
                 <span className="arrow">*</span>
                 <span className="item-third-title">Developer</span>
               </div>
-            </div>
+            </Item>
           </li>
           <li className="nav-list__item">
-            <div
+            <Item
               className="item__translate"
               data-scroll
               data-scroll-direction="horizontal"
               data-scroll-target="#direction"
               data-scroll-speed="10"
               data-scroll-delay=".01"
-            ></div>
+            ></Item>
           </li>
         </NavUl>
       </Nav>
@@ -125,6 +125,7 @@ const Container = styled.div`
   margin-left: auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  margin-top: 15rem;
 `
 const Nav = styled.div`
   position: relative;
@@ -135,31 +136,9 @@ const Nav = styled.div`
   font-weight: bold;
 `
 const NavUl = styled.ul``
-const NavItem = styled.div`
+const Item = styled.div`
+  left: -10%;
   position: relative;
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  opacity: 1;
-  transition: opacity 0.5s;
-  position: relative;
-  transition-property: transform;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
-  transform: translate3d(0, 100%, 0);
-  content: "";
-  position: absolute;
-  top: calc(50% - 10px);
-  left: 50%;
-  height: 10px;
-  width: 100%;
-  transform: scaleX(0);
-  transition: transform 0.5s;
-  background-color: rgba(0, 0, 0, 1);
-  transform: scaleX(1);
-  &:hover {
-    opacity: 0.4;
-  }
+  transform: translate3d(0, 0, 0);
 `
-
 export default Hero

@@ -70,8 +70,8 @@ const AboutContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  /* border: 1px solid blue; */
-  margin: 10rem 1.5rem;
+  border: 1px solid blue;
+  margin: 0rem 1.5rem;
   margin-bottom: 20rem;
 `
 
@@ -98,7 +98,7 @@ const Title = styled.div`
   height: 0vh;
   width: auto;
   top: 13rem;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   margin: 5rem 2.5rem;
   margin-bottom: 10rem;
   @media (max-width: 1440px) {
@@ -120,7 +120,7 @@ const Item = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 38rem;
+  width: 58rem;
   cursor: pointer;
   @media (max-width: 900px) {
     justify-content: flex-start;
@@ -148,7 +148,7 @@ const Span = styled.span`
 `
 const Image = styled.div`
   position: relative;
-  height: 38rem;
+  height: 58rem;
   background-color: gray;
   margin: 10px 0px;
   cursor: none;

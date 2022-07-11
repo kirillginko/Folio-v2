@@ -1,21 +1,46 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useContext } from "react"
 import styled from "styled-components"
 import CircleType from "circletype"
+import { CursorContext } from "../CustomCursor/CursorManager"
 
 function Location() {
+  const mouseContext = useContext(CursorContext)
   useEffect(() => {
     new CircleType(document.getElementById("circle"))
   }, [])
   return (
     <Container data-scroll-section>
-      <Content>
+      <Content
+        onMouseEnter={() => {
+          mouseContext.setSize("bigger")
+        }}
+        onMouseLeave={() => {
+          mouseContext.setSize("small")
+        }}
+      >
         <H2>Currently</H2>
       </Content>
       <Content style={{ justifyContent: "flex-start" }}>
-        <H2>Based</H2>
+        <H2
+          onMouseEnter={() => {
+            mouseContext.setSize("bigger")
+          }}
+          onMouseLeave={() => {
+            mouseContext.setSize("small")
+          }}
+        >
+          Based
+        </H2>
       </Content>
       <Content>
-        <CircleWrapper>
+        <CircleWrapper
+          onMouseEnter={() => {
+            mouseContext.setSize("big")
+          }}
+          onMouseLeave={() => {
+            mouseContext.setSize("small")
+          }}
+        >
           <Circle id="circle">
             <div className="text">
               Based in NYC . Based in NYC . Based in NYC . Based in NYC .
@@ -23,9 +48,27 @@ function Location() {
           </Circle>
         </CircleWrapper>
         <LowerContent>
-          <H2>In</H2>
+          <H2
+            onMouseEnter={() => {
+              mouseContext.setSize("bigger")
+            }}
+            onMouseLeave={() => {
+              mouseContext.setSize("small")
+            }}
+          >
+            In
+          </H2>
           <LowerText>
-            <H2>NYC</H2>
+            <H2
+              onMouseEnter={() => {
+                mouseContext.setSize("bigger")
+              }}
+              onMouseLeave={() => {
+                mouseContext.setSize("small")
+              }}
+            >
+              NYC
+            </H2>
           </LowerText>
         </LowerContent>
       </Content>
@@ -52,7 +95,7 @@ const Content = styled.div`
   text-align: center;
   height: min-content;
   margin: 0rem 10rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   @media (max-width: 1440px) {
     justify-content: center;
     flex-direction: column;

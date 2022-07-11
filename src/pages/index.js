@@ -17,6 +17,7 @@ const IndexPage = () => {
       <Intro />
       <Distort />
       <Location />
+      <Skills />
       {/* <Distort />
       <Location />
       <Skills />

@@ -65,10 +65,11 @@ function Skills() {
 const Container = styled.div`
   display: inline-block;
   flex-direction: column;
-  margin: 20rem 1.5rem;
-  margin-top: 0rem;
+  margin: 0rem 1.5rem;
+  margin-top: 20rem;
+  margin-bottom: 10rem;
   max-width: 100vw;
-  height: 100vh;
+  height: 100%;
   top: 0;
   border: 1px solid red;
   @media (max-width: 1440px) {

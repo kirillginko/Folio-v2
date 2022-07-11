@@ -69,7 +69,7 @@ const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
   border: 1px solid blue;
   margin: 0rem 1.5rem;
   margin-bottom: 20rem;
@@ -98,7 +98,6 @@ const Title = styled.div`
   height: 0vh;
   width: auto;
   top: 13rem;
-  border: 1px solid red;
   margin: 5rem 2.5rem;
   margin-bottom: 10rem;
   @media (max-width: 1440px) {
@@ -120,11 +119,14 @@ const Item = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 58rem;
+  width: 38rem;
   cursor: pointer;
   @media (max-width: 900px) {
     justify-content: flex-start;
     width: 28.1rem;
+  }
+  @media (min-width: 2080px) {
+    width: 58rem;
   }
 `
 const Header = styled.div`
@@ -148,12 +150,15 @@ const Span = styled.span`
 `
 const Image = styled.div`
   position: relative;
-  height: 58rem;
+  height: 38rem;
   background-color: gray;
   margin: 10px 0px;
   cursor: none;
   @media (max-width: 900px) {
     height: 25rem;
+  }
+  @media (min-height: 1920px) {
+    height: 58rem;
   }
 `
 const BottomText = styled.div`

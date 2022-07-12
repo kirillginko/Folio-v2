@@ -74,7 +74,7 @@ const Container = styled.div`
   border: 1px solid red;
   @media (max-width: 1440px) {
     margin: 0rem 1.5rem;
-    margin-bottom: 30rem;
+    margin-bottom: 10rem;
   }
 `
 const SkillsList = styled.div`
@@ -113,7 +113,7 @@ const AboutTitle = styled.div`
   flex-direction: column;
   height: 0vh;
   width: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 10rem 2.5rem;
   margin-bottom: 20rem;
   @media (max-width: 1440px) {

@@ -42,8 +42,9 @@ const Container = styled.div`
   height: 100vh;
   width: 100vw;
   border: 1px solid red;
+  margin-bottom: 10rem;
   @media (max-width: 1440px) {
-    margin-top: 50rem;
+    /* margin-top: 20rem; */
   }
 `
 
@@ -62,7 +63,6 @@ const Element = styled.div`
   border-top: 4px solid black;
 `
 const H1 = styled.h1`
-  font-family: Hatton;
   font-weight: 600;
   font-style: italic;
   border-bottom: 4px solid black;

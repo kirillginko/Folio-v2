@@ -55,9 +55,8 @@ function Distort() {
             }}
           >
             <H1 data-scroll data-scroll-speed="1.8">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-              minima molestiae totam vitae nisi, tempora adipisci error eaque
-              natus voluptatem!
+              A multi-deciplined designer specializing in creating responsive
+              user friendly experiences.
             </H1>
           </About>
         </MainContainer>
@@ -72,7 +71,10 @@ const AboutContainer = styled.div`
   height: 100%;
   border: 1px solid blue;
   margin: 0rem 1.5rem;
-  margin-bottom: 20rem;
+  margin-bottom: 10rem;
+  @media (max-width: 1440px) {
+    margin-bottom: 10rem;
+  }
 `
 
 const MainContainer = styled.div`
@@ -101,7 +103,7 @@ const Title = styled.div`
   margin: 5rem 2.5rem;
   margin-bottom: 10rem;
   @media (max-width: 1440px) {
-    top: 25rem;
+    top: 20rem;
   }
 `
 const Line = styled.div`

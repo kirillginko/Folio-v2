@@ -83,7 +83,7 @@ const Container = styled.div`
   justify-content: start;
   height: 100vh;
   margin: 0rem 1.5rem;
-  margin-top: 60rem;
+  margin-top: 40rem;
   margin-bottom: 10rem;
   /* border: 1px solid red; */
 `
@@ -132,7 +132,7 @@ const H2 = styled.h2`
   font-style: bold;
   padding-bottom: 2rem;
   @media (max-width: 1440px) {
-    font-size: calc(10vmax * 9 / 16);
+    font-size: calc(15vmax * 9 / 16);
   }
 `
 const CircleWrapper = styled.div`

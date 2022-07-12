@@ -1,27 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Raleway+Dots&display=swap');
-
 
 
 body {
-	margin: 0;
-	--color-bg: rgba(216,219,204, 0.7);
-	--color-menu: rgb(2,73,48);
-	--color-menu-hover: rgb(234,170,122);
+	--color-menu: rgb(23, 58, 212);
+	--color-menu-hover: rgb(255, 255, 255);
 	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-family: 'Raleway', sans-serif;
 }
 
-a {
-	text-decoration: none;
-	outline: none;
-	cursor: pointer;
-}
 
 .menu {
 	padding: 10rem 0 20vh;
-	width: 90vw;
+	width: 100vw;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -32,6 +22,8 @@ a {
 	-ms-user-select: none;
 	user-select: none;
 	counter-reset: menucounter;
+    border: 1px solid red;
+    /* overflow: hidden; */
 }
 
 .menu__item {
@@ -52,7 +44,7 @@ a {
 	height: 60%;
 	padding-left: 1rem;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	line-height: 1;
 	font-weight: bold;
 	color: var(--color-menu-hover);
@@ -79,9 +71,8 @@ a {
 
 .menu__item-textinner {
 	display: block;
-    font-size:  10rem;
-  /* font-family: 'Raleway Dots', cursive; */
-	font-weight: 300;
+    font-size: calc(18vmax * 9 / 16);
+	font-weight: 600;
 	white-space: nowrap;
 	color: var(--color-menu);
 	transition-property: color;
@@ -151,13 +142,14 @@ a {
 
 .hover-reveal__img,
 .hover-reveal__inner {
-	width: 100%;
-	height: 100%;
+	width: 20vw;
+	height: 40vh;
 	position: relative;
+    background-repeat: no-repeat;
 }
 
 .hover-reveal__img {
-	background-size: cover;
+	background-size: contain;
 	background-position: 50% 50%;
 }
 
@@ -167,7 +159,7 @@ a {
 	}
 
 	.menu__item {
-		padding-left: 25vw;
+		/* padding-left: 25vw; */
 		justify-content: initial;
 	}
 
@@ -180,6 +172,13 @@ a {
 		display: flex;
 	}
 }
+@media screen and (max-width: 1440px) {
+  
+.menu__item-textinner {
+    font-size: calc(10vmax * 9 / 16);
+}  
+}
+
 
 /*! locomotive-scroll v3.5.4 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {

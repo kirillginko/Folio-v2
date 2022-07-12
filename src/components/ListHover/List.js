@@ -285,30 +285,32 @@ function List() {
         <nav className="menu">
           <a
             className="menu__item"
-            data-img="https://picsum.photos/id/40/200/300?grayscale"
+            data-img="https://res.cloudinary.com/dtps5ugbf/image/upload/v1634343194/Screen_Shot_2021-08-22_at_1.25.04_PM_iolkys.png"
           >
             <span className="menu__item-text">
-              <span className="menu__item-textinner">this is a menu item</span>
+              <span className="menu__item-textinner">Music Player</span>
             </span>
-            <span className="menu__item-sub">some more info</span>
+            <span className="menu__item-sub">Lo-fi hip hop player</span>
           </a>
           <a
             className="menu__item"
-            data-img="https://picsum.photos/id/433/200/300?grayscale"
+            data-img="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657664516/Screen_Shot_2022-07-12_at_6.21.44_PM_qfrbp8.png"
           >
             <span className="menu__item-text">
-              <span className="menu__item-textinner">menu item</span>
+              <span className="menu__item-textinner">Art Infinite</span>
             </span>
-            <span className="menu__item-sub">some more info</span>
+            <span className="menu__item-sub">
+              Infinitly generating art gallery
+            </span>
           </a>
           <a
             className="menu__item"
-            data-img="https://picsum.photos/id/538/200/300?grayscale"
+            data-img="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657665167/Screen_Shot_2022-07-12_at_6.32.38_PM_un9zeh.png"
           >
             <span className="menu__item-text">
-              <span className="menu__item-textinner">another menu item</span>
+              <span className="menu__item-textinner">Drum Machine</span>
             </span>
-            <span className="menu__item-sub">some more info</span>
+            <span className="menu__item-sub">808 Drum Machine </span>
           </a>
           <a
             className="menu__item"

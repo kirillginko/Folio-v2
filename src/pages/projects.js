@@ -1,5 +1,5 @@
 import React from "react"
-import Project from "../components/Projects/Project"
+import List from "../components/ListHover/List"
 import { motion, AnimatePresence } from "framer-motion"
 
 const variants = {
@@ -30,7 +30,7 @@ function projects({ location }) {
         animate="enter"
         exit="exit"
       >
-        <Project />
+        <List />
       </motion.main>
     </AnimatePresence>
   )

@@ -85,7 +85,7 @@ const Container = styled.div`
   margin: 0rem 1.5rem;
   margin-top: 40rem;
   margin-bottom: 10rem;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 `
 const Content = styled.div`
   position: relative;

@@ -3,6 +3,7 @@ import SEO from "../components/seo"
 import Hero from "../components/Hero/Hero"
 import Marquees from "../components/Marquee/Marquees"
 import Contact from "../components/ContactMe/Contact"
+import List from "../components/ListHover/List"
 import Distort from "../components/Distort/Distort"
 import Skills from "../components/Skills/Skills"
 import Location from "../components/Location/Location"
@@ -18,6 +19,7 @@ const IndexPage = () => {
       <Distort />
       <Location />
       <Skills />
+      <List />
       <Marquees />
       {/* <Distort />
       <Location />

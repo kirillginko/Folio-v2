@@ -60,12 +60,12 @@ const MarqueeContainer = styled.div`
   }
 `
 const Element = styled.div`
-  border-top: 4px solid black;
+  border-top: 2px solid black;
 `
 const H1 = styled.h1`
   font-weight: 600;
   font-style: italic;
-  border-bottom: 4px solid black;
+  border-bottom: 2px solid black;
   font-size: 15rem;
   padding: 2rem;
 `

@@ -10,6 +10,7 @@ body {
 
 
 .menu {
+    
 	padding: 10rem 0 20vh;
 	width: 100vw;
 	position: relative;
@@ -22,7 +23,9 @@ body {
 	-ms-user-select: none;
 	user-select: none;
 	counter-reset: menucounter;
+    margin: 0rem 1.5rem;
     border: 1px solid red;
+
     /* overflow: hidden; */
 }
 
@@ -61,8 +64,9 @@ body {
 }
 
 .menu__item-text {
+    font-family: ivypresto-display, serif;
 	position: relative;
-	cursor: pointer;
+	cursor: none;
 	padding: .5rem;
 	display: block;
 	overflow: hidden;
@@ -72,7 +76,7 @@ body {
 .menu__item-textinner {
 	display: block;
     font-size: calc(18vmax * 9 / 16);
-	font-weight: 600;
+	font-weight: 800;
 	white-space: nowrap;
 	color: var(--color-menu);
 	transition-property: color;
@@ -155,7 +159,8 @@ body {
 
 @media screen and (min-width: 53em) {
 	.menu {
-		padding-top: 20vh;
+		padding-top: 10vh;
+        margin-top: 10rem;
 	}
 
 	.menu__item {
@@ -172,11 +177,22 @@ body {
 		display: flex;
 	}
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 900px) {
   
 .menu__item-textinner {
     font-size: calc(10vmax * 9 / 16);
-}  
+}
+.menu {
+    padding-left: 0rem;
+    padding-right: 2.5rem;
+
+}
+.hover-reveal__img,
+.hover-reveal__inner {
+    width: 50vw;
+	height: 40vh;  
+}
+
 }
 
 

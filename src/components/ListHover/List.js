@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import "./list.css"
 import gsap from "gsap"
+import styled from "styled-components"
 
 function List() {
   // UTILS
@@ -282,6 +283,9 @@ function List() {
   return (
     <>
       <main data-scroll-section>
+        <Title>
+          <H2>Projects</H2>
+        </Title>
         <nav className="menu">
           <a
             className="menu__item"
@@ -305,7 +309,7 @@ function List() {
           </a>
           <a
             className="menu__item"
-            data-img="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657665167/Screen_Shot_2022-07-12_at_6.32.38_PM_un9zeh.png"
+            data-img="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657671928/Screen_Shot_2022-07-12_at_8.25.11_PM_gt5bzn.png"
           >
             <span className="menu__item-text">
               <span className="menu__item-textinner">Drum Machine</span>
@@ -314,30 +318,30 @@ function List() {
           </a>
           <a
             className="menu__item"
-            data-img="https://picsum.photos/id/237/200/300?grayscale"
+            data-img="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657672194/Screen_Shot_2022-07-12_at_8.29.34_PM_zzpsso.png"
           >
             <span className="menu__item-text">
-              <span className="menu__item-textinner">menu item</span>
+              <span className="menu__item-textinner">GoOoOgle Drive</span>
             </span>
-            <span className="menu__item-sub">some more info</span>
+            <span className="menu__item-sub">Google Drive Clone</span>
           </a>
           <a
             className="menu__item"
-            data-img="https://picsum.photos/id/1003/200/300?grayscale"
+            data-img="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657672666/Screen_Shot_2022-07-12_at_8.37.37_PM_slyurt.png"
           >
             <span className="menu__item-text">
-              <span className="menu__item-textinner">menu item</span>
+              <span className="menu__item-textinner">CryptoVerse</span>
             </span>
-            <span className="menu__item-sub">some more info</span>
+            <span className="menu__item-sub">Cryptocurrency Dashboard</span>
           </a>
           <a
             className="menu__item"
-            data-img="https://picsum.photos/id/1074/200/300?grayscale"
+            data-img="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657672474/Screen_Shot_2022-07-12_at_8.34.25_PM_drkinz.png"
           >
             <span className="menu__item-text">
-              <span className="menu__item-textinner">final menu item</span>
+              <span className="menu__item-textinner">AmazZzon</span>
             </span>
-            <span className="menu__item-sub">some more info</span>
+            <span className="menu__item-sub">Amazon Clone</span>
           </a>
         </nav>
       </main>
@@ -345,4 +349,21 @@ function List() {
   )
 }
 
+const Title = styled.div`
+  display: flex;
+  justify-content: center;
+  height: min-content;
+  width: 100%;
+  margin-top: 20rem;
+  border: 1px solid blue;
+  @media (max-width: 1440px) {
+    margin-top: 15rem;
+  }
+`
+const H2 = styled.div`
+  font-size: calc(7.1vmax * 9 / 16);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom 2px solid black;
+`
 export default List

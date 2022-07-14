@@ -4,7 +4,7 @@ import styled from "styled-components"
 function Skills() {
   return (
     <Container data-scroll-section>
-      <AboutTitle>
+      <AboutTitle data-scroll data-scroll-speed="1.0">
         <H2>Skills</H2>
         <Line />
       </AboutTitle>

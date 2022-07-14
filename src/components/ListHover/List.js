@@ -283,13 +283,16 @@ function List() {
   return (
     <>
       <main data-scroll-section>
-        <Title>
+        <Title data-scroll data-scroll-speed=".05" data-scroll-delay="0.1">
           <H2>Projects</H2>
         </Title>
         <nav className="menu">
           <a
             className="menu__item"
             data-img="https://res.cloudinary.com/dtps5ugbf/image/upload/v1634343194/Screen_Shot_2021-08-22_at_1.25.04_PM_iolkys.png"
+            data-scroll
+            data-scroll-speed="1.0"
+            data-scroll-delay="0.05"
           >
             <span className="menu__item-text">
               <span className="menu__item-textinner">Music Player</span>
@@ -299,6 +302,9 @@ function List() {
           <a
             className="menu__item"
             data-img="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657664516/Screen_Shot_2022-07-12_at_6.21.44_PM_qfrbp8.png"
+            data-scroll
+            data-scroll-speed="1.2"
+            data-scroll-delay="0.07"
           >
             <span className="menu__item-text">
               <span className="menu__item-textinner">Art Infinite</span>
@@ -310,6 +316,9 @@ function List() {
           <a
             className="menu__item"
             data-img="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657671928/Screen_Shot_2022-07-12_at_8.25.11_PM_gt5bzn.png"
+            data-scroll
+            data-scroll-speed="1.4"
+            data-scroll-delay="0.08"
           >
             <span className="menu__item-text">
               <span className="menu__item-textinner">Drum Machine</span>
@@ -319,6 +328,9 @@ function List() {
           <a
             className="menu__item"
             data-img="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657672194/Screen_Shot_2022-07-12_at_8.29.34_PM_zzpsso.png"
+            data-scroll
+            data-scroll-speed="1.6"
+            data-scroll-delay="0.09"
           >
             <span className="menu__item-text">
               <span className="menu__item-textinner">GoOoOgle Drive</span>
@@ -328,6 +340,9 @@ function List() {
           <a
             className="menu__item"
             data-img="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657672666/Screen_Shot_2022-07-12_at_8.37.37_PM_slyurt.png"
+            data-scroll
+            data-scroll-speed="1.8"
+            data-scroll-delay="0.1"
           >
             <span className="menu__item-text">
               <span className="menu__item-textinner">CryptoVerse</span>
@@ -337,6 +352,9 @@ function List() {
           <a
             className="menu__item"
             data-img="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657672474/Screen_Shot_2022-07-12_at_8.34.25_PM_drkinz.png"
+            data-scroll
+            data-scroll-speed="2.0"
+            data-scroll-delay="0.12"
           >
             <span className="menu__item-text">
               <span className="menu__item-textinner">AmazZzon</span>

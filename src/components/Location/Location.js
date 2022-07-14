@@ -11,6 +11,9 @@ function Location() {
   return (
     <Container data-scroll-section>
       <Content
+        data-scroll
+        data-scroll-speed="1.0"
+        data-scroll-delay="1.05"
         onMouseEnter={() => {
           mouseContext.setSize("bigger")
         }}
@@ -20,7 +23,12 @@ function Location() {
       >
         <H2>Currently</H2>
       </Content>
-      <Content style={{ justifyContent: "flex-start" }}>
+      <Content
+        data-scroll
+        data-scroll-speed="1.8"
+        data-scroll-delay="0.05"
+        style={{ justifyContent: "flex-start" }}
+      >
         <H2
           onMouseEnter={() => {
             mouseContext.setSize("bigger")
@@ -34,6 +42,9 @@ function Location() {
       </Content>
       <Content>
         <CircleWrapper
+          data-scroll
+          data-scroll-speed="1.5"
+          data-scroll-delay="0.05"
           onMouseEnter={() => {
             mouseContext.setSize("big")
           }}
@@ -47,7 +58,11 @@ function Location() {
             </div>
           </Circle>
         </CircleWrapper>
-        <LowerContent>
+        <LowerContent
+          data-scroll
+          data-scroll-speed="2.8"
+          data-scroll-delay="0.05"
+        >
           <H2
             onMouseEnter={() => {
               mouseContext.setSize("bigger")
@@ -125,11 +140,13 @@ const LowerText = styled.div`
   }
 `
 const H2 = styled.h2`
-  font-size: calc(17vmax * 9 / 16);
+  font-size: calc(20vmax * 9 / 16);
   position: relative;
   text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-title);
   font-weight: 100;
-  font-style: bold;
+  /* font-style: italic; */
   padding-bottom: 2rem;
   @media (max-width: 1440px) {
     font-size: calc(15vmax * 9 / 16);

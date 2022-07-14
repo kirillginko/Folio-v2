@@ -9,6 +9,7 @@ import Skills from "../components/Skills/Skills"
 import Location from "../components/Location/Location"
 import Intro from "../components/Intro/Intro"
 import Buttons from "../components/Buttons/Buttons"
+import ImageTrail from "../components/ImageTrail/ImageTrail"
 
 const IndexPage = () => {
   return (
@@ -16,10 +17,10 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Hero />
       <Intro />
+      <ImageTrail />
       <Distort />
       <Location />
       <Skills />
-      <List />
       <Marquees />
       {/* <Distort />
       <Location />

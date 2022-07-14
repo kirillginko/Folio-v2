@@ -41,7 +41,7 @@ function About({ location }) {
               mouseContext.setSize("small")
             }}
           >
-            <LiquidDistortion text={"HELLO"} fontSize={400} />
+            <LiquidDistortion text={"HELLO"} fontSize={250} />
           </Title>
           <Mobile
             data-scroll
@@ -169,7 +169,7 @@ const Item = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 48rem;
+  width: 38rem;
   cursor: pointer;
   @media (max-width: 900px) {
     justify-content: flex-start;
@@ -197,7 +197,7 @@ const Span = styled.span`
 `
 const Image = styled.div`
   position: relative;
-  height: 48rem;
+  height: 38rem;
   background-color: gray;
   margin: 10px 0px;
   cursor: none;

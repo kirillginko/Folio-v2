@@ -8,54 +8,7 @@ body {
     --color-pink: #d02d55;
     --color-title: #232323;
   }
-  
-  .header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    display: flex;
-    z-index: 9;
-    padding: 35px 30px;
-    justify-content: space-between;
-  }
-  
-  .person__name {
-    color: #fff;
-  }
-  
-  .person__prof {
-    font-size: 18px;
-    display: block;
-    display: flex;
-    align-items: center;
-    font-weight: 300;
-  }
-  
-  .person__prof:before {
-    content: "";
-    width: 15px;
-    height: 1px;
-    background: #fff;
-    margin-right: 3px;
-  }
-  
-  .profile__link {
-    color: var(--color-pink);
-    margin-right: 16px;
-    font-size: 18px;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .profile__link:hover {
-    color: #fff;
-  }
-  
-  .person__test {
-    display: block;
-  }
-  
+    
   .img-wrapper {
     height: 100vh;
     position: relative;
@@ -111,55 +64,12 @@ body {
     font-weight: 100;
     text-transform: uppercase;
     position: absolute;
-    left: 0;
-    top: 50%;
+    font-style: italic;
+    /* left: -1.5rem; */
+    top: 0%;
     z-index: 99;
     transform: translateY(-50%);
     pointer-events: none;
   }
   
-  .frame {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    padding: 35px 30px;
-    display: flex;
-  }
-  
-  .frame-title {
-    color: #fff;
-    font-size: 19px;
-  }
-  
-  .frame-title.frame-link {
-    margin-left: 48px;
-  }
-  
-  .frame-link:hover {
-    color: #fff;
-  }
-  
-  .article-link {
-    margin-left: 16px;
-    display: inline-block;
-  }
-  
-  .pagination {
-    margin-left: 32px;
-  }
-  
-  .frame-link {
-    color: var(--color-pink);
-    font-size: 18px;
-    display: inline-block;
-    margin-right: 16px;
-  }
-  
-  .frame-link.frame-link--active {
-    color: #fff;
-    position: relative;
-    text-decoration: line-through;
-    letter-spacing: 40px;
-  }
   

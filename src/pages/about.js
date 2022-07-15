@@ -117,7 +117,7 @@ const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
   border: 1px solid blue;
   margin: 15rem 1.5rem;
   margin-bottom: 20rem;

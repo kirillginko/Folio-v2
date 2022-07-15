@@ -22,15 +22,15 @@ function Distort() {
   return (
     <>
       <AboutContainer data-scroll-section>
-        <Title data-scroll data-scroll-speed="1.8">
+        <Title data-scroll data-scroll-speed="1.8" data-scroll-delay="0.5">
           <H2>ABOUT</H2>
           <Line />
         </Title>
         <MainContainer>
           <Item
             data-scroll
-            data-scroll-speed="1.0"
-            data-scroll-delay="0.05"
+            data-scroll-speed="2.5"
+            data-scroll-delay="0.5"
             onMouseEnter={() => {
               mouseContext.setSize("bigger")
             }}
@@ -55,7 +55,7 @@ function Distort() {
               mouseContext.setSize("small")
             }}
           >
-            <H1 data-scroll data-scroll-speed="2.5" data-scroll-delay="1.5">
+            <H1 data-scroll data-scroll-speed="3.8" data-scroll-delay="0.5">
               A multi-deciplined designer specializing in creating responsive
               user friendly experiences.
             </H1>
@@ -69,7 +69,7 @@ const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
   border: 1px solid blue;
   margin: 0rem 1.5rem;
   margin-bottom: 10rem;

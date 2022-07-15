@@ -43,7 +43,7 @@ function Location() {
       <Content>
         <CircleWrapper
           data-scroll
-          data-scroll-speed="1.5"
+          data-scroll-speed="2.8"
           data-scroll-delay="0.05"
           onMouseEnter={() => {
             mouseContext.setSize("big")
@@ -58,12 +58,11 @@ function Location() {
             </div>
           </Circle>
         </CircleWrapper>
-        <LowerContent
-          data-scroll
-          data-scroll-speed="2.8"
-          data-scroll-delay="0.05"
-        >
+        <LowerContent>
           <H2
+            data-scroll
+            data-scroll-speed="2.0"
+            data-scroll-delay="0.05"
             onMouseEnter={() => {
               mouseContext.setSize("bigger")
             }}
@@ -75,6 +74,9 @@ function Location() {
           </H2>
           <LowerText>
             <H2
+              data-scroll
+              data-scroll-speed="3.0"
+              data-scroll-delay="0.05"
               onMouseEnter={() => {
                 mouseContext.setSize("bigger")
               }}
@@ -146,10 +148,10 @@ const H2 = styled.h2`
   color: transparent;
   -webkit-text-stroke: 2px var(--color-title);
   font-weight: 100;
-  /* font-style: italic; */
+  font-style: italic;
   padding-bottom: 2rem;
   @media (max-width: 1440px) {
-    font-size: calc(15vmax * 9 / 16);
+    font-size: calc(14vmax * 9 / 16);
   }
 `
 const CircleWrapper = styled.div`

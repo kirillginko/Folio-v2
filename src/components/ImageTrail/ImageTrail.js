@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import "./imagetrail.css"
+import styled from "styled-components"
 
 function ImageTrail() {
   useEffect(() => {
@@ -84,8 +85,18 @@ function ImageTrail() {
   }, [])
 
   return (
-    <div className="content" data-scroll-section>
-      <h3 className="content__title">Nice to meet you!</h3>
+    <Content data-scroll-section>
+      <Title>
+        <H2 data-scroll data-scroll-speed="1.5" data-scroll-delay="0.05">
+          Nice
+        </H2>
+        <H2 data-scroll data-scroll-speed="1.8" data-scroll-delay="0.05">
+          To
+        </H2>
+        <H2 data-scroll data-scroll-speed="2.0" data-scroll-delay="0.05">
+          Meet You!
+        </H2>
+      </Title>
       <div className="img-wrapper">
         <img
           className="img-item"
@@ -136,8 +147,45 @@ function ImageTrail() {
           src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828284/gradient_8_amztsm.png"
         />
       </div>
-    </div>
+    </Content>
   )
 }
+
+const Content = styled.div`
+  position: relative;
+  /* overflow: hidden; */
+  height: 100vh;
+  margin: 20rem 1.5rem;
+  border: 1px solid red;
+`
+const Title = styled.div`
+  font-size: 18vw;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-title);
+  font-weight: 100;
+  text-transform: uppercase;
+  position: absolute;
+  font-style: italic;
+  /* left: -1.5rem; */
+  top: 50%;
+  z-index: 99;
+  transform: translateY(-50%);
+  pointer-events: none;
+  @media (max-width: 1440px) {
+    font-size: calc(31vmax * 9 / 16);
+    top: 40%;
+  }
+`
+const H2 = styled.h2`
+  display: block;
+  font-size: 15vw;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-title);
+  z-index: 99;
+  font-weight: 100;
+  @media (max-width: 1440px) {
+    font-size: calc(31vmax * 9 / 16);
+  }
+`
 
 export default ImageTrail

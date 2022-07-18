@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React, { useRef, useEffect } from "react"
 import gsap from "gsap"
 import styled from "styled-components"
 import "./button.css"
@@ -107,19 +107,6 @@ function Buttons() {
   return (
     <div className="App" data-scroll-section>
       <MagneticButton
-        className="button-1"
-        scale={1.5}
-        tollerance={0.8}
-        speed={0.5}
-        borderRadius="30px"
-        onClick={() => {
-          console.log("click")
-        }}
-      >
-        Button
-      </MagneticButton>
-
-      <MagneticButton
         className="button-2"
         scale={2}
         tollerance={0.8}
@@ -130,31 +117,6 @@ function Buttons() {
         }}
       >
         Contact
-      </MagneticButton>
-
-      <MagneticButton
-        className="button-1"
-        style={{ backgroundColor: "transparent" }}
-        scale={2}
-        tollerance={0.8}
-        speed={0.3}
-        borderRadius="50%"
-        onClick={() => {
-          console.log("click")
-        }}
-      >
-        <MagneticButton
-          className="button-1"
-          scale={4}
-          tollerance={1}
-          speed={0.5}
-          borderRadius="50%"
-          onClick={() => {
-            console.log("click")
-          }}
-        >
-          Inception
-        </MagneticButton>
       </MagneticButton>
     </div>
   )
@@ -184,4 +146,4 @@ const Button1 = styled.button`
   }
 `
 
-export default MagneticButton
+export default Buttons

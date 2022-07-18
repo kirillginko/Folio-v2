@@ -59,7 +59,7 @@ const Container = styled.div`
   width: 100vw;
   border: 1px solid red;
   margin-bottom: 35rem;
-  margin-top: 35rem;
+  margin-top: 30rem;
 `
 const Text = styled.div`
   display: flex;
@@ -76,7 +76,8 @@ const Target = styled.div`
   width: 100%;
 `
 const H2 = styled.h2`
-  font-size: calc(10vmax * 9 / 16);
+  font-size: calc(15vmax * 9 / 16);
   text-transform: uppercase;
+  padding: 10rem 0rem;
 `
 export default Intro

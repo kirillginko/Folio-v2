@@ -2,29 +2,9 @@ import React, { useState, useEffect, useRef } from "react"
 import { gsap } from "gsap"
 import Overflow from "../../styles/overflow"
 import mixins from "../../styles/mixins"
+import "../../styles/mixins"
 import useRandomInterval from "../../hooks/useRandomInterval"
 import styled from "styled-components"
-
-const LoaderWrapper = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9998;
-  background-color: var(--text);
-  color: var(--background);
-  ${mixins.flexCenter};
-  cursor: none;
-`
-const Text = styled.p`
-  ${mixins.smallText};
-  margin: 0;
-
-  span {
-    margin-left: 2vw;
-  }
-`
 
 const Loader = ({ setIsLoading }) => {
   const [percent, setPercent] = useState(0)
@@ -65,5 +45,25 @@ const Loader = ({ setIsLoading }) => {
     </LoaderWrapper>
   )
 }
+const LoaderWrapper = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9998;
+  background-color: var(--text);
+  color: var(--background);
+  ${mixins.flexCenter};
+  cursor: none;
+`
+const Text = styled.p`
+  ${mixins.smallText};
+  margin: 0;
+
+  span {
+    margin-left: 2vw;
+  }
+`
 
 export default Loader

@@ -16,7 +16,12 @@ function Intro() {
     <Container data-scroll-section>
       <Target></Target>
       <Text onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
-        <H2 data-scroll data-scroll-speed="1.5" data-scroll-delay=".5">
+        <H2
+          data-scroll
+          data-scroll-speed="1.5"
+          data-scroll-delay=".5"
+          style={{ fontSize: "5rem" }}
+        >
           Research & Strategy
         </H2>
       </Text>
@@ -32,8 +37,13 @@ function Intro() {
         </H2>
       </Text>
       <Text onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
-        <H2 data-scroll data-scroll-speed="3.5" data-scroll-delay="1.2">
-          Minimal
+        <H2
+          data-scroll
+          data-scroll-speed="3.5"
+          data-scroll-delay="1.2"
+          style={{ fontSize: "5rem" }}
+        >
+          Minimalism
         </H2>
       </Text>
       <Text>
@@ -44,7 +54,7 @@ function Intro() {
           data-scroll-delay="1.5"
           style={{ fontWeight: "100", fontStyle: "italic" }}
         >
-          Full-Stack Development
+          Interaction
         </H2>
       </Text>
     </Container>

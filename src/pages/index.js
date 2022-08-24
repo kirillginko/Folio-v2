@@ -14,7 +14,6 @@ const IndexPage = () => {
     <>
       <SEO title="Home" />
       <Hero />
-      <Intro />
       <ImageTrail />
       <Distort />
       <Location />

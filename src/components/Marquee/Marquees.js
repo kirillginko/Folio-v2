@@ -10,7 +10,7 @@ function Marquees() {
       <MarqueeContainer
         data-scroll-section
         data-scroll
-        data-scroll-speed="1"
+        data-scroll-speed="3"
         onMouseEnter={() => {
           mouseContext.setSize("big")
         }}

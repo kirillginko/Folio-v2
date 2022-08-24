@@ -101,50 +101,62 @@ function ImageTrail() {
         <img
           className="img-item"
           src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828284/gradient_8_amztsm.png"
+          alt="gradient"
         />
         <img
           className="img-item"
           src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828284/gradient_12_lojldm.png"
+          alt="gradient"
         />
         <img
           className="img-item"
           src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828284/gradient_7_uhfra6.png"
+          alt="gradient"
         />
         <img
           className="img-item"
           src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828284/gradient_11_bzdj6c.png"
+          alt="gradient"
         />
         <img
           className="img-item"
           src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828284/gradient_9_grl7xr.png"
+          alt="gradient"
         />
         <img
           className="img-item"
           src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828280/gradient_2_fwvars.png"
+          alt="gradient"
         />
         <img
           className="img-item"
           src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828279/gradient_6_raikg4.png"
+          alt="gradient"
         />
         <img
           className="img-item"
           src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828279/gradient_4_d9uv7h.png"
+          alt="gradient"
         />
         <img
           className="img-item"
           src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828279/gradient_3_s9z3f6.png"
+          alt="gradient"
         />
         <img
           className="img-item"
           src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828279/gradient_5_hxfnls.png"
+          alt="gradient"
         />
         <img
           className="img-item"
           src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828279/gradient_1_hbyhqu.png"
+          alt="gradient"
         />
         <img
           className="img-item"
           src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828284/gradient_8_amztsm.png"
+          alt="gradient"
         />
       </div>
     </Content>
@@ -180,7 +192,7 @@ const H2 = styled.h2`
   display: block;
   font-size: 15vw;
   color: transparent;
-  -webkit-text-stroke: 2px var(--color-title);
+  -webkit-text-stroke: 1.5px var(--color-title);
   z-index: 99;
   font-weight: 100;
   @media (max-width: 1440px) {

@@ -5,7 +5,6 @@
   overflow: hidden;
   transform: translate3d(0, 0, 0);
   position: fixed;
-
   background: #ffffff;
   opacity: 1;
   transition: width 0.25s ease-in-out, height 0.25s ease-in-out;

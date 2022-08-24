@@ -1,8 +1,10 @@
-import React from "react"
+import React, { useContext } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { CursorContext } from "../CustomCursor/CursorManager"
 
 const Footer = () => {
+  const mouseContext = useContext(CursorContext)
   const d = new Date()
   const y = d.getFullYear()
 
@@ -10,7 +12,15 @@ const Footer = () => {
     <>
       <FixedWrapper data-scroll-section>
         <ContentWrapper>
-          <Content style={{ width: "15rem" }}>
+          <Content
+            style={{ width: "15rem" }}
+            onMouseEnter={() => {
+              mouseContext.setSize("big")
+            }}
+            onMouseLeave={() => {
+              mouseContext.setSize("small")
+            }}
+          >
             <Title style={{ textAlign: "left" }}>Contacts</Title>
             <StyledLink
               href="mailto:kirill@kirillginko.com?subject=Lets Make Something Cool!&body=Hi Kirill,"
@@ -22,7 +32,14 @@ const Footer = () => {
             </StyledLink>
             <H2>Phone: +301-512-4249</H2>
           </Content>
-          <Content>
+          <Content
+            onMouseEnter={() => {
+              mouseContext.setSize("big")
+            }}
+            onMouseLeave={() => {
+              mouseContext.setSize("small")
+            }}
+          >
             <Title>Socials</Title>
             <StyledLink
               href="https://www.instagram.com/co_existenz/"
@@ -43,7 +60,14 @@ const Footer = () => {
               LinkdIn
             </StyledLink>
           </Content>
-          <Content>
+          <Content
+            onMouseEnter={() => {
+              mouseContext.setSize("big")
+            }}
+            onMouseLeave={() => {
+              mouseContext.setSize("small")
+            }}
+          >
             <Title style={{ textAlign: "right" }}>Links</Title>
             <StyledNav to="/">Home</StyledNav>
             <StyledNav to="/projects">Work</StyledNav>

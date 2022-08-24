@@ -116,7 +116,7 @@ function Buttons() {
           console.log("click")
         }}
       >
-        Contact
+        CONTACT
       </MagneticButton>
     </div>
   )
@@ -126,11 +126,10 @@ const Button1 = styled.button`
   border: none;
   padding: 0;
   background: transparent;
-  cursor: pointer;
   position: relative;
   z-index: 1;
   touch-action: none;
-  background: #075ab3;
+  background: #0c1ee8;
   color: white;
   border-radius: 30px;
   border: none;

@@ -204,25 +204,26 @@ function IconGrid() {
 }
 
 const Container = styled.div`
+  position: relative;
   margin: 10rem 0rem;
 `
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: fixed;
   text-align: left;
   @media (max-width: 1080px) {
-    top: 25rem;
-    left: 4rem;
+    top: 8rem;
+    left: 3rem;
     width: 10rem;
   }
   @media (min-width: 1080px) {
-    top: 30rem;
+    top: 9rem;
     left: 15rem;
     width: 25rem;
   }
   @media (min-width: 2160px) {
-    top: 39rem;
+    top: 12rem;
     left: 20rem;
     width: 30rem;
   }
@@ -230,20 +231,20 @@ const TextContainer = styled.div`
 const BottomText = styled.div`
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: fixed;
   text-align: left;
-  @media (max-width: 1080px) {
-    top: 50rem;
-    left: 18rem;
+  @media (max-width: 840px) {
+    top: 41rem;
+    left: 12rem;
     width: 10rem;
   }
   @media (min-width: 1080px) {
-    top: 54rem;
+    top: 40rem;
     left: 86rem;
     width: 25rem;
   }
   @media (min-width: 2160px) {
-    top: 69rem;
+    top: 50rem;
     left: 115rem;
     width: 30rem;
   }

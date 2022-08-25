@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react"
+import React, { useRef } from "react"
 import gsap from "gsap"
 import styled from "styled-components"
 import "./button.css"
@@ -122,27 +122,27 @@ function Buttons() {
   )
 }
 
-const Button1 = styled.button`
-  border: none;
-  padding: 0;
-  background: transparent;
-  position: relative;
-  z-index: 1;
-  touch-action: none;
-  background: #0c1ee8;
-  color: white;
-  border-radius: 30px;
-  border: none;
-  padding: 20px 40px;
-  &:hover {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-`
+// const Button1 = styled.button`
+//   border: none;
+//   padding: 0;
+//   background: transparent;
+//   position: relative;
+//   z-index: 1;
+//   touch-action: none;
+//   background: #0c1ee8;
+//   color: white;
+//   border-radius: 30px;
+//   border: none;
+//   padding: 20px 40px;
+//   &:hover {
+//     content: "";
+//     position: absolute;
+//     z-index: -1;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+//   }
+// `
 
 export default Buttons

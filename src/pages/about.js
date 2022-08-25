@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react"
+import React, { useContext, useEffect } from "react"
 import { CursorContext } from "../components/CustomCursor/CursorManager"
 import { motion, AnimatePresence } from "framer-motion"
 import styled from "styled-components"

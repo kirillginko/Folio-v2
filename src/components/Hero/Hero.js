@@ -29,6 +29,7 @@ function Hero() {
                 className="item__container"
                 onMouseEnter={mouseEnterHandler}
                 onMouseLeave={mouseLeaveHandler}
+                aria-hidden="true"
               >
                 <span className="item-first-title">Creative</span>
                 <span className="arrow">*</span>
@@ -51,6 +52,7 @@ function Hero() {
                 className="item__container"
                 onMouseEnter={mouseEnterHandler}
                 onMouseLeave={mouseLeaveHandler}
+                aria-hidden="true"
               >
                 <span className="item-first-title">Designer</span>
                 <span className="arrow">*</span>
@@ -73,6 +75,7 @@ function Hero() {
                 className="item__container"
                 onMouseEnter={mouseEnterHandler}
                 onMouseLeave={mouseLeaveHandler}
+                aria-hidden="true"
               >
                 <span className="item-first-title">And</span>
                 <span className="arrow">*</span>
@@ -95,6 +98,7 @@ function Hero() {
                 className="item__container"
                 onMouseEnter={mouseEnterHandler}
                 onMouseLeave={mouseLeaveHandler}
+                aria-hidden="true"
               >
                 <span className="item-first-title">Developer</span>
                 <span className="arrow">*</span>

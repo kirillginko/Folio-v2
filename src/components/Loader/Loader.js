@@ -38,9 +38,11 @@ const Loader = ({ setIsLoading }) => {
   return (
     <LoaderWrapper ref={el => (sectionContainer = el)}>
       <Overflow>
-        <Text ref={el => (textRef = el)}>
-          Your experience is loading... <span>{percent}%</span>
-        </Text>
+        <TextContainer>
+          <Text ref={el => (textRef = el)}>
+            Your experience is loading... <span>{percent}%</span>
+          </Text>
+        </TextContainer>
       </Overflow>
     </LoaderWrapper>
   )
@@ -55,7 +57,21 @@ const LoaderWrapper = styled.div`
   background-color: var(--text);
   color: var(--background);
   ${mixins.flexCenter};
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: none;
+`
+const TextContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `
 const Text = styled.p`
   ${mixins.smallText};

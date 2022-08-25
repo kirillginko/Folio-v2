@@ -6,7 +6,6 @@ import image2 from "../../images/selfie.jpg"
 import overlay from "../../images/overlay.png"
 import styled from "styled-components"
 import { CursorContext } from "../CustomCursor/CursorManager"
-import { LiquidDistortion } from "../Blotter/liquidDistortion"
 
 function Distort() {
   const mouseContext = useContext(CursorContext)

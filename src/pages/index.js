@@ -8,12 +8,14 @@ import Location from "../components/Location/Location"
 import Intro from "../components/Intro/Intro"
 import ImageTrail from "../components/ImageTrail/ImageTrail"
 import Buttons from "../components/Buttons/Buttons"
+import IconGrid from "../components/IconGrid/IconGrid"
 
 const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
       <Hero />
+      <IconGrid />
       <ImageTrail />
       <Distort />
       <Location />

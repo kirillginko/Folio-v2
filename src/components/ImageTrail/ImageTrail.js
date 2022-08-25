@@ -158,6 +158,36 @@ function ImageTrail() {
           src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828284/gradient_8_amztsm.png"
           alt="gradient"
         />
+        <img
+          className="img-item"
+          src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828279/gradient_6_raikg4.png"
+          alt="gradient"
+        />
+        <img
+          className="img-item"
+          src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828279/gradient_4_d9uv7h.png"
+          alt="gradient"
+        />
+        <img
+          className="img-item"
+          src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828279/gradient_3_s9z3f6.png"
+          alt="gradient"
+        />
+        <img
+          className="img-item"
+          src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828279/gradient_5_hxfnls.png"
+          alt="gradient"
+        />
+        <img
+          className="img-item"
+          src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828279/gradient_1_hbyhqu.png"
+          alt="gradient"
+        />
+        <img
+          className="img-item"
+          src="https://res.cloudinary.com/dtps5ugbf/image/upload/v1657828284/gradient_8_amztsm.png"
+          alt="gradient"
+        />
       </div>
     </Content>
   )

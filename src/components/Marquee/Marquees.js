@@ -24,8 +24,28 @@ function Marquees() {
           <H1>Lets Chat!</H1>
           <H1>Lets Chat!</H1>
           <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
         </Marquee>
         <Marquee speed={120} direction={"right"} gradient={false}>
+          <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
+        </Marquee>
+        <Marquee speed={120} gradient={false}>
+          <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
+        </Marquee>
+        <Marquee speed={120} direction={"right"} gradient={false}>
+          <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
           <H1>Lets Chat!</H1>
           <H1>Lets Chat!</H1>
           <H1>Lets Chat!</H1>
@@ -66,7 +86,7 @@ const H1 = styled.h1`
   font-weight: 600;
   font-style: italic;
   border-bottom: 2px solid black;
-  font-size: 15rem;
+  font-size: 4rem;
   padding: 2rem;
 `
 

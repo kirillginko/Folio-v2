@@ -174,19 +174,6 @@ function IconGrid() {
   }, [])
   return (
     <Container data-scroll-section>
-      <TextContainer>
-        <H3 data-scroll data-scroll-speed="1.5">
-          I SUPPORT IN BUILDING THE FULL CYCLE OF A DESIGN PROJECT. I SPECIALIZE
-          IN WORKING WITH CLIENTS AND BRANDS IN BUILDING EVOKING USER-FRIENDLY
-          EXPERIENCES.
-        </H3>
-      </TextContainer>
-      <BottomText>
-        <H3 data-scroll data-scroll-speed="1.5" style={{ textAlign: "end" }}>
-          I LOVE CREATING EYE CATCHING DESIGN. MY SKILLS AND EXPERIECE HELPS ME
-          UTLIIZE THE LASTEST TRENDS AND TECH.
-        </H3>
-      </BottomText>
       <canvas
         id="c"
         data-scroll
@@ -198,6 +185,23 @@ function IconGrid() {
           mouseContext.setSize("small")
         }}
       ></canvas>
+      <TextContainer>
+        <TopText>
+          <H3>
+            I SUPPORT IN BUILDING THE FULL CYCLE OF A DESIGN PROJECT. I
+            SPECIALIZE IN WORKING WITH CLIENTS AND BRANDS IN BUILDING EVOKING
+            USER-FRIENDLY EXPERIENCES.
+          </H3>
+          <SpanTop>↵</SpanTop>
+        </TopText>
+        <BottomText>
+          <Span>↳</Span>
+          <H3 style={{ textAlign: "end" }}>
+            I LOVE CREATING EYE CATCHING DESIGN. MY SKILLS AND EXPERIECE HELPS
+            ME UTLIIZE THE LASTEST TRENDS AND TECH.
+          </H3>
+        </BottomText>
+      </TextContainer>
     </Container>
   )
 }
@@ -207,53 +211,88 @@ const Container = styled.div`
   margin: 10rem 0rem;
 `
 const TextContainer = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: fixed;
-  text-align: left;
-  @media (max-width: 1080px) {
-    position: relative;
-    top: 8rem;
-    left: 3rem;
-    width: 10rem;
-  }
+  z-index: -100;
+  height: 100vh;
+  transform: translateY(-100%);
+  margin: 0rem 1.5rem;
+`
+const TopText = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10rem;
+  padding-left: 3rem;
   @media (min-width: 1080px) {
-    top: 10rem;
-    left: 15rem;
-    width: 25rem;
-  }
-  @media (min-width: 2160px) {
-    top: 14rem;
-    left: 20rem;
-    width: 30rem;
+    margin-top: 18vh;
+    padding-left: 12vw;
   }
 `
 const BottomText = styled.div`
   display: flex;
-  flex-direction: column;
-  position: fixed;
-  text-align: left;
-  @media (max-width: 840px) {
-    position: relative;
-    top: 41rem;
-    left: 12rem;
-    width: 10rem;
-  }
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 26rem;
+  padding-right: 3rem;
   @media (min-width: 1080px) {
-    top: 41rem;
-    left: 80rem;
-    width: 25rem;
-  }
-  @media (min-width: 2160px) {
-    top: 53rem;
-    left: 111rem;
-    width: 30rem;
+    margin-top: 22vh;
+    padding-right: 12vw;
   }
 `
 const H3 = styled.div`
   font-size: calc(2.5vmax * 9 / 16);
   color: #0010ff;
-  line-height: 2rem;
+  width: 10rem;
+  @media (min-width: 1080px) {
+    width: 20rem;
+    line-height: 2rem;
+  }
+  @media (min-width: 1440px) {
+    width: 30rem;
+    line-height: 2.5rem;
+  }
+`
+const Span = styled.div`
+  font-size: calc(10.5vmax * 9 / 16);
+  color: #0010ff;
+  width: 10rem;
+  padding-left: 8vw;
+  padding-top: 5vh;
+  @media (min-width: 1080px) {
+    width: 20rem;
+    line-height: 2rem;
+    padding-left: 12vw;
+    padding-top: 14vh;
+  }
+  @media (min-width: 1440px) {
+    width: 30rem;
+    line-height: 2.5rem;
+    padding-left: 12vw;
+    padding-top: 14vh;
+  }
+`
+const SpanTop = styled.div`
+  font-size: calc(10.5vmax * 9 / 16);
+  color: #0010ff;
+  width: 5vw;
+  height: 5vh;
+  padding-right: 18vw;
+  padding-top: 1vh;
+  transform: scaleY(-1);
+  @media (min-width: 1080px) {
+    width: 20vw;
+    line-height: 2rem;
+    padding-right: 16vw;
+    padding-top: 4vh;
+  }
+  @media (min-width: 1440px) {
+    width: 20rem;
+    line-height: 2.5rem;
+    padding-right: 18vw;
+    padding-top: 4vh;
+  }
 `
 
 export default IconGrid

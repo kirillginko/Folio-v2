@@ -26,8 +26,12 @@ function Marquees() {
           <H1>Lets Chat!</H1>
           <H1>Lets Chat!</H1>
           <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
         </Marquee>
         <Marquee speed={120} direction={"right"} gradient={false}>
+          <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
           <H1>Lets Chat!</H1>
           <H1>Lets Chat!</H1>
           <H1>Lets Chat!</H1>
@@ -42,8 +46,12 @@ function Marquees() {
           <H1>Lets Chat!</H1>
           <H1>Lets Chat!</H1>
           <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
         </Marquee>
         <Marquee speed={120} direction={"right"} gradient={false}>
+          <H1>Lets Chat!</H1>
+          <H1>Lets Chat!</H1>
           <H1>Lets Chat!</H1>
           <H1>Lets Chat!</H1>
           <H1>Lets Chat!</H1>

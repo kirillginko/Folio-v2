@@ -1,93 +1,75 @@
-import React, { useContext } from "react"
-import { CursorContext } from "../CustomCursor/CursorManager"
+import React, { useEffect } from "react"
 import styled from "styled-components"
+import Bluebox from "../../images/blue.jpg"
+import image2 from "../../images/selfie.jpg"
+import hoverEffect from "hover-effect"
+import overlay from "../../images/overlay.png"
 
 function Intro() {
-  const mouseContext = useContext(CursorContext)
-
-  const mouseEnterHandler = () => {
-    mouseContext.setSize("bigger")
-  }
-  const mouseLeaveHandler = () => {
-    mouseContext.setSize("small")
-  }
-
+  useEffect(() => {
+    new hoverEffect({
+      parent: document.querySelector(Img),
+      intensity: 0.3,
+      image1: Bluebox,
+      image2: image2,
+      displacementImage: overlay,
+    })
+  }, [])
   return (
     <Container data-scroll-section>
-      <Target></Target>
-      <Text onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
-        <H2
-          data-scroll
-          data-scroll-speed="1.5"
-          data-scroll-delay=".5"
-          style={{ fontSize: "5rem" }}
-        >
-          Research & Strategy
-        </H2>
-      </Text>
-      <Text>
-        <H2
-          data-scroll
-          data-scroll-to=""
-          data-scroll-speed="2.5"
-          data-scroll-delay=".8"
-          style={{ fontWeight: "100", fontStyle: "italic" }}
-        >
-          Visual Design
-        </H2>
-      </Text>
-      <Text onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler}>
-        <H2
-          data-scroll
-          data-scroll-speed="3.5"
-          data-scroll-delay="1.2"
-          style={{ fontSize: "5rem" }}
-        >
-          Minimalism
-        </H2>
-      </Text>
-      <Text>
-        <H2
-          data-scroll
-          data-scroll-to=""
-          data-scroll-speed="4.5"
-          data-scroll-delay="1.5"
-          style={{ fontWeight: "100", fontStyle: "italic" }}
-        >
-          Interaction
-        </H2>
-      </Text>
+      <TopContainer>
+        <H2>FULL-STACK DEVELOPER</H2>
+      </TopContainer>
+      <Img></Img>
+      <BottomContainer>
+        <Span>↓</Span>
+        <H3>I SUPPORT DESIGNERS AND AGENCIES WITH CREATIVE DEVELOPMENT</H3>
+        <H2>Kirill Ginko</H2>
+      </BottomContainer>
     </Container>
   )
 }
 
 const Container = styled.div`
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  justify-content: flex-start;
-  height: 80vh;
-  width: 100vw;
   border: 1px solid red;
-  margin-bottom: 35rem;
-  margin-top: 30rem;
-`
-const Text = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  height: min-content;
   margin: 0rem 1.5rem;
-  /* border: 1px solid red; */
-  overflow: hidden;
 `
-const Target = styled.div`
-  display: relative;
-  height: 20rem;
-  width: 100%;
+const TopContainer = styled.div`
+  display: inline-block;
+`
+const BottomContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  height: 10rem;
+  border: 1px solid blue;
 `
 const H2 = styled.h2`
-  font-size: calc(15vmax * 9 / 16);
-  text-transform: uppercase;
-  padding: 10rem 0rem;
+  font-size: 11rem;
+  padding-bottom: 2rem;
 `
+const H3 = styled.h2`
+  font-size: 2rem;
+`
+const Span = styled.span`
+  height: 7rem;
+  width: 20rem;
+  font-size: 15rem;
+  padding-left: 6rem;
+  line-height: 3rem;
+  margin-top: 3rem;
+  border: 1px solid red;
+  overflow: hidden;
+`
+const Img = styled.div`
+  position: relative;
+  height: 40rem;
+  width: 40rem;
+  background-color: gray;
+  cursor: none;
+`
+
 export default Intro

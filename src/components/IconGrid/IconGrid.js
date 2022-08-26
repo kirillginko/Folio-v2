@@ -176,16 +176,15 @@ function IconGrid() {
     <Container data-scroll-section>
       <TextContainer>
         <H3 data-scroll data-scroll-speed="1.5">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quod
-          laudantium, totam cupiditate aliquam necessitatibus dignissimos maxime
-          tenetur architecto. Excepturi?
+          I SUPPORT IN BUILDING THE FULL CYCLE OF A DESIGN PROJECT. I SPECIALIZE
+          IN WORKING WITH CLIENTS AND BRANDS IN BUILDING EVOKING USER-FRIENDLY
+          EXPERIENCES.
         </H3>
       </TextContainer>
       <BottomText>
-        <H3 data-scroll data-scroll-speed="1.5">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
-          adipisci provident architecto vel quibusdam accusamus pariatur dolor
-          ut neque asperiores!
+        <H3 data-scroll data-scroll-speed="1.5" style={{ textAlign: "end" }}>
+          I LOVE CREATING EYE CATCHING DESIGN. MY SKILLS AND EXPERIECE HELPS ME
+          UTLIIZE THE LASTEST TRENDS AND TECH.
         </H3>
       </BottomText>
       <canvas
@@ -213,17 +212,18 @@ const TextContainer = styled.div`
   position: fixed;
   text-align: left;
   @media (max-width: 1080px) {
+    position: relative;
     top: 8rem;
     left: 3rem;
     width: 10rem;
   }
   @media (min-width: 1080px) {
-    top: 9rem;
+    top: 10rem;
     left: 15rem;
     width: 25rem;
   }
   @media (min-width: 2160px) {
-    top: 12rem;
+    top: 14rem;
     left: 20rem;
     width: 30rem;
   }
@@ -234,25 +234,26 @@ const BottomText = styled.div`
   position: fixed;
   text-align: left;
   @media (max-width: 840px) {
+    position: relative;
     top: 41rem;
     left: 12rem;
     width: 10rem;
   }
   @media (min-width: 1080px) {
-    top: 40rem;
-    left: 86rem;
+    top: 41rem;
+    left: 80rem;
     width: 25rem;
   }
   @media (min-width: 2160px) {
-    top: 50rem;
-    left: 115rem;
+    top: 53rem;
+    left: 111rem;
     width: 30rem;
   }
 `
 const H3 = styled.div`
   font-size: calc(2.5vmax * 9 / 16);
-  color: white;
-  z-index: -1000;
+  color: #0010ff;
+  line-height: 2rem;
 `
 
 export default IconGrid

@@ -1,5 +1,6 @@
 import React from "react"
 import SEO from "../components/seo"
+import Intro from "../components/Intro/Intro"
 import Hero from "../components/Hero/Hero"
 import Marquees from "../components/Marquee/Marquees"
 import Distort from "../components/Distort/Distort"
@@ -15,6 +16,7 @@ const IndexPage = () => {
       <SEO title="Home" />
       <Hero />
       <IconGrid />
+      <Intro />
       <ImageTrail />
       <Distort />
       <Location />

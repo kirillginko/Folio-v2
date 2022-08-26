@@ -146,13 +146,15 @@ const Title = styled.div`
   width: auto;
   top: 15rem;
   margin-left: 10rem;
-  border: 1px solid red;
-  @media (max-width: 1440px) {
-    margin-left: -3rem;
+  @media (max-width: 900px) {
+    margin-left: -6rem;
     text-align: left;
     justify-content: left;
     display: none;
     top: 13rem;
+  }
+  @media (max-width: 1080px) {
+    margin-left: 20rem;
   }
 `
 const Mobile = styled.h2`
